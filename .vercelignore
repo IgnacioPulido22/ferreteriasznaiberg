@@ -1,0 +1,8 @@
+server.py
+build.py
+products_clean.json
+products_data.json
+_backups/
+*.xlsx
+.claude/
+__pycache__/

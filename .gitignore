@@ -1,0 +1,8 @@
+_backups/
+__pycache__/
+*.pyc
+.env
+node_modules/
+setup_supabase.py
+products_data.json
+products_clean.json

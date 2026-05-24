@@ -1,0 +1,1089 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Admin — Ferretería Sznaiberg</title>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&family=Montserrat:wght@700;800;900&display=swap" rel="stylesheet">
+<style>
+*,*::before,*::after{box-sizing:border-box;margin:0;padding:0}
+:root{
+  --y:#C9A800;--yc:#E6BB00;--blk:#1A1A1A;--blk2:#111;
+  --bg:#F5F4F0;--white:#fff;--border:#E2E0D8;
+  --txt:#2D2D2D;--sec:#6B6B6B;--radius:6px;
+  --red:#E53E3E;--green:#38A169;--blue:#3182CE;
+  --font:'Inter',sans-serif;--ftitle:'Montserrat',sans-serif;
+  --shadow:0 2px 10px rgba(0,0,0,.07);
+  --shadow-lg:0 8px 32px rgba(0,0,0,.13);
+}
+html{height:100%}
+body{font-family:var(--font);background:var(--bg);color:var(--txt);font-size:14px;min-height:100vh}
+a{text-decoration:none;color:inherit}
+button{cursor:pointer;border:none;font-family:var(--font)}
+input,select,textarea{font-family:var(--font)}
+::-webkit-scrollbar{width:6px;height:6px}
+::-webkit-scrollbar-track{background:#f0f0f0}
+::-webkit-scrollbar-thumb{background:#ccc;border-radius:3px}
+
+/* ── LOGIN ── */
+#loginScreen{
+  position:fixed;inset:0;background:var(--blk);
+  display:flex;align-items:center;justify-content:center;z-index:9999;
+}
+.login-box{
+  background:#fff;border-radius:12px;padding:44px 40px;width:360px;
+  box-shadow:0 24px 80px rgba(0,0,0,.4);text-align:center;
+}
+.login-logo{display:flex;align-items:center;justify-content:center;gap:12px;margin-bottom:28px}
+.login-mark{width:46px;height:46px;background:var(--yc);border-radius:8px;display:flex;align-items:center;justify-content:center;font-size:22px;font-weight:900;color:var(--blk);font-family:var(--ftitle)}
+.login-name{text-align:left}
+.login-name strong{display:block;font-family:var(--ftitle);font-size:17px;font-weight:800;color:var(--blk)}
+.login-name span{font-size:10px;color:var(--sec);letter-spacing:2px;text-transform:uppercase;font-weight:600}
+.login-title{font-size:15px;font-weight:700;color:var(--txt);margin-bottom:6px}
+.login-sub{font-size:12px;color:var(--sec);margin-bottom:28px}
+.login-field{margin-bottom:16px;text-align:left}
+.login-field label{display:block;font-size:12px;font-weight:600;color:var(--sec);margin-bottom:6px;text-transform:uppercase;letter-spacing:.8px}
+.login-field input{
+  width:100%;height:42px;border:1px solid var(--border);border-radius:var(--radius);
+  padding:0 14px;font-size:14px;outline:none;transition:border-color .2s;
+}
+.login-field input:focus{border-color:var(--yc);box-shadow:0 0 0 3px rgba(230,187,0,.15)}
+.login-error{font-size:12px;color:var(--red);margin-top:-8px;margin-bottom:12px;display:none}
+.btn-login{
+  width:100%;height:44px;background:var(--yc);color:var(--blk);
+  border-radius:var(--radius);font-weight:800;font-size:14px;font-family:var(--ftitle);
+  transition:all .2s;letter-spacing:.3px;
+}
+.btn-login:hover{background:var(--y);transform:translateY(-1px)}
+.login-hint{font-size:11px;color:#bbb;margin-top:20px}
+
+/* ── LAYOUT ── */
+#app{display:none;min-height:100vh;flex-direction:column}
+#app.visible{display:flex}
+
+.sidebar{
+  position:fixed;top:0;left:0;bottom:0;width:230px;
+  background:var(--blk);display:flex;flex-direction:column;z-index:100;
+}
+.sidebar-logo{
+  display:flex;align-items:center;gap:11px;padding:22px 20px 18px;
+  border-bottom:1px solid rgba(255,255,255,.07);
+}
+.sidebar-mark{width:34px;height:34px;background:var(--yc);border-radius:5px;display:flex;align-items:center;justify-content:center;font-size:16px;font-weight:900;color:var(--blk);font-family:var(--ftitle);flex-shrink:0}
+.sidebar-title{color:#fff;font-family:var(--ftitle);font-size:13px;font-weight:800;letter-spacing:-.2px;line-height:1.2}
+.sidebar-title span{display:block;font-size:9px;font-weight:500;color:var(--y);letter-spacing:2px;text-transform:uppercase;margin-top:1px}
+.sidebar-badge{background:rgba(230,187,0,.15);color:var(--yc);font-size:9px;font-weight:700;padding:2px 7px;border-radius:3px;letter-spacing:1px;text-transform:uppercase;margin-left:auto;flex-shrink:0}
+nav{flex:1;padding:12px 0;overflow-y:auto}
+.nav-section{padding:16px 20px 6px;font-size:9.5px;font-weight:700;color:rgba(255,255,255,.25);text-transform:uppercase;letter-spacing:1.5px}
+.nav-item{
+  display:flex;align-items:center;gap:10px;padding:10px 20px;
+  color:rgba(255,255,255,.6);font-size:13px;font-weight:500;
+  cursor:pointer;transition:all .18s;border-left:3px solid transparent;
+}
+.nav-item:hover{color:#fff;background:rgba(255,255,255,.05)}
+.nav-item.active{color:var(--yc);border-left-color:var(--yc);background:rgba(201,168,0,.08);font-weight:700}
+.nav-item-icon{width:18px;text-align:center;flex-shrink:0;font-size:15px}
+.sidebar-footer{padding:16px 20px;border-top:1px solid rgba(255,255,255,.07)}
+.btn-logout{
+  display:flex;align-items:center;gap:8px;color:rgba(255,255,255,.45);
+  font-size:12px;font-weight:600;cursor:pointer;transition:color .2s;background:none;border:none;
+  font-family:var(--font);
+}
+.btn-logout:hover{color:var(--red)}
+
+.main{margin-left:230px;padding:28px 32px;min-height:100vh}
+.page-header{display:flex;align-items:flex-start;justify-content:space-between;margin-bottom:24px;gap:16px;flex-wrap:wrap}
+.page-title{font-family:var(--ftitle);font-size:20px;font-weight:800;color:var(--blk);letter-spacing:-.5px}
+.page-title small{display:block;font-family:var(--font);font-size:12px;font-weight:400;color:var(--sec);margin-top:2px;letter-spacing:0}
+
+/* ── PANELS ── */
+.panel{display:none}
+.panel.active{display:block}
+
+/* ── STATS ── */
+.stats-grid{display:grid;grid-template-columns:repeat(4,1fr);gap:16px;margin-bottom:24px}
+.stat-card{
+  background:var(--white);border:1px solid var(--border);border-radius:var(--radius);
+  padding:20px 22px;display:flex;flex-direction:column;gap:4px;
+}
+.stat-label{font-size:11px;font-weight:700;color:var(--sec);text-transform:uppercase;letter-spacing:1px}
+.stat-value{font-family:var(--ftitle);font-size:28px;font-weight:900;color:var(--blk);line-height:1}
+.stat-sub{font-size:11px;color:var(--sec);margin-top:2px}
+.stat-bar{height:3px;background:var(--border);border-radius:2px;margin-top:12px;overflow:hidden}
+.stat-bar-fill{height:100%;border-radius:2px;background:var(--yc)}
+
+/* ── CATEGORY BREAKDOWN ── */
+.cat-breakdown{background:#fff;border:1px solid var(--border);border-radius:var(--radius);padding:20px 22px;margin-bottom:24px}
+.cat-breakdown h3{font-size:13px;font-weight:700;color:var(--txt);margin-bottom:14px}
+.cat-row{display:grid;grid-template-columns:1fr auto auto;gap:10px;align-items:center;padding:6px 0;border-bottom:1px solid #f5f4f0}
+.cat-row:last-child{border-bottom:none}
+.cat-row-name{font-size:12.5px;color:var(--txt);font-weight:500}
+.cat-row-bar{height:6px;background:var(--border);border-radius:3px;overflow:hidden;width:120px}
+.cat-row-bar-fill{height:100%;border-radius:3px;background:var(--yc)}
+.cat-row-count{font-size:12px;color:var(--sec);font-weight:600;min-width:60px;text-align:right}
+
+/* ── TOOLBAR ── */
+.toolbar{
+  background:#fff;border:1px solid var(--border);border-radius:var(--radius);
+  padding:12px 16px;display:flex;align-items:center;gap:10px;flex-wrap:wrap;margin-bottom:16px;
+}
+.toolbar-search{
+  flex:1;min-width:200px;height:36px;border:1px solid var(--border);border-radius:var(--radius);
+  padding:0 12px;font-size:13px;outline:none;transition:border-color .2s;
+}
+.toolbar-search:focus{border-color:var(--yc)}
+.toolbar-select{
+  height:36px;border:1px solid var(--border);border-radius:var(--radius);
+  padding:0 10px;font-size:12.5px;background:#fff;outline:none;cursor:pointer;
+}
+.toolbar-spacer{flex:1}
+.btn{
+  display:inline-flex;align-items:center;gap:7px;height:36px;padding:0 16px;
+  border-radius:var(--radius);font-size:12.5px;font-weight:700;transition:all .18s;border:none;cursor:pointer;
+}
+.btn-primary{background:var(--yc);color:var(--blk)}
+.btn-primary:hover{background:var(--y)}
+.btn-secondary{background:var(--bg);border:1px solid var(--border);color:var(--txt)}
+.btn-secondary:hover{background:#e8e6df}
+.btn-danger{background:#fff;border:1px solid var(--border);color:var(--red)}
+.btn-danger:hover{background:var(--red);color:#fff;border-color:var(--red)}
+.btn-green{background:var(--green);color:#fff}
+.btn-green:hover{background:#276749}
+.btn-sm{height:30px;padding:0 11px;font-size:11.5px}
+
+/* ── TABLE ── */
+.table-wrap{background:#fff;border:1px solid var(--border);border-radius:var(--radius);overflow:hidden}
+.table-info{padding:12px 16px;border-bottom:1px solid var(--border);font-size:12px;color:var(--sec);display:flex;align-items:center;justify-content:space-between}
+.table-info strong{color:var(--txt)}
+table{width:100%;border-collapse:collapse}
+th{
+  background:#f9f8f5;padding:10px 14px;text-align:left;
+  font-size:11px;font-weight:700;color:var(--sec);text-transform:uppercase;letter-spacing:.8px;
+  border-bottom:1px solid var(--border);white-space:nowrap;
+}
+th.sortable{cursor:pointer;user-select:none}
+th.sortable:hover{color:var(--txt)}
+th .sort-icon{opacity:.4;margin-left:4px}
+th.sorted .sort-icon{opacity:1;color:var(--yc)}
+td{padding:10px 14px;border-bottom:1px solid #f5f4f0;vertical-align:middle;font-size:13px}
+tr:last-child td{border-bottom:none}
+tr:hover td{background:#fafaf7}
+.td-id{color:var(--sec);font-size:12px;font-weight:600;font-variant-numeric:tabular-nums}
+.td-name{font-weight:600;max-width:340px}
+.td-name small{display:block;font-size:11px;font-weight:400;color:var(--sec);margin-top:2px;white-space:normal}
+.td-cat{font-size:11.5px}
+.cat-chip{display:inline-flex;align-items:center;gap:4px;background:#f0ede6;border-radius:3px;padding:2px 7px;font-size:11px;font-weight:600;color:var(--txt)}
+.td-price{font-family:var(--ftitle);font-size:14px;font-weight:800;color:var(--blk);white-space:nowrap;font-variant-numeric:tabular-nums}
+.td-actions{display:flex;gap:6px;white-space:nowrap}
+
+/* ── PAGINATION ── */
+.pagination{display:flex;align-items:center;gap:6px;padding:12px 16px;border-top:1px solid var(--border);background:#fff}
+.page-btn{
+  width:32px;height:32px;border:1px solid var(--border);border-radius:var(--radius);
+  background:#fff;font-size:12.5px;font-weight:600;color:var(--txt);cursor:pointer;
+  display:flex;align-items:center;justify-content:center;transition:all .15s;
+}
+.page-btn:hover:not(:disabled){background:var(--bg)}
+.page-btn.active{background:var(--yc);border-color:var(--yc);color:var(--blk)}
+.page-btn:disabled{opacity:.35;cursor:not-allowed}
+.page-info-txt{font-size:12px;color:var(--sec);margin-left:auto}
+
+/* ── MODAL ── */
+.modal-overlay{
+  position:fixed;inset:0;background:rgba(0,0,0,.55);z-index:3000;
+  display:none;align-items:center;justify-content:center;backdrop-filter:blur(3px);
+}
+.modal-overlay.open{display:flex}
+.modal-box{
+  background:#fff;border-radius:10px;width:min(580px,95vw);max-height:90vh;
+  overflow:hidden;display:flex;flex-direction:column;box-shadow:var(--shadow-lg);
+}
+.modal-header{
+  display:flex;align-items:center;justify-content:space-between;
+  padding:18px 22px;border-bottom:1px solid var(--border);flex-shrink:0;
+}
+.modal-title{font-family:var(--ftitle);font-size:16px;font-weight:800;color:var(--blk)}
+.modal-close{
+  width:32px;height:32px;background:var(--bg);border:none;border-radius:50%;
+  cursor:pointer;font-size:15px;display:flex;align-items:center;justify-content:center;
+  transition:background .18s;color:var(--sec);
+}
+.modal-close:hover{background:#e0ddd5}
+.modal-body{padding:22px;overflow-y:auto;flex:1}
+.modal-footer{padding:16px 22px;border-top:1px solid var(--border);display:flex;gap:10px;justify-content:flex-end;flex-shrink:0}
+.form-row{display:grid;grid-template-columns:1fr 1fr;gap:14px;margin-bottom:14px}
+.form-row.full{grid-template-columns:1fr}
+.form-group{display:flex;flex-direction:column;gap:5px}
+.form-group label{font-size:11.5px;font-weight:700;color:var(--sec);text-transform:uppercase;letter-spacing:.8px}
+.form-group input,.form-group select,.form-group textarea{
+  border:1px solid var(--border);border-radius:var(--radius);
+  padding:9px 12px;font-size:13.5px;outline:none;transition:border-color .2s;
+  background:#fff;color:var(--txt);
+}
+.form-group input:focus,.form-group select:focus,.form-group textarea:focus{border-color:var(--yc);box-shadow:0 0 0 3px rgba(230,187,0,.12)}
+.form-group textarea{resize:vertical;min-height:72px}
+.form-hint{font-size:11px;color:var(--sec);margin-top:2px}
+.form-preview{
+  background:var(--bg);border:1px solid var(--border);border-radius:var(--radius);
+  padding:10px 12px;display:flex;align-items:center;gap:10px;margin-top:8px;
+}
+.form-preview img{width:48px;height:48px;object-fit:cover;border-radius:4px;border:1px solid var(--border)}
+.form-preview-no{width:48px;height:48px;background:#e8e5dd;border-radius:4px;display:flex;align-items:center;justify-content:center;font-size:22px}
+
+/* ── CONFIRM MODAL ── */
+.confirm-box{
+  background:#fff;border-radius:10px;width:min(400px,90vw);
+  box-shadow:var(--shadow-lg);padding:28px;text-align:center;
+}
+.confirm-icon{font-size:36px;margin-bottom:12px}
+.confirm-title{font-family:var(--ftitle);font-size:17px;font-weight:800;color:var(--blk);margin-bottom:8px}
+.confirm-msg{font-size:13px;color:var(--sec);line-height:1.55;margin-bottom:22px}
+.confirm-actions{display:flex;gap:10px;justify-content:center}
+
+/* ── TOAST ── */
+#toastContainer{position:fixed;bottom:24px;right:24px;display:flex;flex-direction:column;gap:8px;z-index:9999}
+.toast{
+  background:var(--blk);color:#fff;padding:11px 18px;border-radius:var(--radius);
+  font-size:13px;font-weight:600;box-shadow:var(--shadow-lg);
+  animation:toastIn .28s ease;max-width:320px;border-left:3px solid var(--yc);
+}
+.toast.green{border-left-color:var(--green)}
+.toast.red{border-left-color:var(--red)}
+.toast.out{animation:toastOut .28s ease forwards}
+@keyframes toastIn{from{opacity:0;transform:translateX(20px)}to{opacity:1;transform:translateX(0)}}
+@keyframes toastOut{from{opacity:1;transform:translateX(0)}to{opacity:0;transform:translateX(20px)}}
+
+/* ── EMPTY STATE ── */
+.empty-state{text-align:center;padding:56px 24px;color:var(--sec)}
+.empty-state-icon{font-size:40px;margin-bottom:12px;opacity:.4}
+.empty-state h3{font-size:16px;font-weight:700;color:var(--txt);margin-bottom:6px}
+.empty-state p{font-size:13px}
+
+/* ── BADGE ── */
+.badge{display:inline-flex;align-items:center;padding:2px 7px;border-radius:3px;font-size:10.5px;font-weight:700;text-transform:uppercase;letter-spacing:.5px}
+.badge-yellow{background:rgba(230,187,0,.15);color:#92700a}
+.badge-red{background:rgba(229,62,62,.12);color:var(--red)}
+.badge-green{background:rgba(56,161,105,.12);color:var(--green)}
+
+/* ── SETTINGS ── */
+.settings-card{background:#fff;border:1px solid var(--border);border-radius:var(--radius);margin-bottom:16px}
+.settings-card-header{padding:16px 20px;border-bottom:1px solid var(--border);display:flex;align-items:center;gap:10px}
+.settings-card-header h3{font-size:14px;font-weight:700;color:var(--txt)}
+.settings-card-header span{font-size:11px;color:var(--sec)}
+.settings-card-body{padding:20px}
+.settings-row{display:flex;align-items:center;justify-content:space-between;padding:12px 0;border-bottom:1px solid #f5f4f0;gap:16px}
+.settings-row:last-child{border-bottom:none;padding-bottom:0}
+.settings-row-info{}
+.settings-row-label{font-size:13px;font-weight:600;color:var(--txt);margin-bottom:2px}
+.settings-row-desc{font-size:11.5px;color:var(--sec)}
+
+/* ── RESPONSIVE ── */
+@media(max-width:900px){
+  .stats-grid{grid-template-columns:1fr 1fr}
+  .sidebar{transform:translateX(-100%)}
+  .main{margin-left:0}
+}
+</style>
+</head>
+<body>
+
+<!-- LOGIN -->
+<div id="loginScreen">
+  <div class="login-box">
+    <div class="login-logo">
+      <div class="login-mark">S</div>
+      <div class="login-name">
+        <strong>Sznaiberg</strong>
+        <span>Panel de administración</span>
+      </div>
+    </div>
+    <div class="login-title">Acceso restringido</div>
+    <div class="login-sub">Ingresá tu contraseña para continuar</div>
+    <div class="login-field">
+      <label>Contraseña</label>
+      <input type="password" id="pwdInput" placeholder="••••••••" onkeydown="if(event.key==='Enter')doLogin()">
+    </div>
+    <div class="login-error" id="loginError">Contraseña incorrecta. Intentá de nuevo.</div>
+    <button class="btn-login" id="btnLogin" onclick="doLogin()">Ingresar al panel</button>
+  </div>
+</div>
+
+<!-- APP -->
+<div id="app">
+
+  <!-- SIDEBAR -->
+  <aside class="sidebar">
+    <div class="sidebar-logo">
+      <div class="sidebar-mark">S</div>
+      <div class="sidebar-title">Sznaiberg <span>Admin Panel</span></div>
+      <span class="sidebar-badge">Admin</span>
+    </div>
+    <nav>
+      <div class="nav-section">Principal</div>
+      <div class="nav-item active" onclick="showPanel('dashboard',this)">
+        <span class="nav-item-icon">📊</span> Dashboard
+      </div>
+      <div class="nav-section">Catálogo</div>
+      <div class="nav-item" onclick="showPanel('products',this)">
+        <span class="nav-item-icon">📦</span> Productos
+      </div>
+      <div class="nav-item" onclick="showPanel('settings',this)">
+        <span class="nav-item-icon">⚙️</span> Configuración
+      </div>
+    </nav>
+    <div class="sidebar-footer">
+      <button class="btn-logout" onclick="logout()">
+        <span style="font-size:15px">🚪</span> Cerrar sesión
+      </button>
+    </div>
+  </aside>
+
+  <!-- MAIN -->
+  <main class="main">
+
+    <!-- DASHBOARD -->
+    <div class="panel active" id="panel-dashboard">
+      <div class="page-header">
+        <div class="page-title">Dashboard <small>Resumen del catálogo de productos</small></div>
+        <button class="btn btn-primary" onclick="showPanel('products',null)">
+          <span>📦</span> Ver productos
+        </button>
+      </div>
+      <div class="stats-grid" id="statsGrid"></div>
+      <div class="cat-breakdown">
+        <h3>Productos por categoría</h3>
+        <div id="catBreakdown"></div>
+      </div>
+    </div>
+
+    <!-- PRODUCTS -->
+    <div class="panel" id="panel-products">
+      <div class="page-header">
+        <div class="page-title">Productos <small id="productsSubtitle">Cargando...</small></div>
+        <div style="display:flex;gap:10px;flex-wrap:wrap">
+          <button class="btn btn-secondary" id="btnSaveAll" onclick="saveToServer()" style="display:none">
+            <span>💾</span> Guardar cambios
+          </button>
+          <button class="btn btn-secondary" onclick="resetToOriginal()" title="Volver al catálogo original">
+            <span>🔄</span> Resetear
+          </button>
+          <button class="btn btn-primary" onclick="openAddModal()">
+            <span>＋</span> Nuevo producto
+          </button>
+        </div>
+      </div>
+
+      <div class="toolbar">
+        <input class="toolbar-search" type="text" id="prodSearch" placeholder="🔍  Buscar por nombre o código..." oninput="applyFilters()">
+        <select class="toolbar-select" id="catFilter" onchange="applyFilters()">
+          <option value="">Todas las categorías</option>
+        </select>
+        <select class="toolbar-select" id="sortFilter" onchange="applyFilters()">
+          <option value="">Ordenar: Relevancia</option>
+          <option value="price-asc">Precio: menor a mayor</option>
+          <option value="price-desc">Precio: mayor a menor</option>
+          <option value="name-asc">Nombre A→Z</option>
+          <option value="name-desc">Nombre Z→A</option>
+        </select>
+      </div>
+
+      <div class="table-wrap">
+        <div class="table-info">
+          <span>Mostrando <strong id="tableCount">0</strong> productos</span>
+          <span id="unsavedBadge" style="display:none" class="badge badge-yellow">⚠️ Cambios sin guardar</span>
+        </div>
+        <div style="overflow-x:auto">
+          <table>
+            <thead>
+              <tr>
+                <th>ID</th>
+                <th class="sortable" onclick="toggleSort('name')">Nombre <span class="sort-icon" id="sort-name">↕</span></th>
+                <th>Categoría</th>
+                <th class="sortable" onclick="toggleSort('price')">Precio <span class="sort-icon" id="sort-price">↕</span></th>
+                <th>Acciones</th>
+              </tr>
+            </thead>
+            <tbody id="prodTableBody"></tbody>
+          </table>
+        </div>
+        <div id="prodPagination" class="pagination"></div>
+      </div>
+    </div>
+
+    <!-- SETTINGS -->
+    <div class="panel" id="panel-settings">
+      <div class="page-header">
+        <div class="page-title">Configuración <small>Opciones del panel de administración</small></div>
+      </div>
+
+      <div class="settings-card">
+        <div class="settings-card-header">
+          <span style="font-size:20px">🔐</span>
+          <div>
+            <h3>Seguridad</h3>
+            <span>Contraseña de acceso al panel</span>
+          </div>
+        </div>
+        <div class="settings-card-body">
+          <div class="settings-row">
+            <div class="settings-row-info">
+              <div class="settings-row-label">Cambiar contraseña</div>
+              <div class="settings-row-desc">La nueva contraseña se guarda en el navegador</div>
+            </div>
+            <div style="display:flex;gap:8px;align-items:center">
+              <input type="password" id="newPwd" placeholder="Nueva contraseña" style="height:34px;border:1px solid var(--border);border-radius:var(--radius);padding:0 10px;font-size:13px;outline:none;width:180px">
+              <button class="btn btn-primary btn-sm" onclick="changePwd()">Guardar</button>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="settings-card">
+        <div class="settings-card-header">
+          <span style="font-size:20px">🌐</span>
+          <div>
+            <h3>Tienda</h3>
+            <span>Enlace a la tienda pública</span>
+          </div>
+        </div>
+        <div class="settings-card-body">
+          <div class="settings-row">
+            <div class="settings-row-info">
+              <div class="settings-row-label">Ver tienda</div>
+              <div class="settings-row-desc">Abrí la tienda en una pestaña nueva</div>
+            </div>
+            <a href="index.html" target="_blank" class="btn btn-secondary btn-sm">🛍️ Ir a la tienda</a>
+          </div>
+        </div>
+      </div>
+
+      <div class="settings-card">
+        <div class="settings-card-header">
+          <span style="font-size:20px">💾</span>
+          <div>
+            <h3>Datos</h3>
+            <span>Gestión del catálogo</span>
+          </div>
+        </div>
+        <div class="settings-card-body">
+          <div class="settings-row">
+            <div class="settings-row-info">
+              <div class="settings-row-label">Guardar catálogo</div>
+              <div class="settings-row-desc">Guarda todos los cambios directamente en products.json del servidor</div>
+            </div>
+            <button class="btn btn-green btn-sm" onclick="saveToServer()">💾 Guardar ahora</button>
+          </div>
+          <div class="settings-row">
+            <div class="settings-row-info">
+              <div class="settings-row-label">Resetear catálogo</div>
+              <div class="settings-row-desc">Borra los cambios locales y vuelve al products.json original</div>
+            </div>
+            <button class="btn btn-danger btn-sm" onclick="resetToOriginal()">🔄 Resetear</button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+  </main>
+</div>
+
+<!-- MODAL: EDITAR / AGREGAR PRODUCTO -->
+<div class="modal-overlay" id="prodModal">
+  <div class="modal-box">
+    <div class="modal-header">
+      <div class="modal-title" id="prodModalTitle">Nuevo producto</div>
+      <button class="modal-close" onclick="closeProdModal()">✕</button>
+    </div>
+    <div class="modal-body">
+      <input type="hidden" id="fieldId">
+      <div class="form-row">
+        <div class="form-group full">
+          <label>Nombre del producto *</label>
+          <input type="text" id="fieldName" placeholder="Ej: CINTA AISLADORA 3M NEGRA 20M">
+        </div>
+      </div>
+      <div class="form-row">
+        <div class="form-group">
+          <label>Categoría *</label>
+          <select id="fieldCat"></select>
+        </div>
+        <div class="form-group">
+          <label>Precio (ARS) *</label>
+          <input type="number" id="fieldPrice" placeholder="Ej: 1500" min="0">
+        </div>
+      </div>
+      <div class="form-row">
+        <div class="form-group">
+          <label>Precio tachado (opcional)</label>
+          <input type="number" id="fieldPriceOld" placeholder="Ej: 2000 (precio anterior)" min="0">
+        </div>
+        <div class="form-group">
+          <label>Badge (etiqueta)</label>
+          <input type="text" id="fieldBadge" placeholder="Ej: Oferta, Nuevo, Destacado">
+        </div>
+      </div>
+      <div class="form-row full">
+        <div class="form-group full">
+          <label>Descripción (opcional)</label>
+          <textarea id="fieldDesc" placeholder="Descripción breve del producto..."></textarea>
+        </div>
+      </div>
+      <div class="form-row full">
+        <div class="form-group full">
+          <label>URL de imagen (opcional)</label>
+          <input type="text" id="fieldImg" placeholder="https://..." oninput="previewImg()">
+          <div class="form-hint">Dejá en blanco para usar el ícono de categoría</div>
+          <div class="form-preview" id="imgPreview" style="display:none">
+            <div class="form-preview-no" id="imgPreviewIcon"></div>
+            <div style="font-size:11px;color:var(--sec)">Preview de imagen</div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="modal-footer">
+      <button class="btn btn-secondary" onclick="closeProdModal()">Cancelar</button>
+      <button class="btn btn-primary" onclick="saveProduct()">💾 Guardar producto</button>
+    </div>
+  </div>
+</div>
+
+<!-- MODAL: CONFIRMAR ELIMINAR -->
+<div class="modal-overlay" id="confirmModal">
+  <div class="confirm-box">
+    <div class="confirm-icon">🗑️</div>
+    <div class="confirm-title">¿Eliminar este producto?</div>
+    <div class="confirm-msg" id="confirmMsg">Esta acción no se puede deshacer.</div>
+    <div class="confirm-actions">
+      <button class="btn btn-secondary" onclick="closeConfirm()">Cancelar</button>
+      <button class="btn btn-danger" onclick="confirmDeleteFn()">Eliminar</button>
+    </div>
+  </div>
+</div>
+
+<div id="toastContainer"></div>
+
+<script>
+/* ============================================================
+   CONFIG & STATE
+============================================================ */
+const LS_PRODUCTS = 'szn_products';
+const SB_URL  = 'https://ekxtowlurtuyiupkzwge.supabase.co';
+const SB_ANON = 'eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJzdXBhYmFzZSIsInJlZiI6ImVreHRvd2x1cnR1eWl1cGt6d2dlIiwicm9sZSI6ImFub24iLCJpYXQiOjE3Nzk1NjQxMDEsImV4cCI6MjA5NTE0MDEwMX0.cvh8lul1vwe6uXAqkCWRX1nK4n0KtNn1PWSL5Q23Ky8';
+
+const CATS = [
+  {id:'Herramientas',icon:'🔧'},
+  {id:'Electricidad e Iluminacion',icon:'⚡'},
+  {id:'Plomeria y Sanitarios',icon:'🚿'},
+  {id:'Pinturas y Accesorios',icon:'🖌️'},
+  {id:'Ferreteria y Fijacion',icon:'🔩'},
+  {id:'Adhesivos y Selladores',icon:'🧪'},
+  {id:'Cerraduras y Herrajes',icon:'🔐'},
+  {id:'Construccion',icon:'🏗️'},
+  {id:'Materiales Generales',icon:'📦'},
+  {id:'Lubricantes',icon:'💧'},
+  {id:'Control de Plagas',icon:'🛡️'},
+  {id:'Seguridad Industrial',icon:'⛑️'},
+  {id:'Jardin y Exterior',icon:'🌿'},
+];
+
+let PRODUCTS = [];
+let filtered = [];
+let currentPage = 1;
+const PAGE_SIZE = 30;
+let sortField = null, sortDir = 1;
+let hasUnsaved = false;
+let confirmDeleteId = null;
+let editingId = null;
+
+/* ============================================================
+   LOGIN — valida contra el servidor
+============================================================ */
+async function doLogin() {
+  const val = document.getElementById('pwdInput').value.trim();
+  if (!val) return;
+  const err  = document.getElementById('loginError');
+  const btn  = document.getElementById('btnLogin');
+  btn.textContent = 'Verificando...'; btn.disabled = true;
+  err.style.display = 'none';
+  try {
+    const res = await fetch('/api/auth', {
+      method: 'POST',
+      headers: { 'Authorization': `Bearer ${val}` }
+    });
+    if (res.ok) {
+      sessionStorage.setItem('admin_token', val);
+      document.getElementById('loginScreen').style.display = 'none';
+      document.getElementById('app').classList.add('visible');
+      bootApp();
+    } else {
+      err.style.display = 'block';
+      document.getElementById('pwdInput').value = '';
+      document.getElementById('pwdInput').focus();
+      setTimeout(() => err.style.display = 'none', 3000);
+    }
+  } catch(e) {
+    err.textContent = 'Error de conexión. Revisá tu internet.';
+    err.style.display = 'block';
+  } finally {
+    btn.textContent = 'Ingresar al panel'; btn.disabled = false;
+  }
+}
+
+function logout() {
+  if (hasUnsaved && !confirm('Tenés cambios sin guardar. ¿Salir igual?')) return;
+  sessionStorage.removeItem('admin_token');
+  document.getElementById('app').classList.remove('visible');
+  document.getElementById('loginScreen').style.display = 'flex';
+  document.getElementById('pwdInput').value = '';
+}
+
+document.addEventListener('DOMContentLoaded', () => {
+  document.getElementById('pwdInput').focus();
+});
+
+/* ============================================================
+   BOOT — carga productos desde Supabase
+============================================================ */
+async function bootApp() {
+  try {
+    const res = await fetch(
+      `${SB_URL}/rest/v1/catalog?id=eq.1&select=products`,
+      { headers: { 'apikey': SB_ANON, 'Authorization': `Bearer ${SB_ANON}` } }
+    );
+    if (!res.ok) throw new Error('supabase error');
+    const data = await res.json();
+    PRODUCTS = data[0]?.products || [];
+    // guarda copia local como respaldo
+    localStorage.setItem(LS_PRODUCTS, JSON.stringify(PRODUCTS));
+  } catch(e) {
+    // fallback a copia local
+    const cached = localStorage.getItem(LS_PRODUCTS);
+    if (cached) {
+      PRODUCTS = JSON.parse(cached);
+      showToast('⚠️ Sin conexión — mostrando copia local', 'yellow');
+    } else {
+      PRODUCTS = [];
+      showToast('⚠️ No se pudieron cargar los productos', 'red');
+    }
+  }
+  buildDashboard();
+  buildProductsPanel();
+}
+
+/* ============================================================
+   PANELS
+============================================================ */
+function showPanel(id, btn) {
+  document.querySelectorAll('.panel').forEach(p => p.classList.remove('active'));
+  document.getElementById('panel-' + id).classList.add('active');
+  document.querySelectorAll('.nav-item').forEach(n => n.classList.remove('active'));
+  if (btn) btn.classList.add('active');
+  else {
+    const items = document.querySelectorAll('.nav-item');
+    const map = {dashboard:0, products:1, settings:2};
+    if (map[id] !== undefined) items[map[id]]?.classList.add('active');
+  }
+}
+
+/* ============================================================
+   DASHBOARD
+============================================================ */
+function buildDashboard() {
+  const cc = {};
+  let minPrice = Infinity, maxPrice = 0, total = 0;
+  PRODUCTS.forEach(p => {
+    cc[p.cat] = (cc[p.cat]||0)+1;
+    if (p.price < minPrice) minPrice = p.price;
+    if (p.price > maxPrice) maxPrice = p.price;
+    total += p.price;
+  });
+  const avg = PRODUCTS.length ? total / PRODUCTS.length : 0;
+
+  const statsGrid = document.getElementById('statsGrid');
+  statsGrid.innerHTML = `
+    <div class="stat-card">
+      <div class="stat-label">Total productos</div>
+      <div class="stat-value">${PRODUCTS.length.toLocaleString('es-AR')}</div>
+      <div class="stat-sub">${CATS.length} categorías</div>
+      <div class="stat-bar"><div class="stat-bar-fill" style="width:100%"></div></div>
+    </div>
+    <div class="stat-card">
+      <div class="stat-label">Precio promedio</div>
+      <div class="stat-value">$${Math.round(avg).toLocaleString('es-AR')}</div>
+      <div class="stat-sub">Precio unitario · IVA incluido</div>
+      <div class="stat-bar"><div class="stat-bar-fill" style="width:65%"></div></div>
+    </div>
+    <div class="stat-card">
+      <div class="stat-label">Precio mínimo</div>
+      <div class="stat-value">$${minPrice.toLocaleString('es-AR')}</div>
+      <div class="stat-sub">${PRODUCTS.find(p=>p.price===minPrice)?.name?.slice(0,26)+'…'||''}</div>
+      <div class="stat-bar"><div class="stat-bar-fill" style="width:20%;background:#38A169"></div></div>
+    </div>
+    <div class="stat-card">
+      <div class="stat-label">Precio máximo</div>
+      <div class="stat-value">$${maxPrice.toLocaleString('es-AR')}</div>
+      <div class="stat-sub">${PRODUCTS.find(p=>p.price===maxPrice)?.name?.slice(0,26)+'…'||''}</div>
+      <div class="stat-bar"><div class="stat-bar-fill" style="width:100%;background:#E53E3E"></div></div>
+    </div>
+  `;
+
+  const sorted = Object.entries(cc).sort((a,b) => b[1]-a[1]);
+  const maxCount = sorted[0]?.[1] || 1;
+  const breakdown = document.getElementById('catBreakdown');
+  breakdown.innerHTML = sorted.map(([cat, count]) => {
+    const icon = CATS.find(c=>c.id===cat)?.icon || '📦';
+    const pct = Math.round(count/maxCount*100);
+    return `<div class="cat-row">
+      <div class="cat-row-name">${icon} ${cat}</div>
+      <div class="cat-row-bar"><div class="cat-row-bar-fill" style="width:${pct}%"></div></div>
+      <div class="cat-row-count">${count.toLocaleString('es-AR')}</div>
+    </div>`;
+  }).join('');
+}
+
+/* ============================================================
+   PRODUCTS PANEL
+============================================================ */
+function buildProductsPanel() {
+  // Category filter
+  const sel = document.getElementById('catFilter');
+  sel.innerHTML = '<option value="">Todas las categorías</option>' +
+    CATS.map(c => `<option value="${c.id}">${c.icon} ${c.id}</option>`).join('');
+
+  // Category modal select
+  const catSel = document.getElementById('fieldCat');
+  catSel.innerHTML = CATS.map(c => `<option value="${c.id}">${c.icon} ${c.id}</option>`).join('');
+
+  applyFilters();
+}
+
+function applyFilters() {
+  currentPage = 1;
+  const q = document.getElementById('prodSearch').value.trim().toUpperCase();
+  const cat = document.getElementById('catFilter').value;
+  const sort = document.getElementById('sortFilter').value;
+
+  filtered = PRODUCTS.filter(p => {
+    const matchCat = !cat || p.cat === cat;
+    const matchQ = !q || p.name.toUpperCase().includes(q) || String(p.id).includes(q);
+    return matchCat && matchQ;
+  });
+
+  if (sort === 'price-asc')  filtered = [...filtered].sort((a,b)=>a.price-b.price);
+  if (sort === 'price-desc') filtered = [...filtered].sort((a,b)=>b.price-a.price);
+  if (sort === 'name-asc')   filtered = [...filtered].sort((a,b)=>a.name.localeCompare(b.name));
+  if (sort === 'name-desc')  filtered = [...filtered].sort((a,b)=>b.name.localeCompare(a.name));
+
+  renderTable();
+}
+
+function renderTable() {
+  const total = filtered.length;
+  const totalPages = Math.max(1, Math.ceil(total/PAGE_SIZE));
+  if (currentPage > totalPages) currentPage = 1;
+  const page = filtered.slice((currentPage-1)*PAGE_SIZE, currentPage*PAGE_SIZE);
+
+  document.getElementById('tableCount').textContent = total.toLocaleString('es-AR');
+  document.getElementById('productsSubtitle').textContent =
+    `${PRODUCTS.length.toLocaleString('es-AR')} productos en total`;
+  document.getElementById('unsavedBadge').style.display = hasUnsaved ? 'inline-flex' : 'none';
+
+  const tbody = document.getElementById('prodTableBody');
+  if (!page.length) {
+    tbody.innerHTML = `<tr><td colspan="5"><div class="empty-state"><div class="empty-state-icon">🔍</div><h3>Sin resultados</h3><p>Probá con otros términos</p></div></td></tr>`;
+    document.getElementById('prodPagination').innerHTML = '';
+    return;
+  }
+
+  tbody.innerHTML = page.map(p => {
+    const catIcon = CATS.find(c=>c.id===p.cat)?.icon || '📦';
+    const desc = p.description ? `<small>${esc(p.description).slice(0,60)}${p.description.length>60?'…':''}</small>` : '';
+    const badge = p.badge ? `<span class="badge badge-yellow" style="margin-left:6px">${esc(p.badge)}</span>` : '';
+    return `<tr>
+      <td class="td-id">#${p.id}</td>
+      <td class="td-name">${esc(p.name)}${badge}${desc}</td>
+      <td class="td-cat"><span class="cat-chip">${catIcon} ${esc(p.cat)}</span></td>
+      <td class="td-price">${fmtPrice(p.price)}${p.price_old?`<br><small style="font-size:10px;color:var(--sec);font-family:var(--font);text-decoration:line-through;font-weight:400">${fmtPrice(p.price_old)}</small>`:''}</td>
+      <td class="td-actions">
+        <button class="btn btn-secondary btn-sm" onclick="openEditModal(${p.id})">✏️ Editar</button>
+        <button class="btn btn-danger btn-sm" onclick="askDelete(${p.id})">🗑</button>
+      </td>
+    </tr>`;
+  }).join('');
+
+  renderPagination(currentPage, totalPages);
+}
+
+function renderPagination(page, total) {
+  const el = document.getElementById('prodPagination');
+  if (total <= 1) { el.innerHTML=''; return; }
+
+  let h = `<button class="page-btn" onclick="goPage(${page-1})" ${page===1?'disabled':''}>‹</button>`;
+  const range = getRange(page, total);
+  let prev = null;
+  range.forEach(p => {
+    if (prev !== null && p - prev > 1) h += `<span style="padding:0 4px;color:var(--sec)">···</span>`;
+    h += `<button class="page-btn${p===page?' active':''}" onclick="goPage(${p})">${p}</button>`;
+    prev = p;
+  });
+  h += `<button class="page-btn" onclick="goPage(${page+1})" ${page===total?'disabled':''}>›</button>`;
+  h += `<span class="page-info-txt">Pág. ${page} de ${total}</span>`;
+  el.innerHTML = h;
+}
+
+function getRange(page, total) {
+  const d=2, r=[];
+  for(let i=Math.max(1,page-d);i<=Math.min(total,page+d);i++) r.push(i);
+  if(r[0]>1) r.unshift(1);
+  if(r[r.length-1]<total) r.push(total);
+  return r;
+}
+
+function goPage(p) {
+  const total = Math.max(1, Math.ceil(filtered.length/PAGE_SIZE));
+  if(p<1||p>total) return;
+  currentPage = p;
+  renderTable();
+  document.getElementById('panel-products').scrollIntoView({behavior:'smooth',block:'start'});
+}
+
+function toggleSort(field) {
+  if (sortField === field) sortDir *= -1; else { sortField=field; sortDir=1; }
+  document.querySelectorAll('.sort-icon').forEach(el => el.textContent='↕');
+  document.getElementById('sort-'+field).textContent = sortDir===1?'↑':'↓';
+  applyFilters();
+}
+
+/* ============================================================
+   PRODUCT MODAL
+============================================================ */
+function openAddModal() {
+  editingId = null;
+  document.getElementById('prodModalTitle').textContent = 'Nuevo producto';
+  document.getElementById('fieldId').value = '';
+  document.getElementById('fieldName').value = '';
+  document.getElementById('fieldCat').value = CATS[0].id;
+  document.getElementById('fieldPrice').value = '';
+  document.getElementById('fieldPriceOld').value = '';
+  document.getElementById('fieldBadge').value = '';
+  document.getElementById('fieldDesc').value = '';
+  document.getElementById('fieldImg').value = '';
+  document.getElementById('imgPreview').style.display = 'none';
+  document.getElementById('prodModal').classList.add('open');
+  setTimeout(() => document.getElementById('fieldName').focus(), 100);
+}
+
+function openEditModal(id) {
+  const p = PRODUCTS.find(x => x.id === id);
+  if (!p) return;
+  editingId = id;
+  document.getElementById('prodModalTitle').textContent = 'Editar producto #' + id;
+  document.getElementById('fieldId').value = id;
+  document.getElementById('fieldName').value = p.name;
+  document.getElementById('fieldCat').value = p.cat;
+  document.getElementById('fieldPrice').value = p.price;
+  document.getElementById('fieldPriceOld').value = p.price_old || '';
+  document.getElementById('fieldBadge').value = p.badge || '';
+  document.getElementById('fieldDesc').value = p.description || '';
+  document.getElementById('fieldImg').value = p.img || '';
+  previewImg();
+  document.getElementById('prodModal').classList.add('open');
+  setTimeout(() => document.getElementById('fieldName').focus(), 100);
+}
+
+function closeProdModal() {
+  document.getElementById('prodModal').classList.remove('open');
+}
+
+function previewImg() {
+  const url = document.getElementById('fieldImg').value.trim();
+  const prev = document.getElementById('imgPreview');
+  const icon = document.getElementById('imgPreviewIcon');
+  if (url) {
+    prev.style.display = 'flex';
+    const existing = prev.querySelector('img');
+    if (existing) existing.remove();
+    const img = document.createElement('img');
+    img.src = url;
+    img.onerror = () => { img.remove(); icon.style.display='flex'; icon.textContent='🖼️'; };
+    img.onload = () => { icon.style.display='none'; };
+    icon.style.display = 'flex';
+    icon.textContent = '⏳';
+    prev.insertBefore(img, icon);
+  } else {
+    prev.style.display = 'none';
+  }
+}
+
+function saveProduct() {
+  const name = document.getElementById('fieldName').value.trim();
+  const cat  = document.getElementById('fieldCat').value;
+  const price = parseFloat(document.getElementById('fieldPrice').value);
+
+  if (!name) { showToast('⚠️ Escribí el nombre del producto', 'red'); document.getElementById('fieldName').focus(); return; }
+  if (!cat)  { showToast('⚠️ Seleccioná una categoría', 'red'); return; }
+  if (isNaN(price) || price < 0) { showToast('⚠️ Ingresá un precio válido', 'red'); document.getElementById('fieldPrice').focus(); return; }
+
+  const priceOld = parseFloat(document.getElementById('fieldPriceOld').value) || null;
+  const badge    = document.getElementById('fieldBadge').value.trim() || null;
+  const desc     = document.getElementById('fieldDesc').value.trim() || null;
+  const img      = document.getElementById('fieldImg').value.trim() || null;
+
+  if (editingId !== null) {
+    // Edit existing
+    const idx = PRODUCTS.findIndex(x => x.id === editingId);
+    if (idx !== -1) {
+      PRODUCTS[idx] = { ...PRODUCTS[idx], name, cat, price,
+        ...(priceOld ? {price_old:priceOld} : {}),
+        ...(badge ? {badge} : {}),
+        ...(desc ? {description:desc} : {}),
+        ...(img ? {img} : {}) };
+      Object.keys(PRODUCTS[idx]).forEach(k => {
+        if (!['id','name','cat','price','price_old','badge','description','img'].includes(k)) delete PRODUCTS[idx][k];
+        if (!priceOld) delete PRODUCTS[idx].price_old;
+        if (!badge) delete PRODUCTS[idx].badge;
+        if (!desc) delete PRODUCTS[idx].description;
+        if (!img) delete PRODUCTS[idx].img;
+      });
+    }
+    showToast('✅ Producto actualizado', 'green');
+  } else {
+    // New product
+    const newId = Math.max(0, ...PRODUCTS.map(p=>p.id)) + 1;
+    const newP = { id:newId, name, cat, price };
+    if (priceOld) newP.price_old = priceOld;
+    if (badge) newP.badge = badge;
+    if (desc) newP.description = desc;
+    if (img) newP.img = img;
+    PRODUCTS.push(newP);
+    showToast('✅ Producto agregado (#'+newId+')', 'green');
+  }
+
+  markUnsaved();
+  closeProdModal();
+  applyFilters();
+  buildDashboard();
+}
+
+/* ============================================================
+   DELETE
+============================================================ */
+function askDelete(id) {
+  const p = PRODUCTS.find(x=>x.id===id);
+  if (!p) return;
+  confirmDeleteId = id;
+  document.getElementById('confirmMsg').innerHTML =
+    `Vas a eliminar: <strong>${esc(p.name)}</strong><br><br>Esta acción no se puede deshacer.`;
+  document.getElementById('confirmModal').classList.add('open');
+}
+
+function closeConfirm() {
+  document.getElementById('confirmModal').classList.remove('open');
+  confirmDeleteId = null;
+}
+
+function confirmDeleteFn() {
+  if (confirmDeleteId === null) return;
+  PRODUCTS = PRODUCTS.filter(p => p.id !== confirmDeleteId);
+  markUnsaved();
+  closeConfirm();
+  applyFilters();
+  buildDashboard();
+  showToast('🗑️ Producto eliminado', 'red');
+}
+
+/* ============================================================
+   SAVE / EXPORT / RESET
+============================================================ */
+function markUnsaved() {
+  hasUnsaved = true;
+  localStorage.setItem(LS_PRODUCTS, JSON.stringify(PRODUCTS));
+  document.getElementById('unsavedBadge').style.display = 'inline-flex';
+  document.getElementById('btnSaveAll').style.display = 'inline-flex';
+}
+
+async function saveToServer() {
+  const token = sessionStorage.getItem('admin_token');
+  const btn = document.getElementById('btnSaveAll');
+  const orig = btn.innerHTML;
+  btn.innerHTML = '<span>⏳</span> Guardando...';
+  btn.disabled = true;
+
+  try {
+    const res = await fetch('/api/save', {
+      method: 'POST',
+      headers: {
+        'Content-Type': 'application/json',
+        'Authorization': `Bearer ${token}`
+      },
+      body: JSON.stringify(PRODUCTS)
+    });
+    const data = await res.json();
+    if (data.ok) {
+      hasUnsaved = false;
+      localStorage.setItem(LS_PRODUCTS, JSON.stringify(PRODUCTS));
+      document.getElementById('unsavedBadge').style.display = 'none';
+      btn.style.display = 'none';
+      showToast('✅ ' + data.count.toLocaleString('es-AR') + ' productos guardados y publicados', 'green');
+    } else {
+      throw new Error(data.error || 'Error desconocido');
+    }
+  } catch(e) {
+    showToast('⚠️ Error al guardar: ' + e.message, 'red');
+  } finally {
+    btn.innerHTML = orig;
+    btn.disabled = false;
+  }
+}
+
+function exportJSON() {
+  const json = JSON.stringify(PRODUCTS, null, 2);
+  const blob = new Blob([json], {type:'application/json'});
+  const url = URL.createObjectURL(blob);
+  const a = document.createElement('a');
+  a.href = url; a.download = 'products.json';
+  document.body.appendChild(a); a.click();
+  document.body.removeChild(a); URL.revokeObjectURL(url);
+}
+
+function resetToOriginal() {
+  if (!confirm('¿Resetear al catálogo original? Se perderán todos los cambios locales.')) return;
+  localStorage.removeItem(LS_PRODUCTS);
+  hasUnsaved = false;
+  document.getElementById('unsavedBadge').style.display = 'none';
+  document.getElementById('btnSaveAll').style.display = 'none';
+  showToast('🔄 Recargando catálogo original...', '');
+  setTimeout(() => bootApp(), 400);
+}
+
+function changePwd() {
+  showToast('ℹ️ La contraseña se cambia en las variables de entorno de Vercel (ADMIN_SECRET)', '');
+}
+
+/* ============================================================
+   UTILS
+============================================================ */
+function fmtPrice(p) { return '$ ' + Number(p).toLocaleString('es-AR'); }
+function esc(s) {
+  return String(s||'').replace(/&/g,'&amp;').replace(/</g,'&lt;').replace(/>/g,'&gt;').replace(/"/g,'&quot;');
+}
+
+function showToast(msg, type='') {
+  const c = document.getElementById('toastContainer');
+  const t = document.createElement('div');
+  t.className = 'toast' + (type==='green'?' green':type==='red'?' red':'');
+  t.textContent = msg;
+  c.appendChild(t);
+  setTimeout(() => { t.classList.add('out'); setTimeout(() => t.remove(), 320); }, 3000);
+}
+
+/* ── KEYBOARD ── */
+document.addEventListener('keydown', e => {
+  if (e.key === 'Escape') {
+    closeProdModal();
+    closeConfirm();
+  }
+});
+</script>
+</body>
+</html>
