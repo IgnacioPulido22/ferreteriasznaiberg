@@ -235,8 +235,8 @@ button{cursor:pointer;border:none;font-family:var(--font-main)}
 .modal-overlay.open{opacity:1;pointer-events:all}
 .modal-box{position:fixed;top:50%;left:50%;transform:translate(-50%,-46%) scale(.97);width:min(680px,95vw);max-height:85vh;background:#fff;border-radius:10px;z-index:3001;transition:transform .3s cubic-bezier(.4,0,.2,1),opacity .3s;opacity:0;display:flex;flex-direction:column;box-shadow:0 24px 80px rgba(0,0,0,0.25);overflow:hidden}
 .modal-box.open{transform:translate(-50%,-50%) scale(1);opacity:1}
-.modal-img-wrap{height:280px;background:var(--gray-light);position:relative;flex-shrink:0;display:flex;align-items:center;justify-content:center;overflow:hidden}
-.modal-img-wrap img{width:100%;height:100%;object-fit:cover}
+.modal-img-wrap{height:320px;background:#fff;position:relative;flex-shrink:0;display:flex;align-items:center;justify-content:center;overflow:hidden;border-bottom:1px solid var(--border)}
+.modal-img-wrap img{max-width:100%;max-height:100%;width:auto;height:auto;object-fit:contain;padding:12px}
 .modal-img-icon{font-size:64px;opacity:0.25}
 .modal-badge-wrap{position:absolute;top:14px;left:14px}
 .modal-close{position:absolute;top:14px;right:14px;width:34px;height:34px;background:rgba(0,0,0,0.5);border:none;border-radius:50%;cursor:pointer;color:#fff;font-size:16px;display:flex;align-items:center;justify-content:center;transition:background .2s;z-index:1}
@@ -390,7 +390,7 @@ button{cursor:pointer;border:none;font-family:var(--font-main)}
   .modal-overlay{align-items:flex-end}
   .modal-box{width:100vw;max-height:92vh;border-radius:16px 16px 0 0;top:auto;bottom:0;left:0;right:0;transform:translateY(40px)}
   .modal-box.open{transform:translateY(0)}
-  .modal-img-wrap{height:200px}
+  .modal-img-wrap{height:240px}
   .modal-body{padding:18px 16px 20px}
   .modal-name{font-size:17px}
   .modal-price{font-size:22px}
@@ -442,7 +442,7 @@ button{cursor:pointer;border:none;font-family:var(--font-main)}
       <div class="logo-text"><strong>Sznaiberg</strong><span>Ferretería &amp; Materiales</span></div>
     </a>
     <div class="nav-search">
-      <input type="text" id="navSearchInput" placeholder="Buscar productos, marcas, categorías..." autocomplete="off">
+      <input type="text" id="navSearchInput" placeholder="Buscar productos, marcas, categorías..." autocomplete="off" oninput="onNavInput(this.value)">
       <button class="nav-search-btn" onclick="doNavSearch()">
         <svg viewBox="0 0 24 24"><path d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z"/></svg>
       </button>
@@ -896,15 +896,29 @@ function clearSearch() {
   currentPage = 1; renderProducts();
 }
 
+let _navSearchTimer = null;
+function onNavInput(val) {
+  clearTimeout(_navSearchTimer);
+  _navSearchTimer = setTimeout(() => {
+    currentCat = ''; currentPage = 1;
+    document.getElementById('filterInput').value = val.trim();
+    document.querySelectorAll('.cat-nav-btn').forEach(b => b.classList.remove('active'));
+    document.querySelector('.cat-nav-btn').classList.add('active');
+    document.querySelectorAll('.cat-card').forEach(c => c.classList.remove('active'));
+    renderProducts();
+    if (val.trim()) scrollToCatalog();
+  }, 180);
+}
 function doNavSearch() {
+  clearTimeout(_navSearchTimer);
   const q = document.getElementById('navSearchInput').value.trim();
-  if (!q) return;
   currentCat = ''; currentPage = 1;
   document.getElementById('filterInput').value = q;
   document.querySelectorAll('.cat-nav-btn').forEach(b => b.classList.remove('active'));
   document.querySelector('.cat-nav-btn').classList.add('active');
   document.querySelectorAll('.cat-card').forEach(c => c.classList.remove('active'));
-  renderProducts(); scrollToCatalog();
+  renderProducts();
+  if (q) scrollToCatalog();
 }
 
 function resetFilters() {
