@@ -127,7 +127,7 @@ button{cursor:pointer;border:none;font-family:var(--font-main)}
 .promo-text span{font-size:11px;color:rgba(255,255,255,0.45)}
 
 /* ── SECTION ── */
-.section{padding:56px 0}
+.section{padding:56px 0;scroll-margin-top:120px}
 .section-inner{max-width:1400px;margin:0 auto;padding:0 24px}
 .section-header{display:flex;justify-content:space-between;align-items:flex-end;margin-bottom:28px;gap:16px}
 .section-title{font-family:var(--font-title);font-size:22px;font-weight:800;color:var(--black);letter-spacing:-0.5px;display:flex;align-items:center;gap:10px}
@@ -161,8 +161,8 @@ button{cursor:pointer;border:none;font-family:var(--font-main)}
 
 /* ── PRODUCTS GRID ── */
 .products-grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(230px,1fr));gap:16px}
-.prod-card{background:#fff;border:1px solid var(--border);border-radius:var(--radius);overflow:hidden;display:flex;flex-direction:column;transition:all .22s;cursor:pointer}
-.prod-card:hover{box-shadow:var(--shadow-hover);transform:translateY(-3px);border-color:#d8d5ce}
+.prod-card{background:#fff;border:1px solid var(--border);border-radius:var(--radius);overflow:hidden;display:flex;flex-direction:column;transition:all .22s;cursor:pointer;position:relative;z-index:0}
+.prod-card:hover{box-shadow:var(--shadow-hover);transform:translateY(-3px);border-color:#d8d5ce;z-index:10}
 .prod-card-img{background:var(--gray-light);height:180px;display:flex;align-items:center;justify-content:center;position:relative;overflow:hidden;border-bottom:1px solid var(--border);flex-shrink:0}
 .prod-card-img img{width:100%;height:100%;object-fit:cover;transition:transform .3s ease}
 .prod-card:hover .prod-card-img img{transform:scale(1.04)}
@@ -945,8 +945,15 @@ function resetFilters() {
   renderProducts();
 }
 
-function scrollToCatalog() { document.getElementById('productsSection').scrollIntoView({behavior:'smooth'}); }
-function scrollToCats()    { document.getElementById('categoriesSection').scrollIntoView({behavior:'smooth'}); }
+function scrollTo(id) {
+  const el = document.getElementById(id);
+  if (!el) return;
+  const offset = 120; // navbar (68) + cat-nav (44) + 8 margen
+  const top = el.getBoundingClientRect().top + window.scrollY - offset;
+  window.scrollTo({top, behavior:'smooth'});
+}
+function scrollToCatalog() { scrollTo('productsSection'); }
+function scrollToCats()    { scrollTo('categoriesSection'); }
 
 /* ============================================================
    PRODUCT MODAL
