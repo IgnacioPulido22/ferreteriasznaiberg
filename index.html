@@ -234,7 +234,15 @@ button{cursor:pointer;border:none;font-family:var(--font-main)}
 .modal-box{position:fixed;top:50%;left:50%;transform:translate(-50%,-46%) scale(.97);width:min(680px,95vw);max-height:85vh;background:#fff;border-radius:10px;z-index:3001;transition:transform .3s cubic-bezier(.4,0,.2,1),opacity .3s;opacity:0;display:flex;flex-direction:column;box-shadow:0 24px 80px rgba(0,0,0,0.25);overflow:hidden}
 .modal-box.open{transform:translate(-50%,-50%) scale(1);opacity:1}
 .modal-img-wrap{height:320px;background:#fff;position:relative;flex-shrink:0;display:flex;align-items:center;justify-content:center;overflow:hidden;border-bottom:1px solid var(--border)}
-.modal-img-wrap img{max-width:100%;max-height:100%;width:auto;height:auto;object-fit:contain;padding:12px}
+.modal-img-wrap img{max-width:100%;max-height:100%;width:auto;height:auto;object-fit:contain;padding:12px;cursor:zoom-in;transition:transform .15s ease}
+.modal-img-wrap img:hover{transform:scale(1.03)}
+/* LIGHTBOX */
+.lightbox{position:fixed;inset:0;background:rgba(0,0,0,0.92);z-index:9000;display:flex;align-items:center;justify-content:center;opacity:0;pointer-events:none;transition:opacity .25s;cursor:zoom-out;backdrop-filter:blur(4px)}
+.lightbox.open{opacity:1;pointer-events:all}
+.lightbox img{max-width:92vw;max-height:90vh;object-fit:contain;border-radius:4px;box-shadow:0 8px 60px rgba(0,0,0,0.6);transform:scale(.92);transition:transform .25s cubic-bezier(.4,0,.2,1)}
+.lightbox.open img{transform:scale(1)}
+.lightbox-close{position:absolute;top:20px;right:20px;width:42px;height:42px;background:rgba(255,255,255,0.12);border:none;border-radius:50%;color:#fff;font-size:20px;cursor:pointer;display:flex;align-items:center;justify-content:center;transition:background .2s}
+.lightbox-close:hover{background:rgba(255,255,255,0.25)}
 .modal-img-icon{font-size:64px;opacity:0.25}
 .modal-badge-wrap{position:absolute;top:14px;left:14px}
 .modal-close{position:absolute;top:14px;right:14px;width:34px;height:34px;background:rgba(0,0,0,0.5);border:none;border-radius:50%;cursor:pointer;color:#fff;font-size:16px;display:flex;align-items:center;justify-content:center;transition:background .2s;z-index:1}
@@ -615,6 +623,12 @@ button{cursor:pointer;border:none;font-family:var(--font-main)}
   </div>
 </div>
 
+<!-- LIGHTBOX -->
+<div class="lightbox" id="lightbox" onclick="closeLightbox()">
+  <button class="lightbox-close" onclick="closeLightbox()">✕</button>
+  <img id="lightboxImg" src="" alt="">
+</div>
+
 <!-- PRODUCT MODAL -->
 <div class="modal-overlay" id="modalOverlay" onclick="closeModal()"></div>
 <div class="modal-box" id="modalBox">
@@ -949,6 +963,8 @@ function openModal(id) {
   if (p.img) {
     const img = document.createElement('img');
     img.src = p.img; img.alt = p.name;
+    img.title = 'Clic para ampliar';
+    img.onclick = (e) => { e.stopPropagation(); openLightbox(p.img, p.name); };
     img.onerror = () => { img.remove(); showModalIcon(imgWrap, p); };
     imgWrap.appendChild(img);
   } else {
@@ -976,6 +992,20 @@ function showModalIcon(wrap, p) {
   wrap.appendChild(d);
 }
 
+function openLightbox(src, alt) {
+  const lb = document.getElementById('lightbox');
+  const img = document.getElementById('lightboxImg');
+  img.src = src; img.alt = alt || '';
+  lb.classList.add('open');
+  document.body.style.overflow = 'hidden';
+}
+function closeLightbox() {
+  document.getElementById('lightbox').classList.remove('open');
+  // solo restaurar overflow si el modal tambien esta cerrado
+  if (!document.getElementById('modalBox').classList.contains('open')) {
+    document.body.style.overflow = '';
+  }
+}
 function closeModal() {
   document.getElementById('modalOverlay').classList.remove('open');
   document.getElementById('modalBox').classList.remove('open');
@@ -1095,7 +1125,10 @@ function showToast(msg) {
    KEYBOARD
 ============================================================ */
 document.addEventListener('keydown', e => {
-  if (e.key === 'Escape') { closeModal(); }
+  if (e.key === 'Escape') {
+    if (document.getElementById('lightbox').classList.contains('open')) { closeLightbox(); }
+    else { closeModal(); }
+  }
 });
 document.getElementById('navSearchInput').addEventListener('keydown', e => { if(e.key==='Enter') doNavSearch(); });
 document.getElementById('filterInput').addEventListener('keydown', e => { if(e.key==='Enter') renderProducts(); });
