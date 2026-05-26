@@ -201,8 +201,8 @@ button{cursor:pointer;border:none;font-family:var(--font-main)}
 /* ── CART SIDEBAR ── */
 .cart-overlay{position:fixed;inset:0;background:rgba(0,0,0,0.52);z-index:2000;opacity:0;pointer-events:none;transition:opacity .3s;backdrop-filter:blur(2px)}
 .cart-overlay.open{opacity:1;pointer-events:all}
-.cart-sidebar{position:fixed;top:0;right:0;bottom:0;width:380px;max-width:100vw;background:#fff;z-index:2001;transform:translateX(100%);transition:transform .32s cubic-bezier(.4,0,.2,1);display:flex;flex-direction:column;box-shadow:-8px 0 48px rgba(0,0,0,0.18)}
-.cart-sidebar.open{transform:translateX(0)}
+.cart-sidebar{position:fixed;top:0;right:0;bottom:0;width:380px;max-width:100vw;background:#fff;z-index:2001;transform:translateX(100%);transition:transform .32s cubic-bezier(.4,0,.2,1);display:flex;flex-direction:column;box-shadow:-8px 0 48px rgba(0,0,0,0.18);pointer-events:none}
+.cart-sidebar.open{transform:translateX(0);pointer-events:all}
 .cart-header{padding:20px 24px;border-bottom:1px solid var(--border);display:flex;align-items:center;justify-content:space-between;background:var(--black);color:#fff;flex-shrink:0}
 .cart-header h3{font-family:var(--font-title);font-size:15px;font-weight:800;display:flex;align-items:center;gap:8px}
 .cart-close{width:30px;height:30px;background:rgba(255,255,255,0.1);border:none;border-radius:4px;cursor:pointer;color:#fff;font-size:16px;display:flex;align-items:center;justify-content:center;transition:background .2s}
@@ -732,6 +732,15 @@ async function boot() {
   buildFooterCats();
   renderProducts();
 
+  // Event delegation para cards del catálogo (más robusto que onclick inline)
+  document.getElementById('productsGrid').addEventListener('click', e => {
+    const card = e.target.closest('.prod-card');
+    if (!card) return;
+    // Si el click fue en un botón interno, esos tienen stopPropagation — no llegan aquí
+    const id = parseInt(card.dataset.id);
+    if (id) openModal(id);
+  });
+
   // Hide loader
   const loader = document.getElementById('app-loader');
   loader.classList.add('fade-out');
@@ -833,7 +842,7 @@ function renderProducts() {
     const oldPrice = p.price_old && p.price_old > p.price
       ? `<span class="prod-price-old">${fmtPrice(p.price_old)}</span>` : '';
     const desc = p.description ? `<div class="prod-desc">${esc(p.description)}</div>` : '';
-    return `<div class="prod-card" onclick="openModal(${p.id})">
+    return `<div class="prod-card" data-id="${p.id}">
       <div class="prod-card-img">${imgHtml}<div class="prod-card-img-icon" style="${iconStyle}">${getCatIcon(p.cat)}</div>${badge}</div>
       <div class="prod-card-body">
         <div class="prod-cat-tag">${esc(p.cat)}</div>
