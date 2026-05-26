@@ -364,6 +364,9 @@ tr:hover td{background:#fafaf7}
           <button class="btn btn-secondary" id="btnSaveAll" onclick="saveToServer()" style="display:none">
             <span>💾</span> Guardar cambios
           </button>
+          <button class="btn btn-secondary" id="btnSyncJson" onclick="syncFromProductsJson()" title="Carga imágenes del products.json actualizado y marca para guardar en Supabase">
+            <span>🖼️</span> Sincronizar imágenes
+          </button>
           <button class="btn btn-secondary" onclick="resetToOriginal()" title="Volver al catálogo original">
             <span>🔄</span> Resetear
           </button>
@@ -1030,6 +1033,37 @@ async function saveToServer() {
     }
   } catch(e) {
     showToast('⚠️ Error al guardar: ' + e.message, 'red');
+  } finally {
+    btn.innerHTML = orig;
+    btn.disabled = false;
+  }
+}
+
+async function syncFromProductsJson() {
+  const btn = document.getElementById('btnSyncJson');
+  const orig = btn.innerHTML;
+  btn.innerHTML = '<span>⏳</span> Cargando...';
+  btn.disabled = true;
+  try {
+    const res = await fetch('products.json?t=' + Date.now());
+    if (!res.ok) throw new Error('No se pudo cargar products.json');
+    const incoming = await res.json();
+    const map = {};
+    incoming.forEach(p => { if (p.img) map[p.id] = p.img; });
+    let updated = 0;
+    PRODUCTS.forEach(p => {
+      if (map[p.id] && !p.img) { p.img = map[p.id]; updated++; }
+      else if (map[p.id] && p.img !== map[p.id]) { p.img = map[p.id]; updated++; }
+    });
+    if (updated > 0) {
+      markUnsaved();
+      renderTable();
+      showToast(`🖼️ ${updated} imágenes sincronizadas — hacé clic en "Guardar cambios"`, 'green');
+    } else {
+      showToast('Sin cambios nuevos en imágenes', 'yellow');
+    }
+  } catch(e) {
+    showToast('Error: ' + e.message, 'red');
   } finally {
     btn.innerHTML = orig;
     btn.disabled = false;
