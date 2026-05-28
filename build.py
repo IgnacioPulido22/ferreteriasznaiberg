@@ -1154,7 +1154,7 @@ document.getElementById('filterInput').addEventListener('keydown', e => { if(e.k
 </body>
 </html>'''
 
-out = r'C:\Users\pulid\Desktop\FERRETERIA Sznaiberg\index.html'
+out = 'index.html'
 with open(out, 'w', encoding='utf-8') as f:
     f.write(HTML)
 
