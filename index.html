@@ -39,8 +39,9 @@ button{cursor:pointer;border:none;font-family:var(--font-main)}
 #app-loader{
   position:fixed;inset:0;background:var(--black);
   display:flex;flex-direction:column;align-items:center;justify-content:center;
-  z-index:9999;transition:opacity .4s ease;
+  z-index:9999;transition:opacity .4s ease;pointer-events:none;
 }
+#app-loader.visible{pointer-events:auto}
 #app-loader.fade-out{opacity:0;pointer-events:none}
 .loader-logo{display:flex;align-items:center;gap:14px;margin-bottom:32px}
 .loader-mark{width:52px;height:52px;background:var(--yellow-cta);border-radius:6px;display:flex;align-items:center;justify-content:center;font-size:24px;font-weight:900;color:var(--black);font-family:var(--font-title)}
@@ -231,8 +232,8 @@ button{cursor:pointer;border:none;font-family:var(--font-main)}
 /* ── PRODUCT MODAL ── */
 .modal-overlay{position:fixed;inset:0;background:rgba(0,0,0,0.6);z-index:3000;opacity:0;pointer-events:none;transition:opacity .3s;backdrop-filter:blur(3px)}
 .modal-overlay.open{opacity:1;pointer-events:all}
-.modal-box{position:fixed;top:50%;left:50%;transform:translate(-50%,-46%) scale(.97);width:min(680px,95vw);max-height:85vh;background:#fff;border-radius:10px;z-index:3001;transition:transform .3s cubic-bezier(.4,0,.2,1),opacity .3s;opacity:0;display:flex;flex-direction:column;box-shadow:0 24px 80px rgba(0,0,0,0.25);overflow:hidden}
-.modal-box.open{transform:translate(-50%,-50%) scale(1);opacity:1}
+.modal-box{position:fixed;top:50%;left:50%;transform:translate(-50%,-46%) scale(.97);width:min(680px,95vw);max-height:85vh;background:#fff;border-radius:10px;z-index:3001;transition:transform .3s cubic-bezier(.4,0,.2,1),opacity .3s;opacity:0;display:flex;flex-direction:column;box-shadow:0 24px 80px rgba(0,0,0,0.25);overflow:hidden;pointer-events:none}
+.modal-box.open{transform:translate(-50%,-50%) scale(1);opacity:1;pointer-events:auto}
 .modal-img-wrap{height:320px;background:#fff;position:relative;flex-shrink:0;display:flex;align-items:center;justify-content:center;overflow:hidden;border-bottom:1px solid var(--border)}
 .modal-img-wrap img{max-width:100%;max-height:100%;width:auto;height:auto;object-fit:contain;padding:12px;cursor:zoom-in;transition:transform .15s ease}
 .modal-img-wrap img:hover{transform:scale(1.03)}
@@ -413,7 +414,7 @@ button{cursor:pointer;border:none;font-family:var(--font-main)}
 <body>
 
 <!-- LOADER -->
-<div id="app-loader">
+<div id="app-loader" class="visible">
   <div class="loader-logo">
     <div class="loader-mark">S</div>
     <div>
@@ -706,43 +707,45 @@ let modalProduct = null, modalQtyVal = 1;
    BOOT — carga productos desde Supabase
 ============================================================ */
 async function boot() {
-  try {
-    const res = await fetch(
-      `${SB_URL}/rest/v1/catalog?id=eq.1&select=products`,
-      { headers: { 'apikey': SB_ANON, 'Authorization': `Bearer ${SB_ANON}` } }
-    );
-    if (!res.ok) throw new Error('fetch failed');
-    const data = await res.json();
-    PRODUCTS = data[0]?.products || [];
-  } catch(e) {
-    // fallback al products.json local
-    try {
-      const res2 = await fetch('products.json');
-      PRODUCTS = await res2.json();
-    } catch(_) { PRODUCTS = []; }
-  }
-
-  // Update hero count
-  document.getElementById('heroCount').textContent = '+' + Math.floor(PRODUCTS.length / 100) * 100 + ' ';
-
-  buildCatNav();
-  buildCatGrid();
-  buildFooterCats();
-  renderProducts();
-
-  // Event delegation para cards del catálogo (más robusto que onclick inline)
-  document.getElementById('productsGrid').addEventListener('click', e => {
-    const card = e.target.closest('.prod-card');
-    if (!card) return;
-    // Si el click fue en un botón interno, esos tienen stopPropagation — no llegan aquí
-    const id = parseInt(card.dataset.id);
-    if (id) openModal(id);
-  });
-
-  // Hide loader
   const loader = document.getElementById('app-loader');
-  loader.classList.add('fade-out');
-  setTimeout(() => loader.style.display = 'none', 450);
+  try {
+    const ctrl = new AbortController();
+    const sbTimeout = setTimeout(() => ctrl.abort(), 5000);
+    try {
+      const res = await fetch(
+        `${SB_URL}/rest/v1/catalog?id=eq.1&select=products`,
+        { headers: { 'apikey': SB_ANON, 'Authorization': `Bearer ${SB_ANON}` }, signal: ctrl.signal }
+      );
+      clearTimeout(sbTimeout);
+      if (!res.ok) throw new Error('fetch failed');
+      const data = await res.json();
+      PRODUCTS = data[0]?.products || [];
+    } catch(e) {
+      clearTimeout(sbTimeout);
+      try {
+        const res2 = await fetch('products.json');
+        PRODUCTS = await res2.json();
+      } catch(_) { PRODUCTS = []; }
+    }
+
+    document.getElementById('heroCount').textContent = '+' + Math.floor(PRODUCTS.length / 100) * 100 + ' ';
+
+    buildCatNav();
+    buildCatGrid();
+    buildFooterCats();
+    renderProducts();
+
+    document.getElementById('productsGrid').addEventListener('click', e => {
+      const card = e.target.closest('.prod-card');
+      if (!card) return;
+      const id = parseInt(card.dataset.id);
+      if (id) openModal(id);
+    });
+  } finally {
+    loader.classList.remove('visible');
+    loader.classList.add('fade-out');
+    setTimeout(() => loader.style.display = 'none', 450);
+  }
 }
 
 document.addEventListener('DOMContentLoaded', boot);
