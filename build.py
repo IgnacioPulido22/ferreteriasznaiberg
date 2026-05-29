@@ -431,12 +431,12 @@ button{cursor:pointer;border:none;font-family:var(--font-main)}
 <div class="topbar">
   <div class="topbar-inner">
     <div style="display:flex;align-items:center">
-      <span>📍</span><span style="margin-left:6px">Buenos Aires, Argentina</span>
+      <span>📍</span><span style="margin-left:6px">Casinelli 671, Ezpeleta</span>
       <span class="topbar-sep">|</span>
-      <a href="tel:+5491100000000">📞 +54 9 11 0000-0000</a>
+      <a href="tel:+5491130556675">📞 +54 9 11 3055-6675</a>
     </div>
     <div style="display:flex;align-items:center">
-      <span>Lun–Vie 8:00–18:00</span><span class="topbar-sep">|</span><span>Sáb 9:00–14:00</span>
+      <span>Lun-Jue 8:30–18:00</span><span class="topbar-sep">|</span><span>Sáb 8:30–17:30</span><span class="topbar-sep">|</span><span>Dom y Fer. 9:00–13:00</span>
       <span class="topbar-sep">|</span><a href="#">Mi cuenta</a>
       <span class="topbar-sep">|</span><a href="#">Seguir pedido</a>
     </div>
@@ -588,10 +588,10 @@ button{cursor:pointer;border:none;font-family:var(--font-main)}
     </div>
     <div>
       <div class="footer-col-title">Contacto</div>
-      <div class="footer-contact-item"><span>📍</span><span>Buenos Aires, Argentina</span></div>
-      <div class="footer-contact-item"><span>📞</span><span>+54 9 11 0000-0000</span></div>
-      <div class="footer-contact-item"><span>✉️</span><span>ventas@sznaiberg.com.ar</span></div>
-      <div class="footer-contact-item"><span>⏰</span><span>Lun–Vie 8:00–18:00 · Sáb 9:00–14:00</span></div>
+      <div class="footer-contact-item"><span>📍</span><span>Casinelli 671, Ezpeleta</span></div>
+      <div class="footer-contact-item"><span>📞</span><span>+54 9 11 3055-6675</span></div>
+      <div class="footer-contact-item"><span>✉️</span><span>ferreteria.sznaiberg@gmail.com</span></div>
+      <div class="footer-contact-item"><span>⏰</span><span>Lun-Jue 8:30–18:00 · Sáb 8:30–17:30 · Dom y Feriados 9:00–13:00</span></div>
     </div>
   </div>
   <div class="footer-bottom">
