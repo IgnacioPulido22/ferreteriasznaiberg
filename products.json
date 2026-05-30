@@ -2867,14 +2867,14 @@
         "name": "LLAVE EXT. 1 TOMA C/NEUTRO CIOCCA - (LINEA ARMADA Y RPTOS. CIOCCA  CIOCCA)",
         "price": 1000,
         "cat": "Electricidad e Iluminacion",
-        "img": ""
+        "img": "imagenes_productos/prod_410.png"
     },
     {
         "id": 411,
         "name": "LLAVE EXT. 2 PUNTOS CIOCCA - (LINEA ARMADA Y RPTOS. CIOCCA  CIOCCA)",
         "price": 3200,
         "cat": "Materiales Generales",
-        "img": ""
+        "img": "imagenes_productos/prod_411.png"
     },
     {
         "id": 412,
