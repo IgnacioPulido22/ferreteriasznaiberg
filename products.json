@@ -5848,8 +5848,7 @@
         "id": 836,
         "name": "BATERIA 9V RAYOVAC - MARCA RAYOVAC         (60-PILA)",
         "price": 12950,
-        "cat": "Electricidad e Iluminacion",
-        "img": ""
+        "cat": "Electricidad e Iluminacion"
     },
     {
         "id": 837,
@@ -5884,14 +5883,14 @@
         "name": "PILA AA    MARCA ENERGIZER  X UNIDAD",
         "price": 2150,
         "cat": "Electricidad e Iluminacion",
-        "img": ""
+        "img": "imagenes_productos/prod_841.png"
     },
     {
         "id": 842,
         "name": "PILA AAA TIRA X10 - MARCA ENERGIZER         (60-PILA)",
         "price": 1900,
         "cat": "Electricidad e Iluminacion",
-        "img": ""
+        "img": "imagenes_productos/prod_842.png"
     },
     {
         "id": 843,
