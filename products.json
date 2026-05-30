@@ -3420,28 +3420,28 @@
         "name": "Mezcla Adhesiva  EL INCA ENVASE  5k",
         "price": 4250,
         "cat": "Construccion",
-        "img": ""
+        "img": "imagenes_productos/prod_489.png"
     },
     {
         "id": 490,
         "name": "Mezcla Adhesiva  EL INCA ENVASE  10k",
         "price": 7400,
         "cat": "Construccion",
-        "img": ""
+        "img": "imagenes_productos/prod_490.png"
     },
     {
         "id": 491,
         "name": "Mezcla Adhesiva  EL INCA ENVASE  30k",
         "price": 17700,
         "cat": "Construccion",
-        "img": ""
+        "img": "imagenes_productos/prod_491.png"
     },
     {
         "id": 492,
         "name": "HIDROFUGO  EL INCA ENVASE  10k",
         "price": 18900,
         "cat": "Construccion",
-        "img": ""
+        "img": "imagenes_productos/prod_492.png"
     },
     {
         "id": 493,
@@ -3469,7 +3469,7 @@
         "name": "HIDROFUGO EL INCA ENVASE 1K",
         "price": 5500,
         "cat": "Construccion",
-        "img": ""
+        "img": "imagenes_productos/prod_496.png"
     },
     {
         "id": 497,
