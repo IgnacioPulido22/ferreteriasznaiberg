@@ -706,27 +706,27 @@ let cart = [];
 let modalProduct = null, modalQtyVal = 1;
 
 /* ============================================================
-   BOOT — carga productos desde Supabase
+   BOOT — carga productos desde products.json (fallback: Supabase)
 ============================================================ */
 async function boot() {
   const loader = document.getElementById('app-loader');
   try {
-    const ctrl = new AbortController();
-    const sbTimeout = setTimeout(() => ctrl.abort(), 5000);
     try {
-      const res = await fetch(
-        `${SB_URL}/rest/v1/catalog?id=eq.1&select=products`,
-        { headers: { 'apikey': SB_ANON, 'Authorization': `Bearer ${SB_ANON}` }, signal: ctrl.signal }
-      );
-      clearTimeout(sbTimeout);
-      if (!res.ok) throw new Error('fetch failed');
-      const data = await res.json();
-      PRODUCTS = data[0]?.products || [];
+      const res = await fetch('products.json');
+      if (!res.ok) throw new Error('products.json no disponible');
+      PRODUCTS = await res.json();
     } catch(e) {
-      clearTimeout(sbTimeout);
       try {
-        const res2 = await fetch('products.json');
-        PRODUCTS = await res2.json();
+        const ctrl = new AbortController();
+        const sbTimeout = setTimeout(() => ctrl.abort(), 5000);
+        const res = await fetch(
+          `${SB_URL}/rest/v1/catalog?id=eq.1&select=products`,
+          { headers: { 'apikey': SB_ANON, 'Authorization': `Bearer ${SB_ANON}` }, signal: ctrl.signal }
+        );
+        clearTimeout(sbTimeout);
+        if (!res.ok) throw new Error('fetch failed');
+        const data = await res.json();
+        PRODUCTS = data[0]?.products || [];
       } catch(_) { PRODUCTS = []; }
     }
 
