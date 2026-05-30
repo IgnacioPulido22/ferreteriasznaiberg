@@ -3448,21 +3448,21 @@
         "name": "CEMENTO RAPIDO BLANCO  EL INCA ENVASE  1K",
         "price": 3500,
         "cat": "Construccion",
-        "img": ""
+        "img": "imagenes_productos/prod_493.png"
     },
     {
         "id": 494,
         "name": "PASTINA BLANCA  EL INCA ENVASE  1K",
         "price": 2750,
         "cat": "Construccion",
-        "img": ""
+        "img": "imagenes_productos/prod_494.png"
     },
     {
         "id": 495,
         "name": "PASTINA COLORES  EL INCA ENVASE  1K",
         "price": 4050,
         "cat": "Construccion",
-        "img": ""
+        "img": "imagenes_productos/prod_495.png"
     },
     {
         "id": 496,
