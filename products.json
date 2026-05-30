@@ -3756,7 +3756,7 @@
         "name": "Latex Ka Interior-Exterior BLANCO  Take 56  ENVASE  1L",
         "price": 7650,
         "cat": "Pinturas y Accesorios",
-        "img": "https://ekxtowlurtuyiupkzwge.supabase.co/storage/v1/object/public/product-images/l_tex_profesional_exterior_interior.jpeg"
+        "img": "imagenes_productos/prod_537.png"
     },
     {
         "id": 538,
@@ -3770,21 +3770,21 @@
         "name": "Antioxido: Colores: Colorado , Negro, Blanco, Gris  Take 56  LATA  250CC",
         "price": 5700,
         "cat": "Pinturas y Accesorios",
-        "img": ""
+        "img": "imagenes_productos/prod_539.png"
     },
     {
         "id": 540,
         "name": "Antioxido: Colores: Colorado , Negro, Blanco, Gris  Take 56  LATA  500CC",
         "price": 8850,
         "cat": "Pinturas y Accesorios",
-        "img": ""
+        "img": "imagenes_productos/prod_540.png"
     },
     {
         "id": 541,
         "name": "Fijador Pintura A La Cal (Leche De Tuna)  Take 56  ENVASE  250CC",
         "price": 2750,
         "cat": "Pinturas y Accesorios",
-        "img": ""
+        "img": "imagenes_productos/prod_541.png"
     },
     {
         "id": 542,
@@ -3798,7 +3798,7 @@
         "name": "Enduido Interior   Take 56  ENVASE  1L",
         "price": 5800,
         "cat": "Adhesivos y Selladores",
-        "img": ""
+        "img": "imagenes_productos/prod_543.png"
     },
     {
         "id": 544,
@@ -4351,14 +4351,14 @@
         "name": "REMOVEDOR EN GEL - 0,5 LITROS SD",
         "price": 11050,
         "cat": "Adhesivos y Selladores",
-        "img": "https://ekxtowlurtuyiupkzwge.supabase.co/storage/v1/object/public/product-images/removedor_en_gel.jpeg"
+        "img": "imagenes_productos/prod_622.png"
     },
     {
         "id": 623,
         "name": "REMOVEDOR EN GEL - 1 LITROS SD",
         "price": 21500,
         "cat": "Adhesivos y Selladores",
-        "img": "https://ekxtowlurtuyiupkzwge.supabase.co/storage/v1/object/public/product-images/removedor_en_gel.jpeg"
+        "img": "imagenes_productos/prod_623.png"
     },
     {
         "id": 624,
