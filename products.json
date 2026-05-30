@@ -2881,14 +2881,14 @@
         "name": "FICHA MACHO 10AMP BLANCO CIOCCA - (FICHAS CIOCCA  CIOCCA)",
         "price": 1950,
         "cat": "Electricidad e Iluminacion",
-        "img": ""
+        "img": "imagenes_productos/prod_412.png"
     },
     {
         "id": 413,
         "name": "FICHA HEMBRA 10AMP BLANCO CIOCCA - (FICHAS CIOCCA  CIOCCA)",
         "price": 1950,
         "cat": "Electricidad e Iluminacion",
-        "img": ""
+        "img": "imagenes_productos/prod_413.png"
     },
     {
         "id": 414,
