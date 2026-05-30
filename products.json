@@ -3189,14 +3189,14 @@
         "name": "PILA A23 NIELSEN - (PILAS Y BATERIAS  NIELSEN)",
         "price": 1850,
         "cat": "Electricidad e Iluminacion",
-        "img": ""
+        "img": "imagenes_productos/prod_456.png"
     },
     {
         "id": 457,
         "name": "PILA CR2032 LITIO NIELSEN - (PILAS Y BATERIAS  NIELSEN)",
         "price": 1400,
         "cat": "Electricidad e Iluminacion",
-        "img": ""
+        "img": "imagenes_productos/prod_457.png"
     },
     {
         "id": 458,
@@ -5869,7 +5869,7 @@
         "name": "PILA A23 VINNIC - MARCA VINNIC         (60-PILA)",
         "price": 3200,
         "cat": "Electricidad e Iluminacion",
-        "img": ""
+        "img": "imagenes_productos/prod_839.png"
     },
     {
         "id": 840,
