@@ -1,4 +1,8 @@
-import os
+import os, hashlib
+
+# Hash del products.json para cache-busting — cambia automaticamente con cada update
+with open('products.json', 'rb') as _f:
+    _CACHE_VER = hashlib.md5(_f.read()).hexdigest()[:8]
 
 HTML = r'''<!DOCTYPE html>
 <html lang="es">
@@ -1158,7 +1162,8 @@ document.getElementById('filterInput').addEventListener('keydown', e => { if(e.k
 </html>'''
 
 out = 'index.html'
+html_out = HTML.replace("fetch('products.json')", f"fetch('products.json?v={_CACHE_VER}')")
 with open(out, 'w', encoding='utf-8') as f:
-    f.write(HTML)
+    f.write(html_out)
 
 print(f'index.html generado: {os.path.getsize(out)//1024} KB')
