@@ -3868,7 +3868,7 @@
         "name": "FLEXIBLE MONOCOMANDO IMPORTADO   45 CM",
         "price": 2550,
         "cat": "Materiales Generales",
-        "img": ""
+        "img": "imagenes_productos/prod_553.png"
     },
     {
         "id": 554,
@@ -7185,7 +7185,7 @@
         "name": "FLEXIBLE MONOCOMANDO  40CM - XUNIDAD",
         "price": 9900,
         "cat": "Materiales Generales",
-        "img": ""
+        "img": "imagenes_productos/prod_1027.png"
     },
     {
         "id": 1028,
@@ -12974,7 +12974,7 @@
         "name": "FLEXIBLE EXTENSIBLE PILETA 2 - 11/2",
         "price": 2200,
         "cat": "Plomeria y Sanitarios",
-        "img": "https://www.dukeargentina.com/Images/Productos/Flexible Extensible 4050.png"
+        "img": "imagenes_productos/prod_1854.png"
     },
     {
         "id": 1855,
@@ -17657,14 +17657,14 @@
         "name": "FLEXIBLE EXTENSIBLE PILETA 2 - 1½ LARGO GRIS PLATA",
         "price": 2150,
         "cat": "Plomeria y Sanitarios",
-        "img": "https://www.dukeargentina.com/Images/Productos/Flexible Extensible 4050.png"
+        "img": "imagenes_productos/prod_2523.png"
     },
     {
         "id": 2524,
         "name": "FLEXIBLE EXTENSIBLE PILETA 2 - 1½ EXTRA CORTO BLANCO",
         "price": 1600,
         "cat": "Plomeria y Sanitarios",
-        "img": "https://www.dukeargentina.com/Images/Productos/Flexible Extensible 4050.png"
+        "img": "imagenes_productos/prod_2524.png"
     },
     {
         "id": 2525,
@@ -25749,28 +25749,28 @@
         "name": "FLEXIBLE GRIS REGULABLE 20CM SIFOLI",
         "price": 3250,
         "cat": "Plomeria y Sanitarios",
-        "img": "https://www.sanitarioshidro.com.ar/products/761.jpg"
+        "img": "imagenes_productos/prod_3679.png"
     },
     {
         "id": 3680,
         "name": "FLEXIBLE GRIS REGULABLE 30CM SIFOLI",
         "price": 3650,
         "cat": "Plomeria y Sanitarios",
-        "img": "https://www.sanitarioshidro.com.ar/products/761.jpg"
+        "img": "imagenes_productos/prod_3680.png"
     },
     {
         "id": 3681,
         "name": "FLEXIBLE GRIS REGULABLE 40CM SIFOLI",
         "price": 4050,
         "cat": "Plomeria y Sanitarios",
-        "img": "https://www.sanitarioshidro.com.ar/products/761.jpg"
+        "img": "imagenes_productos/prod_3681.png"
     },
     {
         "id": 3682,
         "name": "FLEXIBLE GRIS REGULABLE 50CM SIFOLI",
         "price": 4600,
         "cat": "Plomeria y Sanitarios",
-        "img": "https://www.sanitarioshidro.com.ar/products/761.jpg"
+        "img": "imagenes_productos/prod_3682.png"
     },
     {
         "id": 3683,
@@ -25833,7 +25833,7 @@
         "name": "FLEXIBLE GRIFERIA MONOCOMANDO",
         "price": 9400,
         "cat": "Plomeria y Sanitarios",
-        "img": "https://www.sanitarioshidro.com.ar/products/847.jpg"
+        "img": "imagenes_productos/prod_3691.png"
     },
     {
         "id": 3692,
