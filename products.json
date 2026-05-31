@@ -3875,28 +3875,28 @@
         "name": "FLEXIBLE MALLADO 1/2 ECONOMICO  1/2 X 30CM",
         "price": 2850,
         "cat": "Materiales Generales",
-        "img": ""
+        "img": "imagenes_productos/prod_554.png"
     },
     {
         "id": 555,
         "name": "FLEXIBLE MALLADO 1/2 ECONOMICO  1/2 X 40CM",
         "price": 4650,
         "cat": "Materiales Generales",
-        "img": ""
+        "img": "imagenes_productos/prod_555.png"
     },
     {
         "id": 556,
         "name": "FLEXIBLE MALLADO 3/4  3/4 X 20CM",
         "price": 5250,
         "cat": "Materiales Generales",
-        "img": ""
+        "img": "imagenes_productos/prod_556.png"
     },
     {
         "id": 557,
         "name": "FLEXIBLE MALLADO 3/4  3/4 X 40CM",
         "price": 9800,
         "cat": "Materiales Generales",
-        "img": ""
+        "img": "imagenes_productos/prod_557.png"
     },
     {
         "id": 558,
@@ -4071,7 +4071,7 @@
         "name": "FLEXIBLE DESCARGA LAVARROPA 2.50 METROS",
         "price": 7100,
         "cat": "Herramientas",
-        "img": ""
+        "img": "imagenes_productos/prod_582.png"
     },
     {
         "id": 583,
@@ -12953,14 +12953,14 @@
         "name": "FLEXIBLE CARGA LAVARROPA 1.50 MTR.",
         "price": 6300,
         "cat": "Materiales Generales",
-        "img": "https://ferriplast.com.ar/pedidos/assets/product/img1_0000001532.png"
+        "img": "imagenes_productos/prod_1851.png"
     },
     {
         "id": 1852,
         "name": "FLEXIBLE CARGA LAVARROPA 2.00 MTR.",
         "price": 7200,
         "cat": "Materiales Generales",
-        "img": "https://ferriplast.com.ar/pedidos/assets/product/img1_0000001533.png"
+        "img": "imagenes_productos/prod_1852.png"
     },
     {
         "id": 1853,
@@ -21829,7 +21829,7 @@
         "name": "FLEXIBLE GAS NATURAL 1/2 20-45 CM",
         "price": 20950,
         "cat": "Materiales Generales",
-        "img": ""
+        "img": "imagenes_productos/prod_3119.png"
     },
     {
         "id": 3120,
@@ -25504,7 +25504,7 @@
         "name": "FLEXIBLE GAS 70 CM.",
         "price": 5850,
         "cat": "Materiales Generales",
-        "img": ""
+        "img": "imagenes_productos/prod_3644.png"
     },
     {
         "id": 3645,
@@ -25546,7 +25546,7 @@
         "name": "FLEXIBLE GAS APROBADO 1/2X40CM",
         "price": 30400,
         "cat": "Materiales Generales",
-        "img": "https://www.sanitarioshidro.com.ar/products/683.jpg"
+        "img": "imagenes_productos/prod_3650.png"
     },
     {
         "id": 3651,
@@ -25560,7 +25560,7 @@
         "name": "FLEXIBLE GAS APROBADO 1/2X60CM",
         "price": 35050,
         "cat": "Materiales Generales",
-        "img": "https://www.sanitarioshidro.com.ar/products/683.jpg"
+        "img": "imagenes_productos/prod_3652.png"
     },
     {
         "id": 3653,
@@ -25574,7 +25574,7 @@
         "name": "FLEXIBLE GAS APROBADO 1/2X30CM",
         "price": 27050,
         "cat": "Materiales Generales",
-        "img": "https://www.sanitarioshidro.com.ar/products/683.jpg"
+        "img": "imagenes_productos/prod_3654.png"
     },
     {
         "id": 3655,
@@ -25672,14 +25672,14 @@
         "name": "LLUVIA BIDET 1/2 FLOR Y FLEXIBLE",
         "price": 7100,
         "cat": "Materiales Generales",
-        "img": "https://www.sanitarioshidro.com.ar/products/7350.jpg"
+        "img": "imagenes_productos/prod_3668.png"
     },
     {
         "id": 3669,
         "name": "LLUVIA BIDET 3/8 FLOR Y FLEXIBLE",
         "price": 6700,
         "cat": "Materiales Generales",
-        "img": "https://www.sanitarioshidro.com.ar/products/7350.jpg"
+        "img": "imagenes_productos/prod_3669.png"
     },
     {
         "id": 3670,
@@ -25700,49 +25700,49 @@
         "name": "FLEXIBLE ACERO LATYN 1/2&quot;X20 CM.",
         "price": 4900,
         "cat": "Materiales Generales",
-        "img": ""
+        "img": "imagenes_productos/prod_3672.png"
     },
     {
         "id": 3673,
         "name": "FLEXIBLE ACERO LATYN 1/2&quot;X25 CM.",
         "price": 7400,
         "cat": "Materiales Generales",
-        "img": ""
+        "img": "imagenes_productos/prod_3673.png"
     },
     {
         "id": 3674,
         "name": "FLEXIBLE ACERO LATYN 1/2&quot;X30 CM.",
         "price": 5100,
         "cat": "Materiales Generales",
-        "img": ""
+        "img": "imagenes_productos/prod_3674.png"
     },
     {
         "id": 3675,
         "name": "FLEXIBLE ACERO LATYN 1/2&quot;X35 CM.",
         "price": 5250,
         "cat": "Materiales Generales",
-        "img": ""
+        "img": "imagenes_productos/prod_3675.png"
     },
     {
         "id": 3676,
         "name": "FLEXIBLE ACERO LATYN 1/2&quot;X40 CM.",
         "price": 5350,
         "cat": "Materiales Generales",
-        "img": ""
+        "img": "imagenes_productos/prod_3676.png"
     },
     {
         "id": 3677,
         "name": "FLEXIBLE ACERO LATYN 1/2&quot;X50 CM.",
         "price": 6100,
         "cat": "Materiales Generales",
-        "img": ""
+        "img": "imagenes_productos/prod_3677.png"
     },
     {
         "id": 3678,
         "name": "FLEXIBLE ACERO LATYN 3/4&quot;X40 CM.",
         "price": 12200,
         "cat": "Materiales Generales",
-        "img": ""
+        "img": "imagenes_productos/prod_3678.png"
     },
     {
         "id": 3679,
@@ -25791,21 +25791,21 @@
         "name": "FLEXIBLE ANILLADO LATYN 1/2&quot;X40 CM.",
         "price": 12400,
         "cat": "Materiales Generales",
-        "img": "https://www.sanitarioshidro.com.ar/products/8110.jpg"
+        "img": "imagenes_productos/prod_3685.png"
     },
     {
         "id": 3686,
         "name": "FLEXIBLE ANILLADO LATYN 3/4&quot;X30 CM.",
         "price": 15350,
         "cat": "Materiales Generales",
-        "img": "https://www.sanitarioshidro.com.ar/products/8110.jpg"
+        "img": "imagenes_productos/prod_3686.png"
     },
     {
         "id": 3687,
         "name": "FLEXIBLE ANILLADO LATYN 3/4&quot;X40 CM.",
         "price": 16100,
         "cat": "Materiales Generales",
-        "img": "https://www.sanitarioshidro.com.ar/products/8110.jpg"
+        "img": "imagenes_productos/prod_3687.png"
     },
     {
         "id": 3688,
@@ -27184,7 +27184,7 @@
         "name": "*OFERTA*FLEXIBLE 3/4X50CM ECONOMICO",
         "price": 7550,
         "cat": "Materiales Generales",
-        "img": ""
+        "img": "imagenes_productos/prod_3884.png"
     },
     {
         "id": 3885,
