@@ -2790,14 +2790,14 @@
         "name": "CANO PVC RIGIDO 3/4 BLANCO (METRO) - (CANOS PVC RIGIDO  PORCELUZ)",
         "price": 550,
         "cat": "Plomeria y Sanitarios",
-        "img": ""
+        "img": "imagenes_productos/prod_399.png"
     },
     {
         "id": 400,
         "name": "CANO PVC RIGIDO 1&quot; BLANCO (METRO) - (CANOS PVC RIGIDO  PORCELUZ)",
         "price": 900,
         "cat": "Plomeria y Sanitarios",
-        "img": ""
+        "img": "imagenes_productos/prod_400.png"
     },
     {
         "id": 401,
@@ -2811,14 +2811,14 @@
         "name": "CANO RIGIDO 16MM (5/8&quot;) CONEXTUBE - (CANOS PVC RIGIDO  CONEXTUBE)",
         "price": 650,
         "cat": "Plomeria y Sanitarios",
-        "img": ""
+        "img": "imagenes_productos/prod_402.png"
     },
     {
         "id": 403,
         "name": "CANO RIGIDO 22MM (7/8&quot;) CONEXTUBE - (CANOS PVC RIGIDO  CONEXTUBE)",
         "price": 1050,
         "cat": "Plomeria y Sanitarios",
-        "img": ""
+        "img": "imagenes_productos/prod_403.png"
     },
     {
         "id": 404,
@@ -2895,14 +2895,14 @@
         "name": "CONECTORES PVC 3/4 BLANCOS - (CONECTORES DE HIERRRO Y PVC  TRONCOSO)",
         "price": 150,
         "cat": "Materiales Generales",
-        "img": ""
+        "img": "imagenes_productos/prod_414.png"
     },
     {
         "id": 415,
         "name": "CONECTOR PVC 20MM (3/4) CONEXTUBE - (CONECTORES DE HIERRRO Y PVC  CONEXTUBE)",
         "price": 250,
         "cat": "Materiales Generales",
-        "img": ""
+        "img": "imagenes_productos/prod_415.png"
     },
     {
         "id": 416,
@@ -5988,7 +5988,7 @@
         "name": "CONECTOR 1&quot; PVC - MARCA TXC         (88-ACCESORIOS PVC)",
         "price": 300,
         "cat": "Materiales Generales",
-        "img": ""
+        "img": "imagenes_productos/prod_856.png"
     },
     {
         "id": 857,
@@ -6016,7 +6016,7 @@
         "name": "CURVA 1&quot; PVC - MARCA TXC         (88-ACCESORIOS PVC)",
         "price": 700,
         "cat": "Materiales Generales",
-        "img": ""
+        "img": "imagenes_productos/prod_860.png"
     },
     {
         "id": 861,
@@ -20254,7 +20254,7 @@
         "name": "Cano rigido PVC 22mm electrico x metro",
         "price": 300,
         "cat": "Plomeria y Sanitarios",
-        "img": ""
+        "img": "imagenes_productos/prod_2894.png"
     },
     {
         "id": 2895,
@@ -21815,14 +21815,14 @@
         "name": "PVC CANO 60 X 4 MTS REF ** - MARCA  PLASTIFLEX",
         "price": 15200,
         "cat": "Plomeria y Sanitarios",
-        "img": ""
+        "img": "imagenes_productos/prod_3117.png"
     },
     {
         "id": 3118,
         "name": "PVC CANO 100 X 4 MTS REF ** - MARCA  PLASTIFLEX",
         "price": 23400,
         "cat": "Plomeria y Sanitarios",
-        "img": ""
+        "img": "imagenes_productos/prod_3118.png"
     },
     {
         "id": 3119,
@@ -22732,42 +22732,42 @@
         "name": "CANO PVC #40 REFORZADO",
         "price": 10300,
         "cat": "Plomeria y Sanitarios",
-        "img": ""
+        "img": "imagenes_productos/prod_3248.png"
     },
     {
         "id": 3249,
         "name": "CANO PVC #50 REFORZADO",
         "price": 11700,
         "cat": "Plomeria y Sanitarios",
-        "img": ""
+        "img": "imagenes_productos/prod_3249.png"
     },
     {
         "id": 3250,
         "name": "CANO PVC #60 REFORZADO",
         "price": 15450,
         "cat": "Plomeria y Sanitarios",
-        "img": ""
+        "img": "imagenes_productos/prod_3250.png"
     },
     {
         "id": 3251,
         "name": "CANO PVC 110 REFORZADO",
         "price": 37000,
         "cat": "Plomeria y Sanitarios",
-        "img": ""
+        "img": "imagenes_productos/prod_3251.png"
     },
     {
         "id": 3252,
         "name": "CANO PVC #63 3.2 PREMIUM",
         "price": 31100,
         "cat": "Plomeria y Sanitarios",
-        "img": "https://www.sanitarioshidro.com.ar/products/N2364.jpg"
+        "img": "imagenes_productos/prod_3252.png"
     },
     {
         "id": 3253,
         "name": "CANO PVC110 3.2 PREMIUM",
         "price": 57100,
         "cat": "Plomeria y Sanitarios",
-        "img": ""
+        "img": "imagenes_productos/prod_3253.png"
     },
     {
         "id": 3254,
@@ -22928,28 +22928,28 @@
         "name": "CURVA PVC 40 A 90°",
         "price": 1050,
         "cat": "Materiales Generales",
-        "img": "https://ips-arg.com/wp-content/uploads/2017/09/571_1209171410_Curva-90o-MH.jpg"
+        "img": "imagenes_productos/prod_3276.png"
     },
     {
         "id": 3277,
         "name": "CURVA PVC 50 A 90°",
         "price": 1700,
         "cat": "Materiales Generales",
-        "img": "https://ips-arg.com/wp-content/uploads/2017/09/571_1209171410_Curva-90o-MH.jpg"
+        "img": "imagenes_productos/prod_3277.png"
     },
     {
         "id": 3278,
         "name": "CURVA PVC 60 A 90°",
         "price": 2050,
         "cat": "Materiales Generales",
-        "img": "https://ips-arg.com/wp-content/uploads/2017/09/571_1209171410_Curva-90o-MH.jpg"
+        "img": "imagenes_productos/prod_3278.png"
     },
     {
         "id": 3279,
         "name": "CURVA PVC 100 A 90°",
         "price": 5450,
         "cat": "Materiales Generales",
-        "img": "https://ips-arg.com/wp-content/uploads/2017/09/571_1209171410_Curva-90o-MH.jpg"
+        "img": "imagenes_productos/prod_3279.png"
     },
     {
         "id": 3280,
@@ -22970,28 +22970,28 @@
         "name": "CURVA PVC 40 A 45°",
         "price": 1050,
         "cat": "Materiales Generales",
-        "img": "https://www.sanitarioshidro.com.ar/products/A0031.jpg"
+        "img": "imagenes_productos/prod_3282.png"
     },
     {
         "id": 3283,
         "name": "CURVA PVC 50 A 45°",
         "price": 1500,
         "cat": "Materiales Generales",
-        "img": "https://www.sanitarioshidro.com.ar/products/A0031.jpg"
+        "img": "imagenes_productos/prod_3283.png"
     },
     {
         "id": 3284,
         "name": "CURVA PVC 60 A 45°",
         "price": 2200,
         "cat": "Materiales Generales",
-        "img": "https://www.sanitarioshidro.com.ar/products/A0031.jpg"
+        "img": "imagenes_productos/prod_3284.png"
     },
     {
         "id": 3285,
         "name": "CURVA PVC 100 A 45°",
         "price": 3700,
         "cat": "Materiales Generales",
-        "img": "https://www.sanitarioshidro.com.ar/products/A0031.jpg"
+        "img": "imagenes_productos/prod_3285.png"
     },
     {
         "id": 3286,
@@ -23166,14 +23166,14 @@
         "name": "CURVA PVC 110 A 90°LINEA 110",
         "price": 7850,
         "cat": "Materiales Generales",
-        "img": "https://www.sanitarioshidro.com.ar/products/A0109.jpg"
+        "img": "imagenes_productos/prod_3310.png"
     },
     {
         "id": 3311,
         "name": "CURVA PVC 110 A 45° LINEA 110",
         "price": 6500,
         "cat": "Materiales Generales",
-        "img": "https://www.sanitarioshidro.com.ar/products/A0115.jpg"
+        "img": "imagenes_productos/prod_3311.png"
     },
     {
         "id": 3312,
