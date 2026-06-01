@@ -4092,7 +4092,7 @@
         "name": "SELLADOR DE ROSCA TF3",
         "price": 1800,
         "cat": "Adhesivos y Selladores",
-        "img": ""
+        "img": "imagenes_productos/prod_585.png"
     },
     {
         "id": 586,
@@ -6737,7 +6737,7 @@
         "name": "TF3 LUBRICANTE TF3 AEROSOL CHICO",
         "price": 8400,
         "cat": "Pinturas y Accesorios",
-        "img": "https://ips-arg.com/wp-content/uploads/2019/10/55916_0510170227_Solución-Lubricante-en-Aerosol.jpg"
+        "img": "imagenes_productos/prod_963.png"
     },
     {
         "id": 964,
@@ -6751,7 +6751,7 @@
         "name": "TF3 LUBRICANTE TF3 AEROSOL GRANDE",
         "price": 10600,
         "cat": "Pinturas y Accesorios",
-        "img": "https://ips-arg.com/wp-content/uploads/2019/10/55916_0510170227_Solución-Lubricante-en-Aerosol.jpg"
+        "img": "imagenes_productos/prod_965.png"
     },
     {
         "id": 966,
@@ -6856,7 +6856,7 @@
         "name": "TF3 GRAFITO EN POLVO",
         "price": 3000,
         "cat": "Materiales Generales",
-        "img": ""
+        "img": "imagenes_productos/prod_980.png"
     },
     {
         "id": 981,
@@ -7500,7 +7500,7 @@
         "name": "TF3 SELLA ROSCA",
         "price": 2950,
         "cat": "Materiales Generales",
-        "img": ""
+        "img": "imagenes_productos/prod_1072.png"
     },
     {
         "id": 1073,

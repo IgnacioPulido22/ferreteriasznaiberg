@@ -710,7 +710,7 @@ async function boot() {
   const loader = document.getElementById('app-loader');
   try {
     try {
-      const res = await fetch('products.json?v=3b75b7ff');
+      const res = await fetch('products.json?v=df4940bc');
       if (!res.ok) throw new Error('products.json no disponible');
       PRODUCTS = await res.json();
     } catch(e) {
