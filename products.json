@@ -4463,63 +4463,63 @@
         "name": "LIMPIADOR ACLARADOR PARA MADERA DIRETH X 1L",
         "price": 9650,
         "cat": "Pinturas y Accesorios",
-        "img": ""
+        "img": "imagenes_productos/prod_638.png"
     },
     {
         "id": 639,
         "name": "TINTA DIRETH o CETOL 60 CC",
         "price": 4200,
         "cat": "Pinturas y Accesorios",
-        "img": ""
+        "img": "imagenes_productos/prod_639.png"
     },
     {
         "id": 640,
         "name": "TINTA DIRETH 240 CC",
         "price": 14100,
         "cat": "Pinturas y Accesorios",
-        "img": ""
+        "img": "imagenes_productos/prod_640.png"
     },
     {
         "id": 641,
         "name": "PROTECTOR DIRETH DECORATIVO LADRILLOS X 1L",
         "price": 22500,
         "cat": "Pinturas y Accesorios",
-        "img": ""
+        "img": "imagenes_productos/prod_641.png"
     },
     {
         "id": 642,
         "name": "PRESERVADOR DIRETH PRESERVADOR CURADOR NORMAL PLUS X 10L",
         "price": 83150,
         "cat": "Pinturas y Accesorios",
-        "img": ""
+        "img": "imagenes_productos/prod_642.png"
     },
     {
         "id": 643,
         "name": "MASILLA PLASTICA DIRETH 240 G",
         "price": 4300,
         "cat": "Adhesivos y Selladores",
-        "img": ""
+        "img": "imagenes_productos/prod_643.png"
     },
     {
         "id": 644,
         "name": "LACA DIRETH URETANADA MUEBLES Y PISOS BRILLANTE X 1L",
         "price": 25100,
         "cat": "Pinturas y Accesorios",
-        "img": ""
+        "img": "imagenes_productos/prod_644.png"
     },
     {
         "id": 645,
         "name": "DIRETH REMOVEDOR GEL 1L",
         "price": 16300,
         "cat": "Adhesivos y Selladores",
-        "img": "https://ekxtowlurtuyiupkzwge.supabase.co/storage/v1/object/public/product-images/removedor_en_gel.jpeg"
+        "img": "imagenes_productos/prod_645.png"
     },
     {
         "id": 646,
         "name": "DIRETH REMOVEDOR GEL 0.5L",
         "price": 10600,
         "cat": "Adhesivos y Selladores",
-        "img": "https://ekxtowlurtuyiupkzwge.supabase.co/storage/v1/object/public/product-images/removedor_en_gel.jpeg"
+        "img": "imagenes_productos/prod_646.png"
     },
     {
         "id": 647,
