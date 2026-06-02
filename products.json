@@ -676,7 +676,7 @@
         "name": "BULON HEXAGONAL GALVANIZADO 1/4 X      1/2",
         "price": 100,
         "cat": "Ferreteria y Fijacion",
-        "img": "https://www.sanitarioshidro.com.ar/products/A0675.jpg"
+        "img": "imagenes_productos/prod_97.png"
     },
     {
         "id": 98,
@@ -697,7 +697,7 @@
         "name": "BULON HEXAGONAL GALVANIZADO 1/4 X     3/4",
         "price": 100,
         "cat": "Ferreteria y Fijacion",
-        "img": "https://www.sanitarioshidro.com.ar/products/A0675.jpg"
+        "img": "imagenes_productos/prod_100.png"
     },
     {
         "id": 101,
@@ -711,28 +711,28 @@
         "name": "BULON HEXAGONAL GALVANIZADO 1/4 X   1 1/2",
         "price": 150,
         "cat": "Ferreteria y Fijacion",
-        "img": "https://www.sanitarioshidro.com.ar/products/A0675.jpg"
+        "img": "imagenes_productos/prod_102.png"
     },
     {
         "id": 103,
         "name": "BULON HEXAGONAL GALVANIZADO 1/4 X   2",
         "price": 200,
         "cat": "Ferreteria y Fijacion",
-        "img": "https://www.sanitarioshidro.com.ar/products/A0675.jpg"
+        "img": "imagenes_productos/prod_103.png"
     },
     {
         "id": 104,
         "name": "BULON HEXAGONAL GALVANIZADO 1/4 X  2 1/2",
         "price": 200,
         "cat": "Ferreteria y Fijacion",
-        "img": "https://www.sanitarioshidro.com.ar/products/A0675.jpg"
+        "img": "imagenes_productos/prod_104.png"
     },
     {
         "id": 105,
         "name": "BULON HEXAGONAL GALVANIZADO 1/4 X  3",
         "price": 200,
         "cat": "Ferreteria y Fijacion",
-        "img": "https://www.sanitarioshidro.com.ar/products/A0675.jpg"
+        "img": "imagenes_productos/prod_105.png"
     },
     {
         "id": 106,
@@ -746,7 +746,7 @@
         "name": "BULON HEXAGONAL GALVANIZADO 1/4 X 3 1/2",
         "price": 300,
         "cat": "Ferreteria y Fijacion",
-        "img": "https://www.sanitarioshidro.com.ar/products/A0675.jpg"
+        "img": "imagenes_productos/prod_107.png"
     },
     {
         "id": 108,
@@ -767,7 +767,7 @@
         "name": "BULON HEXAGONAL GALVANIZADO 1/4 X 4 1/2",
         "price": 350,
         "cat": "Ferreteria y Fijacion",
-        "img": "https://www.sanitarioshidro.com.ar/products/A0675.jpg"
+        "img": "imagenes_productos/prod_110.png"
     },
     {
         "id": 111,
@@ -970,7 +970,7 @@
         "name": "BULON HEXAGONAL GALVANIZADO 1/2 X   2 3/4",
         "price": 950,
         "cat": "Ferreteria y Fijacion",
-        "img": "https://www.sanitarioshidro.com.ar/products/A0675.jpg"
+        "img": "imagenes_productos/prod_139.png"
     },
     {
         "id": 140,
