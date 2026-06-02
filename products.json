@@ -6646,21 +6646,21 @@
         "name": "DISCO FLAP 60 4264",
         "price": 2850,
         "cat": "Herramientas",
-        "img": ""
+        "img": "imagenes_productos/prod_950.png"
     },
     {
         "id": 951,
         "name": "DISCO FLAP 120 - - - -",
         "price": 2850,
         "cat": "Herramientas",
-        "img": ""
+        "img": "imagenes_productos/prod_951.png"
     },
     {
         "id": 952,
         "name": "DISCO FLAP 80 -",
         "price": 2850,
         "cat": "Herramientas",
-        "img": ""
+        "img": "imagenes_productos/prod_952.png"
     },
     {
         "id": 953,
@@ -11938,14 +11938,14 @@
         "name": "DISCO FLAP 115 80",
         "price": 2050,
         "cat": "Herramientas",
-        "img": "https://www.sanitarioshidro.com.ar/products/F5340.jpg"
+        "img": "imagenes_productos/prod_1706.png"
     },
     {
         "id": 1707,
         "name": "DISCO FLAP 115 120",
         "price": 2200,
         "cat": "Herramientas",
-        "img": "https://www.sanitarioshidro.com.ar/products/F5340.jpg"
+        "img": "imagenes_productos/prod_1707.png"
     },
     {
         "id": 1708,
@@ -11973,7 +11973,7 @@
         "name": "DISCO FLAP OXIDO ALUMINIO 180 # 60",
         "price": 5700,
         "cat": "Herramientas",
-        "img": "https://ferriplast.com.ar/pedidos/assets/product/127079.jpg"
+        "img": "imagenes_productos/prod_1711.png"
     },
     {
         "id": 1712,
