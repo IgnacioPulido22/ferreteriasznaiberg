@@ -620,28 +620,28 @@
         "name": "MARIPOSA DE HIERRO     5/32",
         "price": 250,
         "cat": "Ferreteria y Fijacion",
-        "img": ""
+        "img": "imagenes_productos/prod_89.png"
     },
     {
         "id": 90,
         "name": "MARIPOSA DE HIERRO   1/4",
         "price": 350,
         "cat": "Ferreteria y Fijacion",
-        "img": ""
+        "img": "imagenes_productos/prod_90.png"
     },
     {
         "id": 91,
         "name": "MARIPOSA DE HIERRO   5/16",
         "price": 400,
         "cat": "Ferreteria y Fijacion",
-        "img": ""
+        "img": "imagenes_productos/prod_91.png"
     },
     {
         "id": 92,
         "name": "MARIPOSA DE HIERRO 1/2",
         "price": 1800,
         "cat": "Ferreteria y Fijacion",
-        "img": ""
+        "img": "imagenes_productos/prod_92.png"
     },
     {
         "id": 93,
