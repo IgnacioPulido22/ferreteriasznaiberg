@@ -20716,7 +20716,7 @@
         "name": "NIVEL SOLA 50 CM",
         "price": 65000,
         "cat": "Herramientas",
-        "img": ""
+        "img": "imagenes_productos/prod_2960.png"
     },
     {
         "id": 2961,
@@ -20730,7 +20730,7 @@
         "name": "NIVEL SOLA 80 CM",
         "price": 80000,
         "cat": "Herramientas",
-        "img": ""
+        "img": "imagenes_productos/prod_2962.png"
     },
     {
         "id": 2963,
