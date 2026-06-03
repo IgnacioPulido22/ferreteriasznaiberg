@@ -16096,42 +16096,42 @@
         "name": "DISCO AA CORTE PLANO 115X1.0 MASTER",
         "price": 2300,
         "cat": "Herramientas",
-        "img": "https://ferriplast.com.ar/pedidos/assets/product/702070.jpg"
+        "img": "imagenes_productos/prod_2300.png"
     },
     {
         "id": 2301,
         "name": "DISCO AA CORTE PLANO 180X1.6 MASTER",
         "price": 3600,
         "cat": "Herramientas",
-        "img": "https://ferriplast.com.ar/pedidos/assets/product/702072.jpg"
+        "img": "imagenes_productos/prod_2301.png"
     },
     {
         "id": 2302,
         "name": "DISCO AA DESBASTE C/D 115X5.0 MASTER",
         "price": 8150,
         "cat": "Herramientas",
-        "img": "https://ferriplast.com.ar/pedidos/assets/product/702073.jpg"
+        "img": "imagenes_productos/prod_2302.png"
     },
     {
         "id": 2303,
         "name": "DISCO AA 8P. 127 X 220 VELCRO ANTI-EMPASTE",
         "price": 1550,
         "cat": "Herramientas",
-        "img": "https://ferriplast.com.ar/pedidos/assets/product/702093.jpg"
+        "img": "imagenes_productos/prod_2303.png"
     },
     {
         "id": 2304,
         "name": "DISCO AA 8P. 127 X 400 VELCRO ANTI-EMPASTE",
         "price": 1550,
         "cat": "Herramientas",
-        "img": "https://ferriplast.com.ar/pedidos/assets/product/702098.jpg"
+        "img": "imagenes_productos/prod_2304.png"
     },
     {
         "id": 2305,
         "name": "DISCO AA 8P. 127 X  60 VELCRO ANTI-EMPASTE",
         "price": 1550,
         "cat": "Herramientas",
-        "img": "https://ferriplast.com.ar/pedidos/assets/product/702104.jpg"
+        "img": "imagenes_productos/prod_2305.png"
     },
     {
         "id": 2306,
@@ -16194,7 +16194,7 @@
         "name": "DISCO AA 8P. 127 X 120 VELCRO ANTI-EMPASTE",
         "price": 1550,
         "cat": "Herramientas",
-        "img": "https://ferriplast.com.ar/pedidos/assets/product/702146.jpg"
+        "img": "imagenes_productos/prod_2314.png"
     },
     {
         "id": 2315,
@@ -17867,7 +17867,7 @@
         "name": "RAPTOR - DISCO CORTE 115 X 1.0 MM",
         "price": 700,
         "cat": "Herramientas",
-        "img": "https://ferriplast.com.ar/pedidos/assets/product/120091.jpg"
+        "img": "imagenes_productos/prod_2553.png"
     },
     {
         "id": 2554,
