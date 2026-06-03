@@ -2755,14 +2755,14 @@
         "name": "CAJA ALUMINIZADA OCTOGONAL 9 DE JULIO - (CAJAS PARA CONEXION  9 DE JULIO)",
         "price": 1000,
         "cat": "Materiales Generales",
-        "img": ""
+        "img": "imagenes_productos/prod_394.png"
     },
     {
         "id": 395,
         "name": "CAJA PVC DE EMBUTIR MIGNON 5X5 KALOP - (CAJAS PARA CONEXION  KALOP)",
         "price": 900,
         "cat": "Materiales Generales",
-        "img": ""
+        "img": "imagenes_productos/prod_395.png"
     },
     {
         "id": 396,
@@ -5562,7 +5562,7 @@
         "name": "CAJA MIGNON PVC - MARCA TECNOCOM         (39-CAJA PVC )",
         "price": 1200,
         "cat": "Materiales Generales",
-        "img": ""
+        "img": "imagenes_productos/prod_795.png"
     },
     {
         "id": 796,
@@ -17622,7 +17622,7 @@
         "name": "GENROD - CAJA DE SOBREPONER OCTOGONAL CHICA C/TAPA GRIS",
         "price": 2350,
         "cat": "Materiales Generales",
-        "img": "https://ferriplast.com.ar/pedidos/assets/product/109647.jpg"
+        "img": "imagenes_productos/prod_2518.png"
     },
     {
         "id": 2519,
