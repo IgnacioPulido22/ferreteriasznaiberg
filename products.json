@@ -312,28 +312,28 @@
         "name": "PATROLL Diamant. L.Amarilla  Continuo  115 mm.",
         "price": 6050,
         "cat": "Herramientas",
-        "img": ""
+        "img": "imagenes_productos/prod_45.png"
     },
     {
         "id": 46,
         "name": "PATROLL Diamant. L.Amrilla  Segmentado 115mm",
         "price": 9000,
         "cat": "Herramientas",
-        "img": ""
+        "img": "imagenes_productos/prod_46.png"
     },
     {
         "id": 47,
         "name": "PATROLL Diamant. L.Amarilla  Turbo  115 mm.",
         "price": 7250,
         "cat": "Herramientas",
-        "img": ""
+        "img": "imagenes_productos/prod_47.png"
     },
     {
         "id": 48,
         "name": "DISCO PATROLL DIAMANTADO TURBO TRF 4.5",
         "price": 22200,
         "cat": "Herramientas",
-        "img": ""
+        "img": "imagenes_productos/prod_48.png"
     },
     {
         "id": 49,
@@ -21241,7 +21241,7 @@
         "name": "DISCO PATROLL DIAMANTADO TURBO TRF",
         "price": 18400,
         "cat": "Herramientas",
-        "img": ""
+        "img": "imagenes_productos/prod_3035.png"
     },
     {
         "id": 3036,
