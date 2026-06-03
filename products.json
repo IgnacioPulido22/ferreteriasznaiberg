@@ -2517,77 +2517,77 @@
         "name": "FICHA SOLDAR ALA CORTA 60X2.5",
         "price": 1100,
         "cat": "Electricidad e Iluminacion",
-        "img": ""
+        "img": "imagenes_productos/prod_360.png"
     },
     {
         "id": 361,
         "name": "FICHA SOLDAR ALA CORTA 80X2.5",
         "price": 1300,
         "cat": "Electricidad e Iluminacion",
-        "img": ""
+        "img": "imagenes_productos/prod_361.png"
     },
     {
         "id": 362,
         "name": "FICHA SOLDAR ALA CORTA 100X2.5",
         "price": 1550,
         "cat": "Electricidad e Iluminacion",
-        "img": ""
+        "img": "imagenes_productos/prod_362.png"
     },
     {
         "id": 363,
         "name": "FICHA SOLDAR ALA LARGA 60X2.5",
         "price": 1400,
         "cat": "Electricidad e Iluminacion",
-        "img": ""
+        "img": "imagenes_productos/prod_363.png"
     },
     {
         "id": 364,
         "name": "FICHA SOLDAR ALA LARGA 80X2.5",
         "price": 1650,
         "cat": "Electricidad e Iluminacion",
-        "img": ""
+        "img": "imagenes_productos/prod_364.png"
     },
     {
         "id": 365,
         "name": "FICHA SOLDAR ALA LARGA 100X2.5",
         "price": 1950,
         "cat": "Electricidad e Iluminacion",
-        "img": ""
+        "img": "imagenes_productos/prod_365.png"
     },
     {
         "id": 366,
         "name": "FICHA FORJADA SOLDAR 25X4 EJE 10",
         "price": 2100,
         "cat": "Electricidad e Iluminacion",
-        "img": ""
+        "img": "imagenes_productos/prod_366.png"
     },
     {
         "id": 367,
         "name": "FICHA FORJADA SOLDAR 32X4.75 EJE 12",
         "price": 3350,
         "cat": "Electricidad e Iluminacion",
-        "img": ""
+        "img": "imagenes_productos/prod_367.png"
     },
     {
         "id": 368,
         "name": "FICHA FORJADA SOLDAR 38X4.75 EJE 12",
         "price": 3950,
         "cat": "Electricidad e Iluminacion",
-        "img": ""
+        "img": "imagenes_productos/prod_368.png"
     },
     {
         "id": 369,
         "name": "FICHA FORJADA SOLDAR 32X4.75 EJE 12 AMURAR",
         "price": 5000,
         "cat": "Electricidad e Iluminacion",
-        "img": ""
+        "img": "imagenes_productos/prod_369.png"
     },
     {
         "id": 370,
         "name": "FICHA FORJADA SOLDAR 38X4.75 EJE 12 AMURAR",
         "price": 5600,
         "cat": "Electricidad e Iluminacion",
-        "img": ""
+        "img": "imagenes_productos/prod_370.png"
     },
     {
         "id": 371,
@@ -2622,21 +2622,21 @@
         "name": "MUNICION SOLDAR 100X37X2.5",
         "price": 2600,
         "cat": "Ferreteria y Fijacion",
-        "img": "https://ferriplast.com.ar/pedidos/assets/product/img1_0000003462.png"
+        "img": "imagenes_productos/prod_375.png"
     },
     {
         "id": 376,
         "name": "MUNICION SOLDAR 75X75X2.5",
         "price": 3250,
         "cat": "Ferreteria y Fijacion",
-        "img": ""
+        "img": "imagenes_productos/prod_376.png"
     },
     {
         "id": 377,
         "name": "MUNICION SOLDAR 100X75X2.5",
         "price": 4200,
         "cat": "Ferreteria y Fijacion",
-        "img": ""
+        "img": "imagenes_productos/prod_377.png"
     },
     {
         "id": 378,
