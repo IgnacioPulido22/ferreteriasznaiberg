@@ -837,7 +837,7 @@
         "name": "PITON LUSO ESCUADRA No 08 (x 50)",
         "price": 500,
         "cat": "Herramientas",
-        "img": ""
+        "img": "imagenes_productos/prod_120.png"
     },
     {
         "id": 121,
@@ -16950,7 +16950,7 @@
         "name": "PITON ABIERTO W.W. 3.17 X 40 x UNIDAD",
         "price": 350,
         "cat": "Materiales Generales",
-        "img": ""
+        "img": "imagenes_productos/prod_2422.png"
     },
     {
         "id": 2423,
@@ -16999,70 +16999,70 @@
         "name": "PITON DE HIERRO ABIERTO 16-30 x UNIDAD",
         "price": 100,
         "cat": "Materiales Generales",
-        "img": ""
+        "img": "imagenes_productos/prod_2429.png"
     },
     {
         "id": 2430,
         "name": "PITON DE ANCLAJE ABIERTO No 5 x UNIDAD",
         "price": 350,
         "cat": "Materiales Generales",
-        "img": ""
+        "img": "imagenes_productos/prod_2430.png"
     },
     {
         "id": 2431,
         "name": "PITON DE ANCLAJE ABIERTO No 6 x UNIDAD",
         "price": 400,
         "cat": "Materiales Generales",
-        "img": ""
+        "img": "imagenes_productos/prod_2431.png"
     },
     {
         "id": 2432,
         "name": "PITON DE ANCLAJE ABIERTO No 8 x UNIDAD",
         "price": 600,
         "cat": "Materiales Generales",
-        "img": ""
+        "img": "imagenes_productos/prod_2432.png"
     },
     {
         "id": 2433,
         "name": "PITON DE ANCLAJE ABIERTO No 10 x UNIDAD",
         "price": 1150,
         "cat": "Materiales Generales",
-        "img": ""
+        "img": "imagenes_productos/prod_2433.png"
     },
     {
         "id": 2434,
         "name": "PITON DE ANCLAJE CERRADO No 5 x UNIDAD",
         "price": 350,
         "cat": "Materiales Generales",
-        "img": ""
+        "img": "imagenes_productos/prod_2434.png"
     },
     {
         "id": 2435,
         "name": "PITON DE ANCLAJE CERRADO No 10 x UNIDAD",
         "price": 1150,
         "cat": "Materiales Generales",
-        "img": ""
+        "img": "imagenes_productos/prod_2435.png"
     },
     {
         "id": 2436,
         "name": "PITON DE ANCLAJE CERRADO No 4 x UNIDAD",
         "price": 300,
         "cat": "Materiales Generales",
-        "img": ""
+        "img": "imagenes_productos/prod_2436.png"
     },
     {
         "id": 2437,
         "name": "PITON DE ANCLAJE ABIERTO No 12 x UNIDAD",
         "price": 1700,
         "cat": "Materiales Generales",
-        "img": ""
+        "img": "imagenes_productos/prod_2437.png"
     },
     {
         "id": 2438,
         "name": "PITON DE ANCLAJE CERRADO No 12 x UNIDAD",
         "price": 1700,
         "cat": "Materiales Generales",
-        "img": ""
+        "img": "imagenes_productos/prod_2438.png"
     },
     {
         "id": 2439,
@@ -27415,28 +27415,28 @@
         "name": "PITON C/TOPE ESCUADRA 5MM",
         "price": 250,
         "cat": "Herramientas",
-        "img": "https://www.sanitarioshidro.com.ar/products/F12660.jpg"
+        "img": "imagenes_productos/prod_3917.png"
     },
     {
         "id": 3918,
         "name": "PITON C/TOPE ESCUADRA 6MM",
         "price": 300,
         "cat": "Herramientas",
-        "img": "https://www.sanitarioshidro.com.ar/products/F12660.jpg"
+        "img": "imagenes_productos/prod_3918.png"
     },
     {
         "id": 3919,
         "name": "PITON C/TOPE ESCUADRA 8MM",
         "price": 550,
         "cat": "Herramientas",
-        "img": "https://www.sanitarioshidro.com.ar/products/F12660.jpg"
+        "img": "imagenes_productos/prod_3919.png"
     },
     {
         "id": 3920,
         "name": "PITON C/TOPE ESCUADRA 10MM",
         "price": 1000,
         "cat": "Herramientas",
-        "img": "https://www.sanitarioshidro.com.ar/products/F12660.jpg"
+        "img": "imagenes_productos/prod_3920.png"
     },
     {
         "id": 3921,
