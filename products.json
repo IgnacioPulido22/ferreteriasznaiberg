@@ -466,7 +466,7 @@
         "name": "ELECTRODO OK 2.00   (X KILO)",
         "price": 16800,
         "cat": "Herramientas",
-        "img": ""
+        "img": "imagenes_productos/prod_67.png"
     },
     {
         "id": 68,
@@ -802,7 +802,7 @@
         "name": "ELECTRODO OK 2.50   (X KILO)",
         "price": 13350,
         "cat": "Herramientas",
-        "img": ""
+        "img": "imagenes_productos/prod_115.png"
     },
     {
         "id": 116,
@@ -872,7 +872,7 @@
         "name": "ELECTRODO CONARCO 2.50   (X KILO)",
         "price": 17150,
         "cat": "Herramientas",
-        "img": ""
+        "img": "imagenes_productos/prod_125.png"
     },
     {
         "id": 126,
