@@ -7794,21 +7794,21 @@
         "name": "NIVEL 60CM",
         "price": 15650,
         "cat": "Herramientas",
-        "img": ""
+        "img": "imagenes_productos/prod_1114.png"
     },
     {
         "id": 1115,
         "name": "NIVEL 40CM",
         "price": 14950,
         "cat": "Herramientas",
-        "img": ""
+        "img": "imagenes_productos/prod_1115.png"
     },
     {
         "id": 1116,
         "name": "NIVEL 30CM",
         "price": 12950,
         "cat": "Herramientas",
-        "img": ""
+        "img": "imagenes_productos/prod_1116.png"
     },
     {
         "id": 1117,
