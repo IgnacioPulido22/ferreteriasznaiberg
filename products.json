@@ -2454,21 +2454,21 @@
         "name": "CARPINTERO FICHA ZINCADA REVER 2X3 AGU X 1.5",
         "price": 1500,
         "cat": "Electricidad e Iluminacion",
-        "img": ""
+        "img": "imagenes_productos/prod_351.png"
     },
     {
         "id": 352,
         "name": "CARPINTERO FICHA ZINCADA REVER 2X5 AGU X 1.5",
         "price": 1600,
         "cat": "Electricidad e Iluminacion",
-        "img": ""
+        "img": "imagenes_productos/prod_352.png"
     },
     {
         "id": 353,
         "name": "CARPINTERO FICHA ZINCADA REVER 80X22X1.5",
         "price": 1100,
         "cat": "Electricidad e Iluminacion",
-        "img": ""
+        "img": "imagenes_productos/prod_353.png"
     },
     {
         "id": 354,
