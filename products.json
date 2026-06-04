@@ -14283,14 +14283,14 @@
         "name": "ESCUADRA ALBANIL 40",
         "price": 12300,
         "cat": "Herramientas",
-        "img": ""
+        "img": "imagenes_productos/prod_2041.png"
     },
     {
         "id": 2042,
         "name": "ESCUADRA ALBANIL 50",
         "price": 14900,
         "cat": "Herramientas",
-        "img": ""
+        "img": "imagenes_productos/prod_2042.png"
     },
     {
         "id": 2043,
