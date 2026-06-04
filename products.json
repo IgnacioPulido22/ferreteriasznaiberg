@@ -669,7 +669,7 @@
         "name": "AUTOPERFORANTE C/TANQUE P/AGUJA 8 X  3/4",
         "price": 50,
         "cat": "Plomeria y Sanitarios",
-        "img": ""
+        "img": "imagenes_productos/prod_96.png"
     },
     {
         "id": 97,
@@ -739,7 +739,7 @@
         "name": "AUTOPERFORANTE C/TANQUE P/AGUJA 8 X 1",
         "price": 50,
         "cat": "Plomeria y Sanitarios",
-        "img": ""
+        "img": "imagenes_productos/prod_106.png"
     },
     {
         "id": 107,
@@ -1355,7 +1355,7 @@
         "name": "AUTOPERFORANTE C/TANQUE P/AGUJA 8 X 1 1/2",
         "price": 100,
         "cat": "Plomeria y Sanitarios",
-        "img": ""
+        "img": "imagenes_productos/prod_194.png"
     },
     {
         "id": 195,
@@ -1831,21 +1831,21 @@
         "name": "AUTOPERFORANTE C/HEXAGONAL P/MECHA 14 X 2",
         "price": 200,
         "cat": "Ferreteria y Fijacion",
-        "img": ""
+        "img": "imagenes_productos/prod_262.png"
     },
     {
         "id": 263,
         "name": "AUTOPERFORANTE C/HEXAGONAL P/MECHA 14 X 2 1/2",
         "price": 200,
         "cat": "Ferreteria y Fijacion",
-        "img": ""
+        "img": "imagenes_productos/prod_263.png"
     },
     {
         "id": 264,
         "name": "AUTOPERFORANTE C/HEXAGONAL P/MECHA 14 X 3",
         "price": 250,
         "cat": "Ferreteria y Fijacion",
-        "img": ""
+        "img": "imagenes_productos/prod_264.png"
     },
     {
         "id": 265,
@@ -2314,7 +2314,7 @@
         "name": "AUTOPERFORANTE C/TANQUE P/AGUJA 8 X   1/2",
         "price": 50,
         "cat": "Plomeria y Sanitarios",
-        "img": ""
+        "img": "imagenes_productos/prod_331.png"
     },
     {
         "id": 332,
