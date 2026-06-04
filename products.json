@@ -1019,21 +1019,21 @@
         "name": "TUERCA AUTOFRENANTE      1/4",
         "price": 100,
         "cat": "Ferreteria y Fijacion",
-        "img": "https://ferriplast.com.ar/pedidos/assets/product/img1_0000005383.jpg"
+        "img": "imagenes_productos/prod_146.png"
     },
     {
         "id": 147,
         "name": "TUERCA AUTOFRENANTE      5/16",
         "price": 100,
         "cat": "Ferreteria y Fijacion",
-        "img": "https://ferriplast.com.ar/pedidos/assets/product/190015.jpg"
+        "img": "imagenes_productos/prod_147.png"
     },
     {
         "id": 148,
         "name": "TUERCA AUTOFRENANTE     3/8",
         "price": 200,
         "cat": "Ferreteria y Fijacion",
-        "img": "https://ferriplast.com.ar/pedidos/assets/product/190016.jpg"
+        "img": "imagenes_productos/prod_148.png"
     },
     {
         "id": 149,
@@ -1138,14 +1138,14 @@
         "name": "TIRAFONDO GALVANIZADO 3/16 X   1 1/4",
         "price": 100,
         "cat": "Ferreteria y Fijacion",
-        "img": "https://www.sanitarioshidro.com.ar/products/A0675.jpg"
+        "img": "imagenes_productos/prod_163.png"
     },
     {
         "id": 164,
         "name": "TIRAFONDO GALVANIZADO 3/16 X  1 1/2",
         "price": 100,
         "cat": "Ferreteria y Fijacion",
-        "img": "https://www.sanitarioshidro.com.ar/products/A0675.jpg"
+        "img": "imagenes_productos/prod_164.png"
     },
     {
         "id": 165,
@@ -1159,7 +1159,7 @@
         "name": "TIRAFONDO GALVANIZADO 3/16 X  1 3/4",
         "price": 100,
         "cat": "Ferreteria y Fijacion",
-        "img": "https://www.sanitarioshidro.com.ar/products/A0675.jpg"
+        "img": "imagenes_productos/prod_166.png"
     },
     {
         "id": 167,
@@ -1173,42 +1173,42 @@
         "name": "TIRAFONDO GALVANIZADO 3/16 X 2 1/2",
         "price": 150,
         "cat": "Ferreteria y Fijacion",
-        "img": "https://www.sanitarioshidro.com.ar/products/A0675.jpg"
+        "img": "imagenes_productos/prod_168.png"
     },
     {
         "id": 169,
         "name": "TIRAFONDO GALVANIZADO 3/16 X 2 3/4",
         "price": 150,
         "cat": "Ferreteria y Fijacion",
-        "img": "https://www.sanitarioshidro.com.ar/products/A0675.jpg"
+        "img": "imagenes_productos/prod_169.png"
     },
     {
         "id": 170,
         "name": "TIRAFONDO GALVANIZADO 1/4 X    1",
         "price": 100,
         "cat": "Ferreteria y Fijacion",
-        "img": "https://www.sanitarioshidro.com.ar/products/A0675.jpg"
+        "img": "imagenes_productos/prod_170.png"
     },
     {
         "id": 171,
         "name": "TIRAFONDO GALVANIZADO 1/4 X    1 1/4",
         "price": 100,
         "cat": "Ferreteria y Fijacion",
-        "img": "https://www.sanitarioshidro.com.ar/products/A0675.jpg"
+        "img": "imagenes_productos/prod_171.png"
     },
     {
         "id": 172,
         "name": "TIRAFONDO GALVANIZADO 1/4 X   1 1/2",
         "price": 100,
         "cat": "Ferreteria y Fijacion",
-        "img": "https://www.sanitarioshidro.com.ar/products/A0675.jpg"
+        "img": "imagenes_productos/prod_172.png"
     },
     {
         "id": 173,
         "name": "TIRAFONDO GALVANIZADO 1/4 X   2",
         "price": 150,
         "cat": "Ferreteria y Fijacion",
-        "img": "https://www.sanitarioshidro.com.ar/products/A0675.jpg"
+        "img": "imagenes_productos/prod_173.png"
     },
     {
         "id": 174,
@@ -1229,28 +1229,28 @@
         "name": "TIRAFONDO GALVANIZADO 1/4 X  2 1/2",
         "price": 200,
         "cat": "Ferreteria y Fijacion",
-        "img": "https://www.sanitarioshidro.com.ar/products/A0675.jpg"
+        "img": "imagenes_productos/prod_176.png"
     },
     {
         "id": 177,
         "name": "TIRAFONDO GALVANIZADO 1/4 X  2 3/4",
         "price": 200,
         "cat": "Ferreteria y Fijacion",
-        "img": "https://www.sanitarioshidro.com.ar/products/A0675.jpg"
+        "img": "imagenes_productos/prod_177.png"
     },
     {
         "id": 178,
         "name": "TIRAFONDO GALVANIZADO 1/4 X  3",
         "price": 200,
         "cat": "Ferreteria y Fijacion",
-        "img": "https://www.sanitarioshidro.com.ar/products/A0675.jpg"
+        "img": "imagenes_productos/prod_178.png"
     },
     {
         "id": 179,
         "name": "TIRAFONDO GALVANIZADO 1/4 X 4",
         "price": 250,
         "cat": "Ferreteria y Fijacion",
-        "img": "https://www.sanitarioshidro.com.ar/products/A0675.jpg"
+        "img": "imagenes_productos/prod_179.png"
     },
     {
         "id": 180,
@@ -1264,7 +1264,7 @@
         "name": "TIRAFONDO GALVANIZADO 5/16 X  2 1/2",
         "price": 200,
         "cat": "Ferreteria y Fijacion",
-        "img": "https://www.sanitarioshidro.com.ar/products/A1115.jpg"
+        "img": "imagenes_productos/prod_181.png"
     },
     {
         "id": 182,
