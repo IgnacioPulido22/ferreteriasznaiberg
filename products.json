@@ -2972,7 +2972,7 @@
         "name": "TECLA VELADOR TORPEDO MIG - (FICHAS PARA VELADORES  MIG)",
         "price": 950,
         "cat": "Electricidad e Iluminacion",
-        "img": ""
+        "img": "imagenes_productos/prod_425.png"
     },
     {
         "id": 426,
@@ -5366,28 +5366,28 @@
         "name": "FICHA HEMBRA LATERAL 10A - MARCA MIG         (29-FICHAS  MIG)",
         "price": 2550,
         "cat": "Electricidad e Iluminacion",
-        "img": ""
+        "img": "imagenes_productos/prod_767.png"
     },
     {
         "id": 768,
         "name": "FICHA MACHO 20A C/AZA+NEUTRO - MARCA MIG         (29-FICHAS  MIG)",
         "price": 2850,
         "cat": "Electricidad e Iluminacion",
-        "img": ""
+        "img": "imagenes_productos/prod_768.png"
     },
     {
         "id": 769,
         "name": "FICHA MACHO LATERAL 10A - MARCA MIG         (29-FICHAS  MIG)",
         "price": 2050,
         "cat": "Electricidad e Iluminacion",
-        "img": ""
+        "img": "imagenes_productos/prod_769.png"
     },
     {
         "id": 770,
         "name": "FICHA AMERICANA NEGRA - MARCA MIG         (30-FICHA AMERICANA)",
         "price": 1800,
         "cat": "Electricidad e Iluminacion",
-        "img": ""
+        "img": "imagenes_productos/prod_770.png"
     },
     {
         "id": 771,
@@ -17517,7 +17517,7 @@
         "name": "GENROD - TAPA CIEGA P/CAJA MIGNON",
         "price": 700,
         "cat": "Materiales Generales",
-        "img": "https://ips-arg.com/wp-content/uploads/2019/10/111_1209171306_Tapa-H.jpg"
+        "img": "imagenes_productos/prod_2503.png"
     },
     {
         "id": 2504,
