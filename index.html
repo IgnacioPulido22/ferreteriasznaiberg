@@ -63,7 +63,8 @@ button{cursor:pointer;border:none;font-family:var(--font-main)}
 .navbar{background:var(--black);position:sticky;top:0;z-index:1000;box-shadow:0 2px 20px rgba(0,0,0,0.4)}
 .navbar-inner{max-width:1400px;margin:0 auto;padding:0 24px;display:flex;align-items:center;gap:20px;height:68px}
 .logo{display:flex;align-items:center;gap:12px;flex-shrink:0}
-.logo-mark{width:38px;height:38px;background:var(--yellow);border-radius:4px;display:flex;align-items:center;justify-content:center;font-size:18px;font-weight:900;color:var(--black);font-family:var(--font-title)}
+.logo-mark{width:42px;height:42px;border-radius:6px;overflow:hidden;flex-shrink:0}
+.logo-mark img{width:100%;height:100%;object-fit:cover;display:block}
 .logo-text{display:flex;flex-direction:column;line-height:1.1}
 .logo-text strong{color:#fff;font-size:16px;font-weight:800;letter-spacing:-0.3px;font-family:var(--font-title)}
 .logo-text span{color:var(--yellow);font-size:10px;font-weight:500;letter-spacing:2px;text-transform:uppercase}
@@ -268,7 +269,8 @@ button{cursor:pointer;border:none;font-family:var(--font-main)}
 .footer{background:#111;color:rgba(255,255,255,.72);padding:52px 0 0}
 .footer-inner{max-width:1400px;margin:0 auto;padding:0 24px;display:grid;grid-template-columns:2fr 1fr 1fr 1fr;gap:48px}
 .footer-logo{display:flex;align-items:center;gap:10px;margin-bottom:16px}
-.footer-logo-mark{width:34px;height:34px;background:var(--yellow);border-radius:4px;display:flex;align-items:center;justify-content:center;font-size:15px;font-weight:900;color:var(--black);font-family:var(--font-title)}
+.footer-logo-mark{width:38px;height:38px;border-radius:6px;overflow:hidden;flex-shrink:0}
+.footer-logo-mark img{width:100%;height:100%;object-fit:cover;display:block}
 .footer-logo-text strong{color:#fff;font-size:14px;font-weight:800;font-family:var(--font-title);display:block}
 .footer-logo-text span{color:var(--yellow);font-size:10px;letter-spacing:2px;font-weight:500}
 .footer-desc{font-size:12.5px;line-height:1.75;color:rgba(255,255,255,.45);margin-bottom:20px}
@@ -441,7 +443,7 @@ button{cursor:pointer;border:none;font-family:var(--font-main)}
 <nav class="navbar">
   <div class="navbar-inner">
     <a href="#" class="logo" onclick="resetFilters();return false">
-      <div class="logo-mark">S</div>
+      <div class="logo-mark"><img src="images/logo.jpg" alt="Ferretería Sznaiberg"></div>
       <div class="logo-text"><strong>Sznaiberg</strong><span>Ferretería &amp; Materiales</span></div>
     </a>
     <div class="nav-search">
@@ -552,7 +554,7 @@ button{cursor:pointer;border:none;font-family:var(--font-main)}
   <div class="footer-inner">
     <div>
       <div class="footer-logo">
-        <div class="footer-logo-mark">S</div>
+        <div class="footer-logo-mark"><img src="images/logo.jpg" alt="Ferretería Sznaiberg"></div>
         <div class="footer-logo-text"><strong>Ferretería Sznaiberg</strong><span>Desde el barrio, para el país</span></div>
       </div>
       <p class="footer-desc">Más de 4.000 productos de ferretería, herramientas, materiales de construcción, electricidad, plomería y pintura. Tu proveedor de confianza.</p>
