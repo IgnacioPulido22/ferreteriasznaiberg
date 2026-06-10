@@ -284,14 +284,14 @@
         "name": "VENTURO    Sierra Copa  Giro  Standard   33 mm.",
         "price": 8850,
         "cat": "Herramientas",
-        "img": ""
+        "img": "imagenes_productos/prod_41.png"
     },
     {
         "id": 42,
         "name": "VENTURO    Sierra Copa  Giro  Standard   43 mm.",
         "price": 11000,
         "cat": "Herramientas",
-        "img": ""
+        "img": "imagenes_productos/prod_42.png"
     },
     {
         "id": 43,
