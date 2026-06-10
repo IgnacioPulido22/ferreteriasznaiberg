@@ -116,11 +116,9 @@ button{cursor:pointer;border:none;font-family:var(--font-main)}
 .hero-stats{display:flex;gap:36px;margin-top:40px;padding-top:32px;border-top:1px solid rgba(255,255,255,0.07)}
 .hero-stat strong{font-family:var(--font-title);font-size:28px;font-weight:800;color:var(--yellow);display:block;line-height:1}
 .hero-stat span{font-size:11px;color:rgba(255,255,255,0.45);text-transform:uppercase;letter-spacing:1.5px;margin-top:4px;display:block}
-.hero-visual{display:grid;grid-template-columns:repeat(3,1fr);gap:8px;opacity:.85}
-.hero-icon-card{background:rgba(255,255,255,0.04);border:1px solid rgba(255,255,255,0.07);border-radius:var(--radius);padding:16px 10px;text-align:center;transition:all .3s;cursor:default}
-.hero-icon-card:hover{background:rgba(201,168,0,0.09);border-color:rgba(201,168,0,0.25);transform:translateY(-2px)}
-.hero-icon-card div{font-size:24px;line-height:1}
-.hero-icon-card p{font-size:10px;color:rgba(255,255,255,0.45);margin-top:7px;letter-spacing:0.5px;font-weight:500}
+.hero-visual{display:flex;align-items:center;justify-content:center}
+.hero-video-wrap{width:420px;max-width:100%;border-radius:12px;overflow:hidden;box-shadow:0 8px 40px rgba(0,0,0,0.5);border:1px solid rgba(255,255,255,0.1);aspect-ratio:16/9}
+.hero-video-wrap iframe{width:100%;height:100%;display:block}
 
 /* ── PROMO STRIP ── */
 .promo-strip{background:var(--black);border-top:1px solid #2a2a2a}
@@ -503,12 +501,12 @@ button{cursor:pointer;border:none;font-family:var(--font-main)}
       </div>
     </div>
     <div class="hero-visual">
-      <div class="hero-icon-card"><div>🔧</div><p>Herramientas</p></div>
-      <div class="hero-icon-card"><div>⚡</div><p>Electricidad</p></div>
-      <div class="hero-icon-card"><div>🚿</div><p>Plomería</p></div>
-      <div class="hero-icon-card"><div>🖌️</div><p>Pinturas</p></div>
-      <div class="hero-icon-card"><div>🔩</div><p>Ferretería</p></div>
-      <div class="hero-icon-card"><div>🏗️</div><p>Construcción</p></div>
+      <div class="hero-video-wrap">
+        <iframe src="https://www.youtube.com/embed/Mti9JGeDPUA?rel=0&modestbranding=1&color=white"
+          title="Ferretería Sznaiberg" frameborder="0"
+          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+          allowfullscreen></iframe>
+      </div>
     </div>
   </div>
 </section>
