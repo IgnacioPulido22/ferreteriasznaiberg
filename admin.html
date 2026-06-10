@@ -262,6 +262,9 @@ tr:hover td{background:#fafaf7}
 /* ── BADGE ── */
 .badge{display:inline-flex;align-items:center;padding:2px 7px;border-radius:3px;font-size:10.5px;font-weight:700;text-transform:uppercase;letter-spacing:.5px}
 .badge-yellow{background:rgba(230,187,0,.15);color:#92700a}
+tr.row-selected{background:#eff6ff}
+tr.row-selected:hover{background:#dbeafe}
+input[type=checkbox]{width:15px;height:15px;cursor:pointer;accent-color:#3b82f6}
 .badge-red{background:rgba(229,62,62,.12);color:var(--red)}
 .badge-green{background:rgba(56,161,105,.12);color:var(--green)}
 
@@ -395,10 +398,22 @@ tr:hover td{background:#fafaf7}
           <span>Mostrando <strong id="tableCount">0</strong> productos</span>
           <span id="unsavedBadge" style="display:none" class="badge badge-yellow">⚠️ Cambios sin guardar</span>
         </div>
+
+        <!-- BULK ACTION BAR -->
+        <div id="bulkBar" style="display:none;align-items:center;gap:10px;background:#1e293b;border-radius:8px;padding:10px 16px;margin-bottom:10px;flex-wrap:wrap">
+          <span id="bulkCount" style="color:#fff;font-weight:700;font-size:13px;min-width:110px"></span>
+          <button class="btn btn-danger btn-sm" onclick="bulkDelete()">🗑 Eliminar</button>
+          <button class="btn btn-secondary btn-sm" onclick="bulkChangeCat()">📁 Cambiar categoría</button>
+          <button class="btn btn-secondary btn-sm" onclick="bulkChangePricePct()">% Cambiar precio</button>
+          <button class="btn btn-secondary btn-sm" onclick="bulkSetBadge()">🏷 Poner badge</button>
+          <button class="btn btn-sm" style="background:rgba(255,255,255,0.1);color:#fff;margin-left:auto" onclick="clearSelection()">✕ Desmarcar</button>
+        </div>
+
         <div style="overflow-x:auto">
           <table>
             <thead>
               <tr>
+                <th style="width:36px;text-align:center"><input type="checkbox" id="selectAll" onchange="toggleSelectAll(this.checked)" title="Seleccionar todos"></th>
                 <th>ID</th>
                 <th class="sortable" onclick="toggleSort('name')">Nombre <span class="sort-icon" id="sort-name">↕</span></th>
                 <th>Categoría</th>
@@ -597,6 +612,7 @@ let sortField = null, sortDir = 1;
 let hasUnsaved = false;
 let confirmDeleteId = null;
 let editingId = null;
+let selectedIds = new Set();
 
 /* ============================================================
    LOGIN — valida contra el servidor
@@ -762,6 +778,8 @@ function buildProductsPanel() {
 
 function applyFilters() {
   currentPage = 1;
+  selectedIds.clear();
+  updateBulkBar();
   const q = document.getElementById('prodSearch').value.trim().toUpperCase();
   const cat = document.getElementById('catFilter').value;
   const sort = document.getElementById('sortFilter').value;
@@ -802,7 +820,9 @@ function renderTable() {
     const catIcon = CATS.find(c=>c.id===p.cat)?.icon || '📦';
     const desc = p.description ? `<small>${esc(p.description).slice(0,60)}${p.description.length>60?'…':''}</small>` : '';
     const badge = p.badge ? `<span class="badge badge-yellow" style="margin-left:6px">${esc(p.badge)}</span>` : '';
-    return `<tr>
+    const checked = selectedIds.has(p.id) ? 'checked' : '';
+    return `<tr class="${selectedIds.has(p.id)?'row-selected':''}">
+      <td style="text-align:center"><input type="checkbox" ${checked} onchange="toggleSelect(${p.id},this.checked)"></td>
       <td class="td-id">#${p.id}</td>
       <td class="td-name">${esc(p.name)}${badge}${desc}</td>
       <td class="td-cat"><span class="cat-chip">${catIcon} ${esc(p.cat)}</span></td>
@@ -855,6 +875,110 @@ function toggleSort(field) {
   document.querySelectorAll('.sort-icon').forEach(el => el.textContent='↕');
   document.getElementById('sort-'+field).textContent = sortDir===1?'↑':'↓';
   applyFilters();
+}
+
+/* ============================================================
+   SELECCIÓN MÚLTIPLE
+============================================================ */
+function toggleSelect(id, checked) {
+  if (checked) selectedIds.add(id); else selectedIds.delete(id);
+  updateBulkBar();
+  updateSelectAllCheckbox();
+}
+
+function toggleSelectAll(checked) {
+  const page = filtered.slice((currentPage-1)*PAGE_SIZE, currentPage*PAGE_SIZE);
+  page.forEach(p => { if (checked) selectedIds.add(p.id); else selectedIds.delete(p.id); });
+  renderTable();
+  updateBulkBar();
+}
+
+function clearSelection() {
+  selectedIds.clear();
+  renderTable();
+  updateBulkBar();
+}
+
+function updateBulkBar() {
+  const bar = document.getElementById('bulkBar');
+  const n = selectedIds.size;
+  if (n > 0) {
+    bar.style.display = 'flex';
+    document.getElementById('bulkCount').textContent = `${n} seleccionado${n>1?'s':''}`;
+  } else {
+    bar.style.display = 'none';
+  }
+}
+
+function updateSelectAllCheckbox() {
+  const page = filtered.slice((currentPage-1)*PAGE_SIZE, currentPage*PAGE_SIZE);
+  const allChecked = page.length > 0 && page.every(p => selectedIds.has(p.id));
+  const cb = document.getElementById('selectAll');
+  if (cb) cb.checked = allChecked;
+}
+
+function bulkDelete() {
+  const n = selectedIds.size;
+  if (!n) return;
+  if (!confirm(`¿Eliminar ${n} producto${n>1?'s':''}? Esta acción no se puede deshacer.`)) return;
+  PRODUCTS = PRODUCTS.filter(p => !selectedIds.has(p.id));
+  selectedIds.clear();
+  markUnsaved();
+  applyFilters();
+  updateBulkBar();
+  showToast(`🗑 ${n} producto${n>1?'s':''} eliminado${n>1?'s':''}`);
+}
+
+function bulkChangeCat() {
+  if (!selectedIds.size) return;
+  const opts = CATS.map(c => `<option value="${c.id}">${c.icon} ${c.id}</option>`).join('');
+  const sel = `<select id="bulkCatSel" style="width:100%;padding:8px;border-radius:6px;border:1px solid #ccc;margin-top:8px">${opts}</select>`;
+  const div = document.createElement('div');
+  div.innerHTML = `<p style="margin-bottom:4px">Nueva categoría para <b>${selectedIds.size}</b> producto${selectedIds.size>1?'s':''}:</p>${sel}`;
+  if (!confirm(`Cambiar categoría de ${selectedIds.size} productos. Continuar?`)) return;
+  // Usar prompt con lista
+  const newCat = prompt(`Categorías disponibles:\n${CATS.map(c=>c.id).join('\n')}\n\nEscribí la categoría exacta:`);
+  if (!newCat) return;
+  const found = CATS.find(c => c.id.toLowerCase() === newCat.trim().toLowerCase());
+  if (!found) { alert('Categoría no encontrada.'); return; }
+  let changed = 0;
+  PRODUCTS.forEach(p => { if (selectedIds.has(p.id)) { p.cat = found.id; changed++; } });
+  markUnsaved();
+  applyFilters();
+  showToast(`📁 Categoría cambiada en ${changed} productos`);
+}
+
+function bulkChangePricePct() {
+  if (!selectedIds.size) return;
+  const pct = parseFloat(prompt(`Porcentaje de cambio para ${selectedIds.size} producto${selectedIds.size>1?'s':''}.\nEjemplos: 10 (aumenta 10%), -5 (reduce 5%)`));
+  if (isNaN(pct)) return;
+  let changed = 0;
+  PRODUCTS.forEach(p => {
+    if (selectedIds.has(p.id)) {
+      p.price = Math.round(p.price * (1 + pct/100));
+      if (p.price < 1) p.price = 1;
+      changed++;
+    }
+  });
+  markUnsaved();
+  applyFilters();
+  showToast(`💰 Precio ${pct>0?'+':''}${pct}% aplicado a ${changed} productos`);
+}
+
+function bulkSetBadge() {
+  if (!selectedIds.size) return;
+  const badge = prompt(`Badge para ${selectedIds.size} producto${selectedIds.size>1?'s':''}.\nEj: OFERTA, NUEVO, PROMO (vacío para quitar):`);
+  if (badge === null) return;
+  let changed = 0;
+  PRODUCTS.forEach(p => {
+    if (selectedIds.has(p.id)) {
+      if (badge.trim()) p.badge = badge.trim(); else delete p.badge;
+      changed++;
+    }
+  });
+  markUnsaved();
+  applyFilters();
+  showToast(`🏷 Badge actualizado en ${changed} productos`);
 }
 
 /* ============================================================
