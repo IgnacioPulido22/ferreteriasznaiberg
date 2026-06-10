@@ -98,27 +98,24 @@ button{cursor:pointer;border:none;font-family:var(--font-main)}
 .cat-nav-btn.active{color:var(--yellow-cta);border-bottom-color:var(--yellow-cta);font-weight:700}
 
 /* ── HERO ── */
-.hero{background:var(--black);position:relative;overflow:hidden;min-height:440px;display:flex;align-items:center}
-.hero-bg{position:absolute;inset:0;background:linear-gradient(135deg,#0d0d0d 0%,#1a1a1a 45%,#242424 100%)}
-.hero-pattern{position:absolute;inset:0;opacity:0.03;background-image:repeating-linear-gradient(0deg,transparent,transparent 39px,rgba(255,255,255,1) 39px,rgba(255,255,255,1) 40px),repeating-linear-gradient(90deg,transparent,transparent 39px,rgba(255,255,255,1) 39px,rgba(255,255,255,1) 40px)}
-.hero-accent{position:absolute;right:0;top:0;bottom:0;width:40%;background:linear-gradient(135deg,transparent,rgba(201,168,0,0.06))}
-.hero-inner{position:relative;max-width:1400px;margin:0 auto;padding:64px 24px;display:grid;grid-template-columns:1fr auto;gap:48px;align-items:center;width:100%}
-.hero-content{max-width:580px}
+.hero{position:relative;overflow:hidden;min-height:480px;display:flex;align-items:center}
+.hero-video-bg{position:absolute;inset:0;z-index:0;pointer-events:none}
+.hero-video-bg iframe{position:absolute;top:50%;left:50%;transform:translate(-50%,-50%);width:100vw;height:56.25vw;min-height:100%;min-width:177.78vh}
+.hero-overlay{position:absolute;inset:0;z-index:1;background:linear-gradient(135deg,rgba(0,0,0,0.82) 0%,rgba(0,0,0,0.65) 60%,rgba(0,0,0,0.5) 100%)}
+.hero-inner{position:relative;z-index:2;max-width:1400px;margin:0 auto;padding:72px 24px;width:100%}
+.hero-content{max-width:640px}
 .hero-badge{display:inline-flex;align-items:center;gap:8px;background:rgba(201,168,0,0.12);border:1px solid rgba(201,168,0,0.25);padding:6px 14px;border-radius:3px;font-size:11px;font-weight:700;color:var(--yellow);letter-spacing:2px;text-transform:uppercase;margin-bottom:22px}
-.hero-title{font-family:var(--font-title);font-size:clamp(30px,4vw,52px);font-weight:900;color:#fff;line-height:1.05;margin-bottom:18px;letter-spacing:-1.5px}
+.hero-title{font-family:var(--font-title);font-size:clamp(30px,4vw,56px);font-weight:900;color:#fff;line-height:1.05;margin-bottom:18px;letter-spacing:-1.5px}
 .hero-title span{color:var(--yellow)}
-.hero-sub{color:rgba(255,255,255,0.55);font-size:16px;margin-bottom:36px;line-height:1.65;max-width:480px}
+.hero-sub{color:rgba(255,255,255,0.65);font-size:17px;margin-bottom:36px;line-height:1.65;max-width:520px}
 .hero-ctas{display:flex;gap:12px;flex-wrap:wrap}
 .btn-primary{display:inline-flex;align-items:center;gap:8px;background:var(--yellow-cta);color:var(--black);padding:14px 28px;border-radius:var(--radius);font-weight:700;font-size:14px;font-family:var(--font-title);letter-spacing:0.3px;transition:all .2s;border:none;cursor:pointer}
 .btn-primary:hover{background:var(--yellow);transform:translateY(-1px);box-shadow:0 6px 20px rgba(201,168,0,0.35)}
 .btn-secondary{display:inline-flex;align-items:center;gap:8px;background:transparent;color:#fff;padding:13px 28px;border-radius:var(--radius);font-weight:600;font-size:14px;border:1px solid rgba(255,255,255,0.18);transition:all .2s;cursor:pointer}
 .btn-secondary:hover{border-color:rgba(255,255,255,0.45);background:rgba(255,255,255,0.05)}
-.hero-stats{display:flex;gap:36px;margin-top:40px;padding-top:32px;border-top:1px solid rgba(255,255,255,0.07)}
+.hero-stats{display:flex;gap:36px;margin-top:40px;padding-top:32px;border-top:1px solid rgba(255,255,255,0.12)}
 .hero-stat strong{font-family:var(--font-title);font-size:28px;font-weight:800;color:var(--yellow);display:block;line-height:1}
-.hero-stat span{font-size:11px;color:rgba(255,255,255,0.45);text-transform:uppercase;letter-spacing:1.5px;margin-top:4px;display:block}
-.hero-visual{display:flex;align-items:center;justify-content:center}
-.hero-video-wrap{width:420px;max-width:100%;border-radius:12px;overflow:hidden;box-shadow:0 8px 40px rgba(0,0,0,0.5);border:1px solid rgba(255,255,255,0.1);aspect-ratio:16/9}
-.hero-video-wrap iframe{width:100%;height:100%;display:block}
+.hero-stat span{font-size:11px;color:rgba(255,255,255,0.55);text-transform:uppercase;letter-spacing:1.5px;margin-top:4px;display:block}
 
 /* ── PROMO STRIP ── */
 .promo-strip{background:var(--black);border-top:1px solid #2a2a2a}
@@ -308,8 +305,7 @@ button{cursor:pointer;border:none;font-family:var(--font-main)}
   .footer-inner{grid-template-columns:1fr 1fr;row-gap:32px}
 }
 @media(max-width:800px){
-  .hero-inner{grid-template-columns:1fr;padding:44px 20px}
-  .hero-visual{display:none}
+  .hero-inner{padding:44px 20px}
   .hero-title{font-size:clamp(26px,7vw,40px)}
   .cat-nav{top:58px}
   .section{padding:36px 0}
@@ -481,7 +477,13 @@ button{cursor:pointer;border:none;font-family:var(--font-main)}
 
 <!-- HERO -->
 <section class="hero">
-  <div class="hero-bg"></div><div class="hero-pattern"></div><div class="hero-accent"></div>
+  <div class="hero-video-bg">
+    <iframe src="https://www.youtube.com/embed/Mti9JGeDPUA?autoplay=1&mute=1&loop=1&playlist=Mti9JGeDPUA&controls=0&rel=0&modestbranding=1&playsinline=1&enablejsapi=1"
+      title="Ferretería Sznaiberg" frameborder="0"
+      allow="autoplay; accelerometer; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+      allowfullscreen></iframe>
+  </div>
+  <div class="hero-overlay"></div>
   <div class="hero-inner">
     <div class="hero-content">
       <div class="hero-badge"><span>★</span> Ferretería Industrial &amp; Materiales</div>
@@ -498,14 +500,6 @@ button{cursor:pointer;border:none;font-family:var(--font-main)}
         <div class="hero-stat"><strong id="heroCount">+4.000</strong><span>Productos</span></div>
         <div class="hero-stat"><strong>13</strong><span>Categorías</span></div>
         <div class="hero-stat"><strong>+30</strong><span>Marcas</span></div>
-      </div>
-    </div>
-    <div class="hero-visual">
-      <div class="hero-video-wrap">
-        <iframe src="https://www.youtube.com/embed/Mti9JGeDPUA?rel=0&modestbranding=1&color=white"
-          title="Ferretería Sznaiberg" frameborder="0"
-          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-          allowfullscreen></iframe>
       </div>
     </div>
   </div>
