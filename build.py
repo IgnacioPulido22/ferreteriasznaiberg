@@ -98,12 +98,15 @@ button{cursor:pointer;border:none;font-family:var(--font-main)}
 .cat-nav-btn.active{color:var(--yellow-cta);border-bottom-color:var(--yellow-cta);font-weight:700}
 
 /* ── HERO ── */
-.hero{position:relative;overflow:hidden;min-height:480px;display:flex;align-items:center}
-.hero-video-bg{position:absolute;top:0;left:0;width:100%;height:100%;z-index:0;pointer-events:none;overflow:hidden}
-.hero-video-bg video{position:absolute;top:0;left:0;width:100%;height:100%;object-fit:cover}
-.hero-overlay{position:absolute;inset:0;z-index:1;background:linear-gradient(135deg,rgba(0,0,0,0.82) 0%,rgba(0,0,0,0.65) 60%,rgba(0,0,0,0.5) 100%)}
-.hero-inner{position:relative;z-index:2;max-width:1400px;margin:0 auto;padding:72px 24px;width:100%}
-.hero-content{max-width:640px}
+.hero{background:var(--black);position:relative;overflow:hidden;min-height:480px;display:flex;align-items:center}
+.hero-bg{position:absolute;inset:0;background:linear-gradient(135deg,#0d0d0d 0%,#1a1a1a 45%,#242424 100%)}
+.hero-pattern{position:absolute;inset:0;opacity:0.03;background-image:repeating-linear-gradient(0deg,transparent,transparent 39px,rgba(255,255,255,1) 39px,rgba(255,255,255,1) 40px),repeating-linear-gradient(90deg,transparent,transparent 39px,rgba(255,255,255,1) 39px,rgba(255,255,255,1) 40px)}
+.hero-inner{position:relative;z-index:1;max-width:1400px;margin:0 auto;padding:64px 24px;display:grid;grid-template-columns:1fr 1fr;gap:56px;align-items:center;width:100%}
+.hero-content{max-width:560px}
+.hero-video-card{position:relative;border-radius:16px;overflow:hidden;box-shadow:0 20px 60px rgba(0,0,0,0.5);border:1px solid rgba(255,255,255,0.1);aspect-ratio:9/16;max-height:520px;max-width:300px;margin:0 auto}
+.hero-video-card video{width:100%;height:100%;object-fit:cover;display:block}
+.hero-video-badge{position:absolute;bottom:20px;right:16px;background:rgba(201,168,0,0.92);color:#1a1a1a;padding:10px 14px;border-radius:8px;font-family:var(--font-title);font-weight:800;font-size:11px;letter-spacing:1px;text-align:center;text-transform:uppercase;backdrop-filter:blur(8px)}
+.hero-video-badge strong{display:block;font-size:22px;letter-spacing:-0.5px}
 .hero-badge{display:inline-flex;align-items:center;gap:8px;background:rgba(201,168,0,0.12);border:1px solid rgba(201,168,0,0.25);padding:6px 14px;border-radius:3px;font-size:11px;font-weight:700;color:var(--yellow);letter-spacing:2px;text-transform:uppercase;margin-bottom:22px}
 .hero-title{font-family:var(--font-title);font-size:clamp(30px,4vw,56px);font-weight:900;color:#fff;line-height:1.05;margin-bottom:18px;letter-spacing:-1.5px}
 .hero-title span{color:var(--yellow)}
@@ -305,7 +308,8 @@ button{cursor:pointer;border:none;font-family:var(--font-main)}
   .footer-inner{grid-template-columns:1fr 1fr;row-gap:32px}
 }
 @media(max-width:800px){
-  .hero-inner{padding:44px 20px}
+  .hero-inner{grid-template-columns:1fr;padding:44px 20px}
+  .hero-video-card{display:none}
   .hero-title{font-size:clamp(26px,7vw,40px)}
   .cat-nav{top:58px}
   .section{padding:36px 0}
@@ -477,12 +481,7 @@ button{cursor:pointer;border:none;font-family:var(--font-main)}
 
 <!-- HERO -->
 <section class="hero">
-  <div class="hero-video-bg">
-    <video autoplay muted loop playsinline preload="auto">
-      <source src="videos/hero.mp4" type="video/mp4">
-    </video>
-  </div>
-  <div class="hero-overlay"></div>
+  <div class="hero-bg"></div><div class="hero-pattern"></div>
   <div class="hero-inner">
     <div class="hero-content">
       <div class="hero-badge"><span>★</span> Ferretería Industrial &amp; Materiales</div>
@@ -500,6 +499,12 @@ button{cursor:pointer;border:none;font-family:var(--font-main)}
         <div class="hero-stat"><strong>13</strong><span>Categorías</span></div>
         <div class="hero-stat"><strong>+30</strong><span>Marcas</span></div>
       </div>
+    </div>
+    <div class="hero-video-card">
+      <video autoplay muted loop playsinline preload="auto">
+        <source src="videos/hero.mp4" type="video/mp4">
+      </video>
+      <div class="hero-video-badge"><strong>+4.000</strong>Productos</div>
     </div>
   </div>
 </section>
