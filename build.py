@@ -50,7 +50,8 @@ button{cursor:pointer;border:none;font-family:var(--font-main)}
 #app-loader.visible{pointer-events:auto}
 #app-loader.fade-out{opacity:0;pointer-events:none}
 .loader-logo{display:flex;align-items:center;gap:14px;margin-bottom:32px}
-.loader-mark{width:52px;height:52px;background:var(--yellow-cta);border-radius:6px;display:flex;align-items:center;justify-content:center;font-size:24px;font-weight:900;color:var(--black);font-family:var(--font-title)}
+.loader-mark{width:64px;height:64px;border-radius:8px;overflow:hidden;flex-shrink:0}
+.loader-mark img{width:100%;height:100%;object-fit:cover;display:block}
 .loader-name{color:#fff;font-family:var(--font-title);font-size:22px;font-weight:800;letter-spacing:-0.5px}
 .loader-name span{display:block;font-size:11px;font-weight:500;color:var(--yellow);letter-spacing:3px;text-transform:uppercase;margin-top:2px}
 .loader-bar{width:220px;height:3px;background:rgba(255,255,255,0.1);border-radius:3px;overflow:hidden}
@@ -115,9 +116,7 @@ button{cursor:pointer;border:none;font-family:var(--font-main)}
 .btn-primary:hover{background:var(--yellow);transform:translateY(-1px);box-shadow:0 6px 20px rgba(201,168,0,0.35)}
 .btn-secondary{display:inline-flex;align-items:center;gap:8px;background:transparent;color:#fff;padding:13px 28px;border-radius:var(--radius);font-weight:600;font-size:14px;border:1px solid rgba(255,255,255,0.18);transition:all .2s;cursor:pointer}
 .btn-secondary:hover{border-color:rgba(255,255,255,0.45);background:rgba(255,255,255,0.05)}
-.hero-stats{display:flex;align-items:center;gap:36px;margin-top:40px;padding-top:32px;border-top:1px solid rgba(255,255,255,0.12)}
-.hero-logo-img{height:52px;width:52px;border-radius:8px;overflow:hidden;margin-left:auto;flex-shrink:0}
-.hero-logo-img img{width:100%;height:100%;object-fit:cover;display:block}
+.hero-stats{display:flex;gap:36px;margin-top:40px;padding-top:32px;border-top:1px solid rgba(255,255,255,0.12)}
 .hero-stat strong{font-family:var(--font-title);font-size:28px;font-weight:800;color:var(--yellow);display:block;line-height:1}
 .hero-stat span{font-size:11px;color:rgba(255,255,255,0.55);text-transform:uppercase;letter-spacing:1.5px;margin-top:4px;display:block}
 
@@ -422,7 +421,7 @@ button{cursor:pointer;border:none;font-family:var(--font-main)}
 <!-- LOADER -->
 <div id="app-loader" class="visible">
   <div class="loader-logo">
-    <div class="loader-mark">S</div>
+    <div class="loader-mark"><img src="images/logo.jpg" alt="Ferretería Sznaiberg"></div>
     <div>
       <div class="loader-name">Sznaiberg<span>Ferretería &amp; Materiales</span></div>
     </div>
@@ -500,7 +499,6 @@ button{cursor:pointer;border:none;font-family:var(--font-main)}
         <div class="hero-stat"><strong id="heroCount">+4.000</strong><span>Productos</span></div>
         <div class="hero-stat"><strong>13</strong><span>Categorías</span></div>
         <div class="hero-stat"><strong>+30</strong><span>Marcas</span></div>
-        <div class="hero-logo-img"><img src="images/logo.jpg" alt="Ferretería Sznaiberg"></div>
       </div>
     </div>
     <div class="hero-video-card">
