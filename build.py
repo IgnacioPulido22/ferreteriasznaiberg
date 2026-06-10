@@ -309,8 +309,8 @@ button{cursor:pointer;border:none;font-family:var(--font-main)}
   .footer-inner{grid-template-columns:1fr 1fr;row-gap:32px}
 }
 @media(max-width:800px){
-  .hero-inner{grid-template-columns:1fr;padding:44px 20px}
-  .hero-video-card{display:none}
+  .hero-inner{grid-template-columns:1fr;padding:32px 20px 20px;gap:28px}
+  .hero-video-card{max-height:340px;width:auto;margin:0 auto}
   .hero-title{font-size:clamp(26px,7vw,40px)}
   .cat-nav{top:58px}
   .section{padding:36px 0}
