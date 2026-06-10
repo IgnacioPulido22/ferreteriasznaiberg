@@ -115,7 +115,9 @@ button{cursor:pointer;border:none;font-family:var(--font-main)}
 .btn-primary:hover{background:var(--yellow);transform:translateY(-1px);box-shadow:0 6px 20px rgba(201,168,0,0.35)}
 .btn-secondary{display:inline-flex;align-items:center;gap:8px;background:transparent;color:#fff;padding:13px 28px;border-radius:var(--radius);font-weight:600;font-size:14px;border:1px solid rgba(255,255,255,0.18);transition:all .2s;cursor:pointer}
 .btn-secondary:hover{border-color:rgba(255,255,255,0.45);background:rgba(255,255,255,0.05)}
-.hero-stats{display:flex;gap:36px;margin-top:40px;padding-top:32px;border-top:1px solid rgba(255,255,255,0.12)}
+.hero-stats{display:flex;align-items:center;gap:36px;margin-top:40px;padding-top:32px;border-top:1px solid rgba(255,255,255,0.12)}
+.hero-logo-img{height:52px;width:52px;border-radius:8px;overflow:hidden;margin-left:auto;flex-shrink:0}
+.hero-logo-img img{width:100%;height:100%;object-fit:cover;display:block}
 .hero-stat strong{font-family:var(--font-title);font-size:28px;font-weight:800;color:var(--yellow);display:block;line-height:1}
 .hero-stat span{font-size:11px;color:rgba(255,255,255,0.55);text-transform:uppercase;letter-spacing:1.5px;margin-top:4px;display:block}
 
@@ -498,6 +500,7 @@ button{cursor:pointer;border:none;font-family:var(--font-main)}
         <div class="hero-stat"><strong id="heroCount">+4.000</strong><span>Productos</span></div>
         <div class="hero-stat"><strong>13</strong><span>Categorías</span></div>
         <div class="hero-stat"><strong>+30</strong><span>Marcas</span></div>
+        <div class="hero-logo-img"><img src="images/logo.jpg" alt="Ferretería Sznaiberg"></div>
       </div>
     </div>
     <div class="hero-video-card">
