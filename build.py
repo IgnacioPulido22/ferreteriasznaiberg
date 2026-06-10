@@ -99,8 +99,8 @@ button{cursor:pointer;border:none;font-family:var(--font-main)}
 
 /* ── HERO ── */
 .hero{position:relative;overflow:hidden;min-height:480px;display:flex;align-items:center}
-.hero-video-bg{position:absolute;inset:0;z-index:0;pointer-events:none}
-.hero-video-bg iframe{position:absolute;top:50%;left:50%;transform:translate(-50%,-50%);width:100vw;height:56.25vw;min-height:100%;min-width:177.78vh}
+.hero-video-bg{position:absolute;inset:0;z-index:0;pointer-events:none;overflow:hidden}
+.hero-video-bg video{position:absolute;top:50%;left:50%;transform:translate(-50%,-50%);min-width:100%;min-height:100%;width:auto;height:auto;object-fit:cover}
 .hero-overlay{position:absolute;inset:0;z-index:1;background:linear-gradient(135deg,rgba(0,0,0,0.82) 0%,rgba(0,0,0,0.65) 60%,rgba(0,0,0,0.5) 100%)}
 .hero-inner{position:relative;z-index:2;max-width:1400px;margin:0 auto;padding:72px 24px;width:100%}
 .hero-content{max-width:640px}
@@ -478,10 +478,9 @@ button{cursor:pointer;border:none;font-family:var(--font-main)}
 <!-- HERO -->
 <section class="hero">
   <div class="hero-video-bg">
-    <iframe src="https://www.youtube.com/embed/Mti9JGeDPUA?autoplay=1&mute=1&loop=1&playlist=Mti9JGeDPUA&controls=0&rel=0&modestbranding=1&playsinline=1&enablejsapi=1"
-      title="Ferretería Sznaiberg" frameborder="0"
-      allow="autoplay; accelerometer; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-      allowfullscreen></iframe>
+    <video autoplay muted loop playsinline preload="auto">
+      <source src="videos/hero.mp4" type="video/mp4">
+    </video>
   </div>
   <div class="hero-overlay"></div>
   <div class="hero-inner">
