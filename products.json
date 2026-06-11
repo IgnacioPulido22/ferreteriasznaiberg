@@ -2804,7 +2804,7 @@
         "name": "CANO FLEXIBLE 5/8 BLANCO TECNOCOM (METRO) - (CANOS PVC FLEXIBLES  TECNOCOM)",
         "price": 400,
         "cat": "Plomeria y Sanitarios",
-        "img": ""
+        "img": "imagenes_productos/prod_401.png"
     },
     {
         "id": 402,
@@ -3917,7 +3917,7 @@
         "name": "CANO DE DUCHA 90°  35CM",
         "price": 4250,
         "cat": "Plomeria y Sanitarios",
-        "img": ""
+        "img": "imagenes_productos/prod_560.png"
     },
     {
         "id": 561,
@@ -3938,14 +3938,14 @@
         "name": "PICO CANILLA S 35CM",
         "price": 4350,
         "cat": "Plomeria y Sanitarios",
-        "img": ""
+        "img": "imagenes_productos/prod_563.png"
     },
     {
         "id": 564,
         "name": "CANILLA MESADA CANO MOVIL VOL. ASAS  ITEPA",
         "price": 7050,
         "cat": "Plomeria y Sanitarios",
-        "img": ""
+        "img": "imagenes_productos/prod_564.png"
     },
     {
         "id": 565,
@@ -4085,7 +4085,7 @@
         "name": "PICO PARA CANILLA TIPO L",
         "price": 8600,
         "cat": "Plomeria y Sanitarios",
-        "img": ""
+        "img": "imagenes_productos/prod_584.png"
     },
     {
         "id": 585,
@@ -6702,14 +6702,13 @@
         "name": "GRIF CANILLA 1 AGUA PLASTICA PARED",
         "price": 17250,
         "cat": "Plomeria y Sanitarios",
-        "img": ""
+        "img": "imagenes_productos/prod_958.png"
     },
     {
         "id": 959,
         "name": "RESISTENCIA DUCHA LORENZZETTI - -",
         "price": 14950,
-        "cat": "Electricidad e Iluminacion",
-        "img": ""
+        "cat": "Electricidad e Iluminacion"
     },
     {
         "id": 960,
@@ -6835,7 +6834,7 @@
         "name": "GRIF CANILLA MEZCLADORA 33 PICO J",
         "price": 57500,
         "cat": "Plomeria y Sanitarios",
-        "img": ""
+        "img": "imagenes_productos/prod_977.png"
     },
     {
         "id": 978,
@@ -7010,7 +7009,7 @@
         "name": "GRIF CANILLA PLASTICA 1 AGUA MESADA",
         "price": 13600,
         "cat": "Plomeria y Sanitarios",
-        "img": ""
+        "img": "imagenes_productos/prod_1002.png"
     },
     {
         "id": 1003,
@@ -7430,7 +7429,7 @@
         "name": "FLEXIBLE 1/2 30CM DUROX BRONCEADO",
         "price": 7150,
         "cat": "Materiales Generales",
-        "img": ""
+        "img": "imagenes_productos/prod_1062.png"
     },
     {
         "id": 1063,
@@ -7451,7 +7450,7 @@
         "name": "FLEXIBLE 3/4 40CM",
         "price": 14000,
         "cat": "Materiales Generales",
-        "img": ""
+        "img": "imagenes_productos/prod_1065.png"
     },
     {
         "id": 1066,
@@ -7465,7 +7464,7 @@
         "name": "GRIF FIJACION DE CANILLAS",
         "price": 4600,
         "cat": "Plomeria y Sanitarios",
-        "img": ""
+        "img": "imagenes_productos/prod_1067.png"
     },
     {
         "id": 1068,
@@ -7527,8 +7526,7 @@
         "id": 1076,
         "name": "LINTERNA MINERA COB CAJA -",
         "price": 10700,
-        "cat": "Materiales Generales",
-        "img": ""
+        "cat": "Materiales Generales"
     },
     {
         "id": 1077,
@@ -7562,8 +7560,7 @@
         "id": 1081,
         "name": "GRIF MONOCOMANDO  CISNE METALICA",
         "price": 46350,
-        "cat": "Plomeria y Sanitarios",
-        "img": ""
+        "cat": "Plomeria y Sanitarios"
     },
     {
         "id": 1082,
@@ -7584,7 +7581,7 @@
         "name": "GRIF FLEXIBLE 1/2 40CM",
         "price": 9800,
         "cat": "Plomeria y Sanitarios",
-        "img": ""
+        "img": "imagenes_productos/prod_1084.png"
     },
     {
         "id": 1085,
@@ -7598,7 +7595,7 @@
         "name": "GRIF DUCHADOR HIGIENICO 1668",
         "price": 20300,
         "cat": "Plomeria y Sanitarios",
-        "img": ""
+        "img": "imagenes_productos/prod_1086.png"
     },
     {
         "id": 1087,
@@ -7737,8 +7734,7 @@
         "id": 1106,
         "name": "NIVEL LASER CAJA",
         "price": 34600,
-        "cat": "Herramientas",
-        "img": ""
+        "cat": "Herramientas"
     },
     {
         "id": 1107,
@@ -7766,7 +7762,7 @@
         "name": "GRIF MONOCOMANDO  ALTA CROMO",
         "price": 62300,
         "cat": "Plomeria y Sanitarios",
-        "img": ""
+        "img": "imagenes_productos/prod_1110.png"
     },
     {
         "id": 1111,
@@ -12539,36 +12535,31 @@
         "id": 1792,
         "name": "TARUGO COMUN EN CAJA No 8 x UNIDAD",
         "price": 50,
-        "cat": "Ferreteria y Fijacion",
-        "img": ""
+        "cat": "Ferreteria y Fijacion"
     },
     {
         "id": 1793,
         "name": "TARUGO COMUN EN CAJA No10 x UNIDAD",
         "price": 100,
-        "cat": "Ferreteria y Fijacion",
-        "img": ""
+        "cat": "Ferreteria y Fijacion"
     },
     {
         "id": 1794,
         "name": "TARUGO COMUN EN CAJA No12 x UNIDAD",
         "price": 200,
-        "cat": "Ferreteria y Fijacion",
-        "img": ""
+        "cat": "Ferreteria y Fijacion"
     },
     {
         "id": 1795,
         "name": "TARUGO CON ARANDELA EN CAJA No 6 x UNIDAD",
         "price": 50,
-        "cat": "Ferreteria y Fijacion",
-        "img": ""
+        "cat": "Ferreteria y Fijacion"
     },
     {
         "id": 1796,
         "name": "TARUGO CON ARANDELA EN CAJA No12 x UNIDAD",
         "price": 250,
-        "cat": "Ferreteria y Fijacion",
-        "img": ""
+        "cat": "Ferreteria y Fijacion"
     },
     {
         "id": 1797,
@@ -16347,8 +16338,7 @@
         "id": 2336,
         "name": "EMBUDO PICO FLEXIBLE LARGO",
         "price": 6000,
-        "cat": "Materiales Generales",
-        "img": ""
+        "cat": "Materiales Generales"
     },
     {
         "id": 2337,
@@ -18741,8 +18731,7 @@
         "id": 2678,
         "name": "LAMINA DE MASILLAR 8X 10 ACERO FLEXIBLE",
         "price": 2100,
-        "cat": "Adhesivos y Selladores",
-        "img": ""
+        "cat": "Adhesivos y Selladores"
     },
     {
         "id": 2679,
@@ -19400,7 +19389,7 @@
         "name": "Descarga Lavatorio Pileta Flexible Cromado Plastico",
         "price": 5500,
         "cat": "Plomeria y Sanitarios",
-        "img": ""
+        "img": "imagenes_productos/prod_2772.png"
     },
     {
         "id": 2773,
@@ -20156,7 +20145,7 @@
         "name": "GRIFERIA COCINA NEGRA o CROMO MONOCOMANDO",
         "price": 40000,
         "cat": "Plomeria y Sanitarios",
-        "img": ""
+        "img": "imagenes_productos/prod_2880.png"
     },
     {
         "id": 2881,
@@ -20317,14 +20306,14 @@
         "name": "Griferia Bano monocomando",
         "price": 34600,
         "cat": "Plomeria y Sanitarios",
-        "img": ""
+        "img": "imagenes_productos/prod_2903.png"
     },
     {
         "id": 2904,
         "name": "Griferia bano monocomando cuadrada",
         "price": 46950,
         "cat": "Plomeria y Sanitarios",
-        "img": ""
+        "img": "imagenes_productos/prod_2904.png"
     },
     {
         "id": 2905,
@@ -20337,8 +20326,7 @@
         "id": 2906,
         "name": "CINTA METRICA FLEJE FLEXIBLE 30 METROS",
         "price": 15750,
-        "cat": "Herramientas",
-        "img": ""
+        "cat": "Herramientas"
     },
     {
         "id": 2907,
@@ -20765,21 +20753,21 @@
         "name": "FLOR DE DUCHA CUADRADA",
         "price": 10600,
         "cat": "Materiales Generales",
-        "img": ""
+        "img": "imagenes_productos/prod_2967.png"
     },
     {
         "id": 2968,
         "name": "FLOR DE DUCHA REDONDA",
         "price": 10000,
         "cat": "Materiales Generales",
-        "img": ""
+        "img": "imagenes_productos/prod_2968.png"
     },
     {
         "id": 2969,
         "name": "CANO P/DUCHA 10 X 35CM",
         "price": 3500,
         "cat": "Plomeria y Sanitarios",
-        "img": ""
+        "img": "imagenes_productos/prod_2969.png"
     },
     {
         "id": 2970,
@@ -21024,7 +21012,7 @@
         "name": "MONOCOMANDO COCINA FLEX",
         "price": 34900,
         "cat": "Materiales Generales",
-        "img": ""
+        "img": "imagenes_productos/prod_3004.png"
     },
     {
         "id": 3005,
@@ -21052,7 +21040,7 @@
         "name": "CANILLA BIDON ITEPA",
         "price": 2900,
         "cat": "Plomeria y Sanitarios",
-        "img": ""
+        "img": "imagenes_productos/prod_3008.png"
     },
     {
         "id": 3009,
@@ -21087,7 +21075,7 @@
         "name": "CANILLA BIDON",
         "price": 5600,
         "cat": "Plomeria y Sanitarios",
-        "img": ""
+        "img": "imagenes_productos/prod_3013.png"
     },
     {
         "id": 3014,
@@ -21661,7 +21649,7 @@
         "name": "450213 DUCHA ANTICALCAREA ** - MARCA  DEALER",
         "price": 12600,
         "cat": "Materiales Generales",
-        "img": ""
+        "img": "imagenes_productos/prod_3095.png"
     },
     {
         "id": 3096,
@@ -24440,7 +24428,7 @@
         "name": "MANGA CANILLA 1/2 PARA ACOPLE RAPID",
         "price": 2400,
         "cat": "Plomeria y Sanitarios",
-        "img": ""
+        "img": "imagenes_productos/prod_3492.png"
     },
     {
         "id": 3493,
@@ -24895,7 +24883,7 @@
         "name": "CANILLA 1/2 METAL ESF. SANIPLAST CANILLA 1/2&quot; METAL ESF. SANIPLAST",
         "price": 6600,
         "cat": "Plomeria y Sanitarios",
-        "img": ""
+        "img": "imagenes_productos/prod_3557.png"
     },
     {
         "id": 3558,
@@ -25238,14 +25226,14 @@
         "name": "CANO FLEXIBLE DE ALUMINIO 3&quot;",
         "price": 9600,
         "cat": "Plomeria y Sanitarios",
-        "img": ""
+        "img": "imagenes_productos/prod_3606.png"
     },
     {
         "id": 3607,
         "name": "CANO FLEXIBLE DE ALUMINIO 4&quot;",
         "price": 11800,
         "cat": "Plomeria y Sanitarios",
-        "img": ""
+        "img": "imagenes_productos/prod_3607.png"
     },
     {
         "id": 3608,
@@ -25637,7 +25625,7 @@
         "name": "FLEXIBLE ACERO 1/2&quot;X40 CM.",
         "price": 5000,
         "cat": "Materiales Generales",
-        "img": ""
+        "img": "imagenes_productos/prod_3663.png"
     },
     {
         "id": 3664,
@@ -25686,7 +25674,7 @@
         "name": "FLEXIBLE ACERO 3/4&quot;X50 CM.",
         "price": 10600,
         "cat": "Materiales Generales",
-        "img": ""
+        "img": "imagenes_productos/prod_3670.png"
     },
     {
         "id": 3671,
@@ -28661,7 +28649,7 @@
         "name": "CANILLA 1/2 BRONCEADA",
         "price": 10300,
         "cat": "Plomeria y Sanitarios",
-        "img": ""
+        "img": "imagenes_productos/prod_4095.png"
     },
     {
         "id": 4096,
@@ -28682,6 +28670,6 @@
         "name": "CANILLA 3/4 BRONCEADA",
         "price": 12700,
         "cat": "Plomeria y Sanitarios",
-        "img": ""
+        "img": "imagenes_productos/prod_4098.png"
     }
 ]
