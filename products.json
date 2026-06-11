@@ -5737,7 +5737,7 @@
         "name": "MEDIA SOMBRA ANCHO 4M - CALIDAD 80%  - POR METRO",
         "price": 5000,
         "cat": "Herramientas",
-        "img": ""
+        "img": "imagenes_productos/prod_820.png"
     },
     {
         "id": 821,
@@ -13399,7 +13399,7 @@
         "name": "TEJIDO MOSQUITERO FIBRA GRIS 1.20 MT.  x METRO",
         "price": 4800,
         "cat": "Herramientas",
-        "img": ""
+        "img": "imagenes_productos/prod_1916.png"
     },
     {
         "id": 1917,
@@ -13959,28 +13959,28 @@
         "name": "TEJIDO MOSQUITERO ALUMINIO 1.20 MT.",
         "price": 10350,
         "cat": "Control de Plagas",
-        "img": "https://ferriplast.com.ar/pedidos/assets/product/img1_0000003240.jpg"
+        "img": "imagenes_productos/prod_1996.png"
     },
     {
         "id": 1997,
         "name": "TEJIDO MOSQUITERO ALUMINIO AMERICANO 1.00 MT.  x METRO",
         "price": 15800,
         "cat": "Plomeria y Sanitarios",
-        "img": ""
+        "img": "imagenes_productos/prod_1997.png"
     },
     {
         "id": 1998,
         "name": "TEJIDO MOSQUITERO ALUMINIO AMERICANO 1.50 MT.  x METRO",
         "price": 22900,
         "cat": "Plomeria y Sanitarios",
-        "img": ""
+        "img": "imagenes_productos/prod_1998.png"
     },
     {
         "id": 1999,
         "name": "BROCHES PARA MEDIA SOMBRA",
         "price": 200,
         "cat": "Materiales Generales",
-        "img": ""
+        "img": "imagenes_productos/prod_1999.png"
     },
     {
         "id": 2000,
@@ -17269,7 +17269,7 @@
         "name": "TEJIDO 1/2 SOMBRA 2 MT. 80% NEGRO  x METRO",
         "price": 2950,
         "cat": "Herramientas",
-        "img": ""
+        "img": "imagenes_productos/prod_2469.png"
     },
     {
         "id": 2470,
@@ -20515,7 +20515,7 @@
         "name": "POLIETILENO NEGRO 200 MICRONES X 2M ANCHO  X METRO",
         "price": 1050,
         "cat": "Herramientas",
-        "img": ""
+        "img": "imagenes_productos/prod_2933.png"
     },
     {
         "id": 2934,
