@@ -4099,70 +4099,70 @@
         "name": "ESMALTE BRILLANTE 5 EN 1 (G1) - 0,25 LITROS BLANCO",
         "price": 5600,
         "cat": "Pinturas y Accesorios",
-        "img": "https://ekxtowlurtuyiupkzwge.supabase.co/storage/v1/object/public/product-images/esmalte_brillante_5_en_1__g1_.png"
+        "img": "imagenes_productos/prod_586.png"
     },
     {
         "id": 587,
         "name": "ESMALTE BRILLANTE 5 EN 1 (G1) - 0,5 LITROS BLANCO",
         "price": 8650,
         "cat": "Pinturas y Accesorios",
-        "img": "https://ekxtowlurtuyiupkzwge.supabase.co/storage/v1/object/public/product-images/esmalte_brillante_5_en_1__g1_.png"
+        "img": "imagenes_productos/prod_587.png"
     },
     {
         "id": 588,
         "name": "ESMALTE BRILLANTE 5 EN 1 (G1) - 1 LITROS BLANCO",
         "price": 14850,
         "cat": "Pinturas y Accesorios",
-        "img": "https://ekxtowlurtuyiupkzwge.supabase.co/storage/v1/object/public/product-images/esmalte_brillante_5_en_1__g1_.png"
+        "img": "imagenes_productos/prod_588.png"
     },
     {
         "id": 589,
         "name": "ESMALTE BRILLANTE 5 EN 1 (G1) - 4 LITROS BLANCO",
         "price": 52450,
         "cat": "Pinturas y Accesorios",
-        "img": "https://ekxtowlurtuyiupkzwge.supabase.co/storage/v1/object/public/product-images/esmalte_brillante_5_en_1__g1_.png"
+        "img": "imagenes_productos/prod_589.png"
     },
     {
         "id": 590,
         "name": "ESMALTE BRILLANTE 5 EN 1 (G2) - 0,5 LITROS VERDE INGLES",
         "price": 7400,
         "cat": "Pinturas y Accesorios",
-        "img": "https://ekxtowlurtuyiupkzwge.supabase.co/storage/v1/object/public/product-images/esmalte_brillante_5_en_1__g2_.png"
+        "img": "imagenes_productos/prod_590.png"
     },
     {
         "id": 591,
         "name": "ESMALTE BRILLANTE 5 EN 1 (G3) - 0,25 LITROS NEGRO",
         "price": 4400,
         "cat": "Pinturas y Accesorios",
-        "img": "https://ekxtowlurtuyiupkzwge.supabase.co/storage/v1/object/public/product-images/esmalte_brillante_5_en_1__g3_.png"
+        "img": "imagenes_productos/prod_591.png"
     },
     {
         "id": 592,
         "name": "ESMALTE BRILLANTE 5 EN 1 (G3) - 0,5 NEGRO",
         "price": 6800,
         "cat": "Pinturas y Accesorios",
-        "img": "https://ekxtowlurtuyiupkzwge.supabase.co/storage/v1/object/public/product-images/esmalte_brillante_5_en_1__g3_.png"
+        "img": "imagenes_productos/prod_592.png"
     },
     {
         "id": 593,
         "name": "ESMALTE BRILLANTE 5 EN 1 (G3) - 1 LITROS NEGRO",
         "price": 11850,
         "cat": "Pinturas y Accesorios",
-        "img": "https://ekxtowlurtuyiupkzwge.supabase.co/storage/v1/object/public/product-images/esmalte_brillante_5_en_1__g3_.png"
+        "img": "imagenes_productos/prod_593.png"
     },
     {
         "id": 594,
         "name": "ESMALTE BRILLANTE 5 EN 1 (G3) - 4 LITROS NEGRO",
         "price": 41250,
         "cat": "Pinturas y Accesorios",
-        "img": "https://ekxtowlurtuyiupkzwge.supabase.co/storage/v1/object/public/product-images/esmalte_brillante_5_en_1__g3_.png"
+        "img": "imagenes_productos/prod_594.png"
     },
     {
         "id": 595,
         "name": "ESMALTE BRILLANTE 5 EN 1 (G4) - 0,5 LITROS ALUMINIO",
         "price": 11350,
         "cat": "Pinturas y Accesorios",
-        "img": "https://ekxtowlurtuyiupkzwge.supabase.co/storage/v1/object/public/product-images/esmalte_brillante_5_en_1__g4_.png"
+        "img": "imagenes_productos/prod_595.png"
     },
     {
         "id": 596,
@@ -4183,70 +4183,70 @@
         "name": "ESMALTE SATINADO 5 EN 1 (BLANCO) - 0,25 LITROS BLANCO",
         "price": 5400,
         "cat": "Pinturas y Accesorios",
-        "img": "https://ekxtowlurtuyiupkzwge.supabase.co/storage/v1/object/public/product-images/esmalte_satinado_5_en_1.png"
+        "img": "imagenes_productos/prod_598.png"
     },
     {
         "id": 599,
         "name": "ESMALTE SATINADO 5 EN 1 (BLANCO) - 0,5 LITROS BLANCO",
         "price": 8950,
         "cat": "Pinturas y Accesorios",
-        "img": "https://ekxtowlurtuyiupkzwge.supabase.co/storage/v1/object/public/product-images/esmalte_satinado_5_en_1.png"
+        "img": "imagenes_productos/prod_599.png"
     },
     {
         "id": 600,
         "name": "ESMALTE SATINADO 5 EN 1 (BLANCO) - 1 LITROS BLANCO",
         "price": 17000,
         "cat": "Pinturas y Accesorios",
-        "img": "https://ekxtowlurtuyiupkzwge.supabase.co/storage/v1/object/public/product-images/esmalte_satinado_5_en_1.png"
+        "img": "imagenes_productos/prod_600.png"
     },
     {
         "id": 601,
         "name": "ESMALTE SATINADO 5 EN 1 (NEGRO) - 0,25 LITROS NEGRO",
         "price": 4900,
         "cat": "Pinturas y Accesorios",
-        "img": "https://ekxtowlurtuyiupkzwge.supabase.co/storage/v1/object/public/product-images/esmalte_satinado_5_en_1.png"
+        "img": "imagenes_productos/prod_601.png"
     },
     {
         "id": 602,
         "name": "ESMALTE SATINADO 5 EN 1 (NEGRO) - 0,5 LITROS NEGRO",
         "price": 7800,
         "cat": "Pinturas y Accesorios",
-        "img": "https://ekxtowlurtuyiupkzwge.supabase.co/storage/v1/object/public/product-images/esmalte_satinado_5_en_1.png"
+        "img": "imagenes_productos/prod_602.png"
     },
     {
         "id": 603,
         "name": "ESMALTE SATINADO 5 EN 1 (NEGRO) - 1 LITROS NEGRO",
         "price": 13150,
         "cat": "Pinturas y Accesorios",
-        "img": "https://ekxtowlurtuyiupkzwge.supabase.co/storage/v1/object/public/product-images/esmalte_satinado_5_en_1.png"
+        "img": "imagenes_productos/prod_603.png"
     },
     {
         "id": 604,
         "name": "ESMALTE SATINADO 5 EN 1 (NEGRO) - 4 LITROS NEGRO",
         "price": 43350,
         "cat": "Pinturas y Accesorios",
-        "img": "https://ekxtowlurtuyiupkzwge.supabase.co/storage/v1/object/public/product-images/esmalte_satinado_5_en_1.png"
+        "img": "imagenes_productos/prod_604.png"
     },
     {
         "id": 605,
         "name": "ESMALTE MATE 5 EN 1 (BLANCO) - 0,5 LITROS BLANCO",
         "price": 7400,
         "cat": "Pinturas y Accesorios",
-        "img": "https://ekxtowlurtuyiupkzwge.supabase.co/storage/v1/object/public/product-images/esmalte_mate_5_en_1.png"
+        "img": "imagenes_productos/prod_605.png"
     },
     {
         "id": 606,
         "name": "ESMALTE MATE 5 EN 1 (NEGRO) - 0,5 LITROS NEGRO",
         "price": 6550,
         "cat": "Pinturas y Accesorios",
-        "img": "https://ekxtowlurtuyiupkzwge.supabase.co/storage/v1/object/public/product-images/esmalte_mate_5_en_1.png"
+        "img": "imagenes_productos/prod_606.png"
     },
     {
         "id": 607,
         "name": "ESMALTE MATE 5 EN 1 (NEGRO) - 4 LITROS NEGRO",
         "price": 41400,
         "cat": "Pinturas y Accesorios",
-        "img": "https://ekxtowlurtuyiupkzwge.supabase.co/storage/v1/object/public/product-images/esmalte_mate_5_en_1.png"
+        "img": "imagenes_productos/prod_607.png"
     },
     {
         "id": 608,
@@ -4379,28 +4379,28 @@
         "name": "ESMALTE BRILLANTE 5 EN 1 (G1) - 1 LITROS AMARILLO",
         "price": 14000,
         "cat": "Pinturas y Accesorios",
-        "img": "https://ekxtowlurtuyiupkzwge.supabase.co/storage/v1/object/public/product-images/esmalte_brillante_5_en_1__g1_.png"
+        "img": "imagenes_productos/prod_626.png"
     },
     {
         "id": 627,
         "name": "ESMALTE BRILLANTE 5 EN 1 (G3) - 0,5 LITROS GRIS OSCURO",
         "price": 8650,
         "cat": "Pinturas y Accesorios",
-        "img": "https://ekxtowlurtuyiupkzwge.supabase.co/storage/v1/object/public/product-images/esmalte_brillante_5_en_1__g3_.png"
+        "img": "imagenes_productos/prod_627.png"
     },
     {
         "id": 628,
         "name": "ESMALTE BRILLANTE 5 EN 1 (G3) - 0,5 LITROS GRIS ESPACIAL",
         "price": 6800,
         "cat": "Pinturas y Accesorios",
-        "img": "https://ekxtowlurtuyiupkzwge.supabase.co/storage/v1/object/public/product-images/esmalte_brillante_5_en_1__g3_.png"
+        "img": "imagenes_productos/prod_628.png"
     },
     {
         "id": 629,
         "name": "ESMALTE BRILLANTE 5 EN 1 (G3) - 4 LITROS GRIS OSCURO",
         "price": 38950,
         "cat": "Pinturas y Accesorios",
-        "img": "https://ekxtowlurtuyiupkzwge.supabase.co/storage/v1/object/public/product-images/esmalte_brillante_5_en_1__g3_.png"
+        "img": "imagenes_productos/prod_629.png"
     },
     {
         "id": 630,
