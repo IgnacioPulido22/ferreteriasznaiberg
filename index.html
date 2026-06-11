@@ -1118,9 +1118,9 @@ function toggleCart() {
 
 function checkout() {
   if (!cart.length) return;
-  const items = cart.map(i => `• ${i.qty}x ${i.name} — ${fmtPrice(i.price*i.qty)}`).join('%0A');
+  const items = cart.map(i => `• ${i.qty}x ${i.name} — ${fmtPrice(i.price*i.qty)}`).join('\n');
   const total = cart.reduce((s,i) => s+i.price*i.qty, 0);
-  const msg = encodeURIComponent('Hola! Me interesa hacer un pedido:%0A%0A' + items + '%0A%0ATotal: ' + fmtPrice(total));
+  const msg = encodeURIComponent(`Hola! Me interesa hacer un pedido:\n\n${items}\n\n*Total: ${fmtPrice(total)}*`);
   showToast('✅ Generando pedido...');
   setTimeout(() => window.open('https://wa.me/5491130556675?text=' + msg, '_blank'), 500);
 }
