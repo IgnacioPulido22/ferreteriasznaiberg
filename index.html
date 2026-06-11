@@ -1041,7 +1041,7 @@ function modalAddToCart() {
 function modalWhatsApp() {
   if (!modalProduct) return;
   const msg = encodeURIComponent(`Hola! Quisiera consultar sobre el producto:\n\n*${modalProduct.name}*\nPrecio: ${fmtPrice(modalProduct.price)}\n\n¿Tienen disponibilidad?`);
-  window.open('https://wa.me/5491100000000?text=' + msg, '_blank');
+  window.open('https://wa.me/5491130556675?text=' + msg, '_blank');
 }
 
 /* ============================================================
@@ -1122,7 +1122,7 @@ function checkout() {
   const total = cart.reduce((s,i) => s+i.price*i.qty, 0);
   const msg = encodeURIComponent('Hola! Me interesa hacer un pedido:%0A%0A' + items + '%0A%0ATotal: ' + fmtPrice(total));
   showToast('✅ Generando pedido...');
-  setTimeout(() => window.open('https://wa.me/5491100000000?text=' + msg, '_blank'), 500);
+  setTimeout(() => window.open('https://wa.me/5491130556675?text=' + msg, '_blank'), 500);
 }
 
 /* ============================================================
