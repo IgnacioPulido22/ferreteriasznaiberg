@@ -3000,7 +3000,7 @@
         "name": "MODULO TOMA C/NEUTRO BLANCO KALOP - (LINEA MODULAR KALOP  KALOP)",
         "price": 1700,
         "cat": "Electricidad e Iluminacion",
-        "img": ""
+        "img": "imagenes_productos/prod_429.png"
     },
     {
         "id": 430,
@@ -3224,14 +3224,14 @@
         "name": "FICHA MACHO 3 PATAS SALIDA AXIAL 10AMP RICHI - (FICHAS  RICHI)",
         "price": 2200,
         "cat": "Electricidad e Iluminacion",
-        "img": ""
+        "img": "imagenes_productos/prod_461.png"
     },
     {
         "id": 462,
         "name": "FICHA HEMBRA 3 PATAS SALIDA AXIAL 10AMP RICHI - (FICHAS  RICHI)",
         "price": 2200,
         "cat": "Electricidad e Iluminacion",
-        "img": ""
+        "img": "imagenes_productos/prod_462.png"
     },
     {
         "id": 463,
@@ -5359,7 +5359,7 @@
         "name": "FICHA HEMBRA 20A C/AZA - MARCA MIG         (29-FICHAS  MIG)",
         "price": 2900,
         "cat": "Electricidad e Iluminacion",
-        "img": ""
+        "img": "imagenes_productos/prod_766.png"
     },
     {
         "id": 767,
@@ -18920,7 +18920,7 @@
         "name": "CAJA CAPSULADA TOMA 10A AZUL EXULTT",
         "price": 4250,
         "cat": "Electricidad e Iluminacion",
-        "img": ""
+        "img": "imagenes_productos/prod_2705.png"
     },
     {
         "id": 2706,
@@ -28481,7 +28481,7 @@
         "name": "ADAPTADOR MOSQUITO",
         "price": 1800,
         "cat": "Control de Plagas",
-        "img": ""
+        "img": "imagenes_productos/prod_4071.png"
     },
     {
         "id": 4072,
