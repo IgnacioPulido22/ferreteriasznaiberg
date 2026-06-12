@@ -14841,7 +14841,7 @@
         "name": "TOTAL - LIJADORA PALMA 240W",
         "price": 160550,
         "cat": "Pinturas y Accesorios",
-        "img": ""
+        "img": "imagenes_productos/prod_2122.png"
     },
     {
         "id": 2123,
@@ -15387,7 +15387,7 @@
         "name": "TOTAL - AMOLADORA 710 W.",
         "price": 94250,
         "cat": "Herramientas",
-        "img": ""
+        "img": "imagenes_productos/prod_2200.png"
     },
     {
         "id": 2201,
@@ -20396,14 +20396,14 @@
         "name": "DESTORNILLADOR TOTAL PHILIPS 6 X 125",
         "price": 7800,
         "cat": "Herramientas",
-        "img": ""
+        "img": "imagenes_productos/prod_2916.png"
     },
     {
         "id": 2917,
         "name": "DESTORNILLADOR TOTAL PHILIPS 6 X 150",
         "price": 7900,
         "cat": "Herramientas",
-        "img": ""
+        "img": "imagenes_productos/prod_2917.png"
     },
     {
         "id": 2918,
