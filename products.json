@@ -6715,7 +6715,7 @@
         "name": "BJ PISTOLA APLICADORA ABIERTA BLACK JACK P016",
         "price": 12850,
         "cat": "Electricidad e Iluminacion",
-        "img": "https://www.adhesivospegalo.com.ar/wp-content/uploads/2016/02/pistola_instalador-320x202.png"
+        "img": "imagenes_productos/prod_960.png"
     },
     {
         "id": 961,
@@ -7037,14 +7037,14 @@
         "name": "MECHA COPA TUNGSTENO 67MM BLACK JACK - - - - -",
         "price": 29950,
         "cat": "Materiales Generales",
-        "img": ""
+        "img": "imagenes_productos/prod_1006.png"
     },
     {
         "id": 1007,
         "name": "MECHA COPA TUNGSTENO 103 MM BLACK JACK - - - -",
         "price": 38750,
         "cat": "Materiales Generales",
-        "img": ""
+        "img": "imagenes_productos/prod_1007.png"
     },
     {
         "id": 1008,
@@ -7065,14 +7065,14 @@
         "name": "BJ LLAVE ALLEM X8 BOLSILLO BLACK -b453 BALCK JACK",
         "price": 22600,
         "cat": "Materiales Generales",
-        "img": ""
+        "img": "imagenes_productos/prod_1010.png"
     },
     {
         "id": 1011,
         "name": "BJ LLAVE TORX X8 BOLSILLO BLACK B454",
         "price": 26700,
         "cat": "Materiales Generales",
-        "img": ""
+        "img": "imagenes_productos/prod_1011.png"
     },
     {
         "id": 1012,
@@ -7086,35 +7086,35 @@
         "name": "BJ SONDA MEDIDORA 13P BLACK JACK D310",
         "price": 11800,
         "cat": "Materiales Generales",
-        "img": ""
+        "img": "imagenes_productos/prod_1013.png"
     },
     {
         "id": 1014,
         "name": "BJ ACCESORIO P/MINI DRILL WS370010 BLACK JACK",
         "price": 6700,
         "cat": "Materiales Generales",
-        "img": ""
+        "img": "imagenes_productos/prod_1014.png"
     },
     {
         "id": 1015,
         "name": "BJ ACCESORIO P/MINI DRILL WS37003 BLACK JACK",
         "price": 11650,
         "cat": "Materiales Generales",
-        "img": ""
+        "img": "imagenes_productos/prod_1015.png"
     },
     {
         "id": 1016,
         "name": "BJ MARTILLO CARPINTERO 20MM BLACK JACK G045",
         "price": 14600,
         "cat": "Herramientas",
-        "img": "https://ferriplast.com.ar/pedidos/assets/product/img1_0000000428.png"
+        "img": "imagenes_productos/prod_1016.png"
     },
     {
         "id": 1017,
         "name": "BJ PINZA SEGUER BLACK JACK b110",
         "price": 19100,
         "cat": "Herramientas",
-        "img": ""
+        "img": "imagenes_productos/prod_1017.png"
     },
     {
         "id": 1018,
@@ -7142,7 +7142,7 @@
         "name": "BJ ACCESORIO P/MINI DRILL WS370014 BLACK JACK",
         "price": 7150,
         "cat": "Materiales Generales",
-        "img": ""
+        "img": "imagenes_productos/prod_1021.png"
     },
     {
         "id": 1022,
@@ -7170,7 +7170,7 @@
         "name": "BJ ACCESORIO MINI DRILL 370012 BLACK JACK",
         "price": 6700,
         "cat": "Materiales Generales",
-        "img": ""
+        "img": "imagenes_productos/prod_1025.png"
     },
     {
         "id": 1026,
@@ -7317,7 +7317,7 @@
         "name": "BJ DESTORNILLADOR  PRECISION X6 BLACK JACK B365",
         "price": 23600,
         "cat": "Herramientas",
-        "img": ""
+        "img": "imagenes_productos/prod_1046.png"
     },
     {
         "id": 1047,
@@ -7345,7 +7345,7 @@
         "name": "BJ SACABOCADO GOLPE X9 PCS BALCK JACK B625",
         "price": 40600,
         "cat": "Materiales Generales",
-        "img": ""
+        "img": "imagenes_productos/prod_1050.png"
     },
     {
         "id": 1051,
@@ -7485,7 +7485,7 @@
         "name": "BJ LAPIZ WIDIA PTA COMBIABLE BLACK JACK",
         "price": 16950,
         "cat": "Materiales Generales",
-        "img": ""
+        "img": "imagenes_productos/prod_1070.png"
     },
     {
         "id": 1071,
@@ -7728,7 +7728,7 @@
         "name": "BJ MANDRIL 10MM VERSA J630",
         "price": 26100,
         "cat": "Materiales Generales",
-        "img": ""
+        "img": "imagenes_productos/prod_1105.png"
     },
     {
         "id": 1106,
@@ -19592,14 +19592,14 @@
         "name": "Accesorio Torno Mini Drill 6 Discos Goma Black Jack WS 37008",
         "price": 6850,
         "cat": "Herramientas",
-        "img": ""
+        "img": "imagenes_productos/prod_2801.png"
     },
     {
         "id": 2802,
         "name": "Accesorio Mini Drill 3 Cepillos De Nylon Black Jack Ws 37005",
         "price": 6850,
         "cat": "Materiales Generales",
-        "img": ""
+        "img": "imagenes_productos/prod_2802.png"
     },
     {
         "id": 2803,
