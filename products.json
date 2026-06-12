@@ -6618,7 +6618,7 @@
         "name": "TANZA GRILLON 2MM CUAD",
         "price": 300,
         "cat": "Materiales Generales",
-        "img": ""
+        "img": "imagenes_productos/prod_946.png"
     },
     {
         "id": 947,
@@ -6764,14 +6764,14 @@
         "name": "TANZA GRILLON 2,5MM CUAD - -",
         "price": 450,
         "cat": "Materiales Generales",
-        "img": ""
+        "img": "imagenes_productos/prod_967.png"
     },
     {
         "id": 968,
         "name": "TANZA GRILLON 1,5 REDONDA - -",
         "price": 200,
         "cat": "Materiales Generales",
-        "img": ""
+        "img": "imagenes_productos/prod_968.png"
     },
     {
         "id": 969,
@@ -6792,7 +6792,7 @@
         "name": "TANZA GRILLON 3mm CUAD - - - - - -",
         "price": 600,
         "cat": "Materiales Generales",
-        "img": ""
+        "img": "imagenes_productos/prod_971.png"
     },
     {
         "id": 972,
@@ -11178,7 +11178,7 @@
         "name": "TANZA ALBANIL 0.80 MM. X 100 MTR. x UNIDAD",
         "price": 5400,
         "cat": "Materiales Generales",
-        "img": ""
+        "img": "imagenes_productos/prod_1598.png"
     },
     {
         "id": 1599,
@@ -14330,14 +14330,14 @@
         "name": "CARRETEL UNIV. GRANDE CON TANZA EN BLISTER",
         "price": 2250,
         "cat": "Materiales Generales",
-        "img": "https://ferriplast.com.ar/pedidos/assets/product/img1_0000000577.jpg"
+        "img": "imagenes_productos/prod_2049.png"
     },
     {
         "id": 2050,
         "name": "CARRETEL UNIV. CHICO CON TANZA SUPER",
         "price": 3700,
         "cat": "Materiales Generales",
-        "img": "https://ferriplast.com.ar/pedidos/assets/product/031021.jpg"
+        "img": "imagenes_productos/prod_2050.png"
     },
     {
         "id": 2051,
@@ -14365,7 +14365,7 @@
         "name": "CARRETEL UNIV. AUTOMATICO CON TANZA SUPER",
         "price": 4600,
         "cat": "Materiales Generales",
-        "img": "https://ferriplast.com.ar/pedidos/assets/product/031033.jpg"
+        "img": "imagenes_productos/prod_2054.png"
     },
     {
         "id": 2055,
@@ -16877,7 +16877,7 @@
         "name": "CARRETEL DESMALEZADORA CON TUERCA Y TANZA",
         "price": 13050,
         "cat": "Ferreteria y Fijacion",
-        "img": "https://ferriplast.com.ar/pedidos/assets/product/091052.jpg"
+        "img": "imagenes_productos/prod_2413.png"
     },
     {
         "id": 2414,
@@ -16926,7 +16926,7 @@
         "name": "CARRETEL DESMALEZADORA AUTOMATICO CON TANZA",
         "price": 8300,
         "cat": "Materiales Generales",
-        "img": ""
+        "img": "imagenes_productos/prod_2420.png"
     },
     {
         "id": 2421,
@@ -17710,28 +17710,28 @@
         "name": "TANZA CUADRADA 1.5 MM.  X METRO",
         "price": 100,
         "cat": "Herramientas",
-        "img": ""
+        "img": "imagenes_productos/prod_2532.png"
     },
     {
         "id": 2533,
         "name": "TANZA CUADRADA 2.0 MM.  X METRO",
         "price": 150,
         "cat": "Herramientas",
-        "img": ""
+        "img": "imagenes_productos/prod_2533.png"
     },
     {
         "id": 2534,
         "name": "TANZA CUADRADA 2.5 MM. X METRO",
         "price": 300,
         "cat": "Herramientas",
-        "img": ""
+        "img": "imagenes_productos/prod_2534.png"
     },
     {
         "id": 2535,
         "name": "TANZA CUADRADA 3.0 MM. X METRO",
         "price": 400,
         "cat": "Herramientas",
-        "img": ""
+        "img": "imagenes_productos/prod_2535.png"
     },
     {
         "id": 2536,
