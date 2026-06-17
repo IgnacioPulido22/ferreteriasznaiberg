@@ -17479,28 +17479,28 @@
         "name": "GENROD - TAPA CIEGA P/CAJA RECTANGULAR",
         "price": 700,
         "cat": "Materiales Generales",
-        "img": "https://ips-arg.com/wp-content/uploads/2019/10/111_1209171306_Tapa-H.jpg"
+        "img": "imagenes_productos/prod_2499.png"
     },
     {
         "id": 2500,
         "name": "GENROD - TAPA CIEGA P/CAJA OCTOGONAL CHICA",
         "price": 700,
         "cat": "Materiales Generales",
-        "img": "https://ips-arg.com/wp-content/uploads/2019/10/111_1209171306_Tapa-H.jpg"
+        "img": "imagenes_productos/prod_2500.png"
     },
     {
         "id": 2501,
         "name": "GENROD - TAPA CIEGA P/CAJA OCTOGONAL GRANDE",
         "price": 1100,
         "cat": "Materiales Generales",
-        "img": "https://ips-arg.com/wp-content/uploads/2019/10/111_1209171306_Tapa-H.jpg"
+        "img": "imagenes_productos/prod_2501.png"
     },
     {
         "id": 2502,
         "name": "GENROD - TAPA CIEGA P/CAJA CUADRADA",
         "price": 1250,
         "cat": "Materiales Generales",
-        "img": "https://ips-arg.com/wp-content/uploads/2019/10/111_1209171306_Tapa-H.jpg"
+        "img": "imagenes_productos/prod_2502.png"
     },
     {
         "id": 2503,
@@ -17521,21 +17521,21 @@
         "name": "GENROD - CAJA EXT. TM 2 BOCAS C/TAPA FUME - BLANCA",
         "price": 5200,
         "cat": "Materiales Generales",
-        "img": "https://ferriplast.com.ar/pedidos/assets/product/109635.jpg"
+        "img": "imagenes_productos/prod_2505.png"
     },
     {
         "id": 2506,
         "name": "GENROD - CAJA EXT. TM 4 BOCAS C/TAPA FUME - BLANCA",
         "price": 6400,
         "cat": "Materiales Generales",
-        "img": "https://ferriplast.com.ar/pedidos/assets/product/109636.jpg"
+        "img": "imagenes_productos/prod_2506.png"
     },
     {
         "id": 2507,
         "name": "GENROD - CAJA DE EMBUTIR P/12 MODULOS DIN PUERTA FUME",
         "price": 26250,
         "cat": "Materiales Generales",
-        "img": ""
+        "img": "imagenes_productos/prod_2507.png"
     },
     {
         "id": 2508,
@@ -17556,21 +17556,21 @@
         "name": "GENROD - CONECTOR Ø20 MM. P/TUBO RIGIDO Y CORRUGADO",
         "price": 300,
         "cat": "Materiales Generales",
-        "img": "https://ferriplast.com.ar/pedidos/assets/product/109606.jpg"
+        "img": "imagenes_productos/prod_2510.png"
     },
     {
         "id": 2511,
         "name": "GENROD - CONECTOR Ø22 MM. P/TUBO RIGIDO Y CORRUGADO",
         "price": 550,
         "cat": "Materiales Generales",
-        "img": "https://ferriplast.com.ar/pedidos/assets/product/109607.jpg"
+        "img": "imagenes_productos/prod_2511.png"
     },
     {
         "id": 2512,
         "name": "GENROD - CONECTOR Ø25 MM. P/TUBO RIGIDO Y CORRUGADO",
         "price": 650,
         "cat": "Materiales Generales",
-        "img": "https://ferriplast.com.ar/pedidos/assets/product/109608.jpg"
+        "img": "imagenes_productos/prod_2512.png"
     },
     {
         "id": 2513,
@@ -17619,28 +17619,25 @@
         "name": "GENROD - CAJA DE SOBREPONER CUADRADA C/TAPA BLANCA",
         "price": 2000,
         "cat": "Materiales Generales",
-        "img": "https://ferriplast.com.ar/pedidos/assets/product/109648.jpg"
+        "img": "imagenes_productos/prod_2519.png"
     },
     {
         "id": 2520,
         "name": "GENROD - TUBO RIGIDO SISTELECTRIC SD 20 X 3 MT.",
         "price": 3550,
-        "cat": "Materiales Generales",
-        "img": ""
+        "cat": "Materiales Generales"
     },
     {
         "id": 2521,
         "name": "GENROD - TUBO RIGIDO SISTELECTRIC SD Ø22 X 3 MT.",
         "price": 4800,
-        "cat": "Materiales Generales",
-        "img": ""
+        "cat": "Materiales Generales"
     },
     {
         "id": 2522,
         "name": "GENROD - TUBO RIGIDO SISTELECTRIC SD Ø25 X 3 MT.",
         "price": 5050,
-        "cat": "Materiales Generales",
-        "img": ""
+        "cat": "Materiales Generales"
     },
     {
         "id": 2523,
@@ -18829,14 +18826,14 @@
         "name": "MORDAZA PARA JABALINA 1/2&quot; GENROD",
         "price": 7300,
         "cat": "Materiales Generales",
-        "img": ""
+        "img": "imagenes_productos/prod_2692.png"
     },
     {
         "id": 2693,
         "name": "JABALINA NORMALIZADA 1/2 X 1,5MTS GENROD",
         "price": 28050,
         "cat": "Materiales Generales",
-        "img": ""
+        "img": "imagenes_productos/prod_2693.png"
     },
     {
         "id": 2694,
