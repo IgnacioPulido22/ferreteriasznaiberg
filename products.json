@@ -3930,8 +3930,7 @@
         "id": 562,
         "name": "PICO J PARA GRIFERIA MESADA 42cm",
         "price": 4350,
-        "cat": "Plomeria y Sanitarios",
-        "img": ""
+        "cat": "Plomeria y Sanitarios"
     },
     {
         "id": 563,
@@ -7127,8 +7126,7 @@
         "id": 1019,
         "name": "PICO P/MANGUERA COMPRESOR GOMERO 12136 -",
         "price": 10300,
-        "cat": "Plomeria y Sanitarios",
-        "img": ""
+        "cat": "Plomeria y Sanitarios"
     },
     {
         "id": 1020,
@@ -7901,8 +7899,7 @@
         "id": 1130,
         "name": "PINZA PICO LORO TIPO BOMBISTA 250 MM",
         "price": 22600,
-        "cat": "Herramientas",
-        "img": ""
+        "cat": "Herramientas"
     },
     {
         "id": 1131,
@@ -9337,56 +9334,56 @@
         "name": "PICO CALEFON 1 ORBIS BOTONERA ANTIGUA",
         "price": 1400,
         "cat": "Electricidad e Iluminacion",
-        "img": ""
+        "img": "imagenes_productos/prod_1335.png"
     },
     {
         "id": 1336,
         "name": "PICO COCINA 10 COVENTRY G/E CORTO",
         "price": 1450,
         "cat": "Materiales Generales",
-        "img": ""
+        "img": "imagenes_productos/prod_1336.png"
     },
     {
         "id": 1337,
         "name": "PICO COCINA 11 DOMEC",
         "price": 1300,
         "cat": "Materiales Generales",
-        "img": ""
+        "img": "imagenes_productos/prod_1337.png"
     },
     {
         "id": 1338,
         "name": "PICO COCINA 12 WHIRPOOL",
         "price": 1200,
         "cat": "Materiales Generales",
-        "img": ""
+        "img": "imagenes_productos/prod_1338.png"
     },
     {
         "id": 1339,
         "name": "PICO COCINA 13 DREAM AURORA",
         "price": 1600,
         "cat": "Materiales Generales",
-        "img": ""
+        "img": "imagenes_productos/prod_1339.png"
     },
     {
         "id": 1340,
         "name": "PICO COCINA 14 ESCORIAL CORTO",
         "price": 1100,
         "cat": "Materiales Generales",
-        "img": ""
+        "img": "imagenes_productos/prod_1340.png"
     },
     {
         "id": 1341,
         "name": "PICO COCINA 15 ESCORIAL MEDIANO",
         "price": 1550,
         "cat": "Materiales Generales",
-        "img": ""
+        "img": "imagenes_productos/prod_1341.png"
     },
     {
         "id": 1342,
         "name": "PICO COCINA 16 ESCORIAL LARGO",
         "price": 1750,
         "cat": "Materiales Generales",
-        "img": ""
+        "img": "imagenes_productos/prod_1342.png"
     },
     {
         "id": 1343,
@@ -9400,63 +9397,63 @@
         "name": "PICO COCINA 18 ORBIS COQUETA CORTO",
         "price": 2000,
         "cat": "Materiales Generales",
-        "img": ""
+        "img": "imagenes_productos/prod_1344.png"
     },
     {
         "id": 1345,
         "name": "PICO COCINA 19 ORBIS COQUETA LARGO",
         "price": 3500,
         "cat": "Materiales Generales",
-        "img": ""
+        "img": "imagenes_productos/prod_1345.png"
     },
     {
         "id": 1346,
         "name": "PICO CALEFON 2 ORBIS BOTONERA MODERNA",
         "price": 1400,
         "cat": "Electricidad e Iluminacion",
-        "img": ""
+        "img": "imagenes_productos/prod_1346.png"
     },
     {
         "id": 1347,
         "name": "PICO COCINA 20 ORBIS CHATO",
         "price": 1750,
         "cat": "Materiales Generales",
-        "img": ""
+        "img": "imagenes_productos/prod_1347.png"
     },
     {
         "id": 1348,
         "name": "PICO COCINA 21 ORBIS CONVECTA",
         "price": 1350,
         "cat": "Materiales Generales",
-        "img": ""
+        "img": "imagenes_productos/prod_1348.png"
     },
     {
         "id": 1349,
         "name": "PICO COCINA 22 ORO AZUL",
         "price": 1850,
         "cat": "Materiales Generales",
-        "img": ""
+        "img": "imagenes_productos/prod_1349.png"
     },
     {
         "id": 1350,
         "name": "PICO COCINA 23 VOLCAN",
         "price": 1450,
         "cat": "Materiales Generales",
-        "img": ""
+        "img": "imagenes_productos/prod_1350.png"
     },
     {
         "id": 1351,
         "name": "PICO COCINA 24 ORBIS DONNA",
         "price": 1700,
         "cat": "Materiales Generales",
-        "img": ""
+        "img": "imagenes_productos/prod_1351.png"
     },
     {
         "id": 1352,
         "name": "PICO CALEFON 25 LONGVIE SEMILLA",
         "price": 1150,
         "cat": "Electricidad e Iluminacion",
-        "img": ""
+        "img": "imagenes_productos/prod_1352.png"
     },
     {
         "id": 1353,
@@ -9470,84 +9467,84 @@
         "name": "PICO CALEFON 26 ORBIS POLIDORO",
         "price": 1400,
         "cat": "Electricidad e Iluminacion",
-        "img": ""
+        "img": "imagenes_productos/prod_1354.png"
     },
     {
         "id": 1355,
         "name": "PICO COCINA 27 DOMEC ITALIANO",
         "price": 1600,
         "cat": "Materiales Generales",
-        "img": ""
+        "img": "imagenes_productos/prod_1355.png"
     },
     {
         "id": 1356,
         "name": "PICO COCINA 28 BRASIL CORTO",
         "price": 1400,
         "cat": "Materiales Generales",
-        "img": ""
+        "img": "imagenes_productos/prod_1356.png"
     },
     {
         "id": 1357,
         "name": "PICO COCINA 29 CONSUL",
         "price": 1350,
         "cat": "Materiales Generales",
-        "img": ""
+        "img": "imagenes_productos/prod_1357.png"
     },
     {
         "id": 1358,
         "name": "PICO VARIOS 3 STD.HEXADONAL",
         "price": 1050,
         "cat": "Materiales Generales",
-        "img": ""
+        "img": "imagenes_productos/prod_1358.png"
     },
     {
         "id": 1359,
         "name": "PICO COCINA 30 VOLCAN MODERNO",
         "price": 2100,
         "cat": "Materiales Generales",
-        "img": ""
+        "img": "imagenes_productos/prod_1359.png"
     },
     {
         "id": 1360,
         "name": "PICO VARIOS 4 FAROL",
         "price": 1600,
         "cat": "Materiales Generales",
-        "img": ""
+        "img": "imagenes_productos/prod_1360.png"
     },
     {
         "id": 1361,
         "name": "PICO VARIOS 5 CALENTADOR",
         "price": 1500,
         "cat": "Electricidad e Iluminacion",
-        "img": ""
+        "img": "imagenes_productos/prod_1361.png"
     },
     {
         "id": 1362,
         "name": "PICO COCINA 6 ARTUR MARTIN R/FINA",
         "price": 1450,
         "cat": "Materiales Generales",
-        "img": ""
+        "img": "imagenes_productos/prod_1362.png"
     },
     {
         "id": 1363,
         "name": "PICO COCINA 7 ARTUR MARTIN R/GRUES",
         "price": 1450,
         "cat": "Materiales Generales",
-        "img": ""
+        "img": "imagenes_productos/prod_1363.png"
     },
     {
         "id": 1364,
         "name": "PICO COCINA 8 COVENTRY LARGO",
         "price": 3000,
         "cat": "Materiales Generales",
-        "img": ""
+        "img": "imagenes_productos/prod_1364.png"
     },
     {
         "id": 1365,
         "name": "PICO COCINA 9 COVENTRY HORNO",
         "price": 1200,
         "cat": "Materiales Generales",
-        "img": ""
+        "img": "imagenes_productos/prod_1365.png"
     },
     {
         "id": 1366,
@@ -13496,8 +13493,7 @@
         "id": 1930,
         "name": "PINZA PICO DE LORO 10&quot; TIPO KNIPEX",
         "price": 16450,
-        "cat": "Herramientas",
-        "img": ""
+        "cat": "Herramientas"
     },
     {
         "id": 1931,
@@ -18077,8 +18073,7 @@
         "id": 2585,
         "name": "CODO 1/4 M VIROLA X 1/4 M PORTA PICO (FUNDIDO)",
         "price": 3200,
-        "cat": "Plomeria y Sanitarios",
-        "img": ""
+        "cat": "Plomeria y Sanitarios"
     },
     {
         "id": 2586,
@@ -18231,15 +18226,13 @@
         "id": 2607,
         "name": "PERNO 10 KG X 1/4 M PORTA PICO (TRAFILADO)",
         "price": 2200,
-        "cat": "Materiales Generales",
-        "img": ""
+        "cat": "Materiales Generales"
     },
     {
         "id": 2608,
         "name": "PERNO 10 KG X 1/8 M PORTA PICO (TRAFILADO)",
         "price": 1750,
-        "cat": "Materiales Generales",
-        "img": ""
+        "cat": "Materiales Generales"
     },
     {
         "id": 2609,
@@ -19665,8 +19658,7 @@
         "id": 2812,
         "name": "Inflador Pelota Pico Pitbuild Futbol Rugby Voley",
         "price": 9900,
-        "cat": "Materiales Generales",
-        "img": ""
+        "cat": "Materiales Generales"
     },
     {
         "id": 2813,
@@ -20987,22 +20979,19 @@
         "id": 3001,
         "name": "PICO GRIFERIA J",
         "price": 3200,
-        "cat": "Plomeria y Sanitarios",
-        "img": ""
+        "cat": "Plomeria y Sanitarios"
     },
     {
         "id": 3002,
         "name": "PICO GRIFERIA S",
         "price": 3200,
-        "cat": "Plomeria y Sanitarios",
-        "img": ""
+        "cat": "Plomeria y Sanitarios"
     },
     {
         "id": 3003,
         "name": "PICO GRIFERIA U",
         "price": 4000,
-        "cat": "Plomeria y Sanitarios",
-        "img": ""
+        "cat": "Plomeria y Sanitarios"
     },
     {
         "id": 3004,
@@ -21015,8 +21004,7 @@
         "id": 3005,
         "name": "PICO GRIFERIA U",
         "price": 4000,
-        "cat": "Plomeria y Sanitarios",
-        "img": ""
+        "cat": "Plomeria y Sanitarios"
     },
     {
         "id": 3006,
