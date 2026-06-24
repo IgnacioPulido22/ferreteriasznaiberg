@@ -7224,14 +7224,14 @@
         "name": "PUNTA CON ENCASTRE SDS 14X250MM",
         "price": 10300,
         "cat": "Materiales Generales",
-        "img": ""
+        "img": "imagenes_productos/prod_1033.png"
     },
     {
         "id": 1034,
         "name": "CINCEL CON ENCASTRE SDS 14X250MM",
         "price": 10300,
         "cat": "Herramientas",
-        "img": ""
+        "img": "imagenes_productos/prod_1034.png"
     },
     {
         "id": 1035,
@@ -13556,7 +13556,7 @@
         "name": "MECHA SDS  8 X 460 EZETA",
         "price": 14550,
         "cat": "Materiales Generales",
-        "img": ""
+        "img": "imagenes_productos/prod_1939.png"
     },
     {
         "id": 1940,
@@ -13612,7 +13612,7 @@
         "name": "MECHA SDS 10 X 460 EZETA",
         "price": 17200,
         "cat": "Materiales Generales",
-        "img": ""
+        "img": "imagenes_productos/prod_1947.png"
     },
     {
         "id": 1948,
@@ -19463,7 +19463,7 @@
         "name": "Mecha Broca Widia Sds Plus Venturo Aliafor 20 X 260mm",
         "price": 11000,
         "cat": "Herramientas",
-        "img": ""
+        "img": "imagenes_productos/prod_2784.png"
     },
     {
         "id": 2785,
